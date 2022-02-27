@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-r0010325_20220226134659",
-      "name": "R0010325_20220226134659",
+      "id": "parter",
+      "name": "parter",
       "levels": [
         {
           "tileSize": 256,
