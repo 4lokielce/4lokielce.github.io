@@ -4,6 +4,47 @@ var APP_DATA = {
       "id": "0-dziurka-1",
       "name": "Dziurka 1",
       "levels": [
+            {
+      "id": "0-iv-lo-kielcach",
+      "name": "IV LO Kielcach",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1000,
+      "initialViewParameters": {
+        "yaw": -2.5908133042756276,
+        "pitch": 0.19000094371438792,
+        "fov": 1.3333127936580627
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.8403588323914555,
+          "pitch": 0.7573872099319559,
+          "rotation": 6.283185307179586,
+          "target": "0-iv-lo-kielcach"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -3.094786563566384,
+          "pitch": 0.1850925263558505,
+          "title": "O szkole",
+          "text": "Strona: http://4lo.kielce.eu/"
+        }
+      ]
+    },
         {
           "tileSize": 256,
           "size": 256,
