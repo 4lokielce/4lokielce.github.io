@@ -37,7 +37,7 @@ var APP_DATA = {
           "yaw": -3.094786563566384,
           "pitch": 0.1850925263558505,
           "title": "O szkole",
-          "text": "Strona: <a href='http://4lo.kielce.eu/'>http://4lo.kielce.eu/</a>"
+          "text": "Strona: <a href='http://4lo.kielce.eu/' target='_blank'>http://4lo.kielce.eu/</a>"
         }
       ]
     },
@@ -139,7 +139,7 @@ var APP_DATA = {
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": false,
+    "fullscreenButton": true,
     "viewControlButtons": true
   }
 };
