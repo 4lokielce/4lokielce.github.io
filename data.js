@@ -1,9 +1,5 @@
 var APP_DATA = {
   "scenes": [
-    {
-      "id": "0-dziurka-1",
-      "name": "Dziurka 1",
-      "levels": [
             {
       "id": "0-iv-lo-kielcach",
       "name": "IV LO Kielcach",
@@ -45,6 +41,10 @@ var APP_DATA = {
         }
       ]
     },
+        {
+      "id": "0-dziurka-1",
+      "name": "Dziurka 1",
+      "levels": [
         {
           "tileSize": 256,
           "size": 256,
