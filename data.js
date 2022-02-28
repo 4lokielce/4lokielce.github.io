@@ -29,7 +29,7 @@ var APP_DATA = {
           "yaw": -2.8403588323914555,
           "pitch": 0.7573872099319559,
           "rotation": 6.283185307179586,
-          "target": "0-iv-lo-kielcach"
+          "target": "0-dziurka-1"
         }
       ],
       "infoHotspots": [
@@ -37,7 +37,7 @@ var APP_DATA = {
           "yaw": -3.094786563566384,
           "pitch": 0.1850925263558505,
           "title": "O szkole",
-          "text": "Strona: http://4lo.kielce.eu/"
+          "text": "Strona: <a href='http://4lo.kielce.eu/'>http://4lo.kielce.eu/</a>"
         }
       ]
     },
