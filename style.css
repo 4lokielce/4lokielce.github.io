@@ -305,7 +305,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   height: 40px;
 }
 
-#sceneList .scene .text {
+#sceneList .scene .text, summary {
   width: 100%;
   height: 100%;
   padding: 0 15px;
