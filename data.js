@@ -36,7 +36,7 @@ var APP_DATA = {
         {
           "yaw": -3.094786563566384,
           "pitch": 0.1850925263558505,
-          "title": "<img src='favicon.png' width='14'> O szkole",
+          "title": "<img src='favicon.png' width='12'> O szkole",
           "text": "Strona: <a href='http://4lo.kielce.eu/' target='_blank'>http://4lo.kielce.eu/</a><br>Facebook: <a href='https://www.facebook.com/ivlogim23' target='_blank'>https://www.facebook.com/ivlogim23</a>"
         }
       ]
