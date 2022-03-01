@@ -37,8 +37,7 @@ var APP_DATA = {
           "yaw": -3.094786563566384,
           "pitch": 0.1850925263558505,
           "title": "O szkole",
-          "text": "Strona: <a href='http://4lo.kielce.eu/' target='_blank'>http://4lo.kielce.eu/</a><br>
-          facebook: <a href='https://www.facebook.com/ivlogim23' target='_blank'>https://www.facebook.com/ivlogim23</a>"
+          "text": "Strona: <a href='http://4lo.kielce.eu/' target='_blank'>http://4lo.kielce.eu/</a><br>facebook: <a href='https://www.facebook.com/ivlogim23' target='_blank'>https://www.facebook.com/ivlogim23</a>"
         }
       ]
     },
