@@ -74,7 +74,7 @@ var APP_DATA = {
           "yaw": -2.0972631651854137,
           "pitch": 0.18787579220032313,
           "rotation": 0,
-          "target": "0-dziurka-2"
+          "target": "1-dziurka-2"
         }
       ],
       "infoHotspots": [
