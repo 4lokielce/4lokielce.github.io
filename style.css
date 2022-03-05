@@ -795,7 +795,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Hide controls when width is too small */
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   body.view-control-buttons .viewControlButton {
     display: none;
   }
