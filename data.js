@@ -42,6 +42,51 @@ var APP_DATA = {
       ]
     },
         {
+      "id": "0-wop-2022",
+      "name": "WOŚP 2022",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.11881111875784711,
+        "pitch": 0.41498424947659984,
+        "fov": 1.3517668344523721
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0972631651854137,
+          "pitch": 0.18787579220032313,
+          "rotation": 0,
+          "target": "0-wop-2022"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.20556470200055976,
+          "pitch": 0,
+          "title": "Dronorelacja",
+          "text": "Pracujemy<div><br></div>"
+        }
+      ]
+    },
+        {
       "id": "0-dziurka-1",
       "name": "Dziurka 1",
       "levels": [
