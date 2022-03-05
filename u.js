@@ -112,7 +112,7 @@ var APP_DATA = {
     },
     {
       "id": "0-szatnia",
-      "name": "Szatnia",
+      "name": "Гардероб",
       "levels": [
         {
           "tileSize": 256,
