@@ -83,7 +83,9 @@ var APP_DATA = {
           "pitch": 0,
           "title": "Dronorelacja",
           "text": "Pracujemy<div><br></div>"
-        },
+        }
+      ]
+    },
         {
       "id": "0-dziurka-1",
       "name": "Dziurka 1",
