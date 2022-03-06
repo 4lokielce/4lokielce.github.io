@@ -43,7 +43,7 @@ var APP_DATA = {
     },
         {
       "id": "0-dziurka-1",
-      "name": "Dziurka 1",
+      "name": "Шкільний магазин",
       "levels": [
         {
           "tileSize": 256,
@@ -81,7 +81,7 @@ var APP_DATA = {
     },
     {
       "id": "1-dziurka-2",
-      "name": "Dziurka 2",
+      "name": "Шкільний магазин",
       "levels": [
         {
           "tileSize": 256,
@@ -112,7 +112,7 @@ var APP_DATA = {
     },
     {
       "id": "0-szatnia",
-      "name": "Гардероб",
+      "name": "Гардеробна",
       "levels": [
         {
           "tileSize": 256,
@@ -142,7 +142,7 @@ var APP_DATA = {
       "infoHotspots": []
     }
   ],
-  "name": "IV LO w Kielcach",
+  "name": "IV школa в Кельцах",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
