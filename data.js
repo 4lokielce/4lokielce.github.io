@@ -29,7 +29,7 @@ var APP_DATA = {
           "yaw": -2.8403588323914555,
           "pitch": 0.7573872099319559,
           "rotation": 6.283185307179586,
-          "target": "0-dziurka-1"
+          "target": "0-wop-2022"
         }
       ],
       "infoHotspots": [
