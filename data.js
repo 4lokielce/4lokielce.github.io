@@ -37,7 +37,7 @@ var APP_DATA = {
           "yaw": -3.094786563566384,
           "pitch": 0.1850925263558505,
           "title": "<img src='favicon.png' width='12'> O szkole",
-          "text": "<img src='4lozdrona.jpg' width='120' style='float:left;margin:5px'>Linki:<br>- <a href='http://4lo.kielce.eu/' target='_blank'>Strona WWW</a><br>- <a href='https://www.facebook.com/ivlogim23' target='_blank'>Facebook</a>"
+          "text": "<img src='4lozdrona.jpg' width='250' style='float:left;margin:5px'>Linki:<br>- <a href='http://4lo.kielce.eu/' target='_blank'>Strona WWW</a><br>- <a href='https://www.facebook.com/ivlogim23' target='_blank'>Facebook</a>"
         }
       ]
     },
