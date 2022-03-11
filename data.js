@@ -85,8 +85,8 @@ var APP_DATA = {
           "text": "Pracujemy<div><br></div>"
         },
         {
-          "yaw": 1.20556470200055976,
-          "pitch": 10,
+          "yaw": 0.20556470200055976,
+          "pitch": 5,
           "title": "Dronorelacja",
           "text": "Efekt<div><br></div>"
         }
