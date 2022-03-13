@@ -20,8 +20,8 @@ var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
 // Create source.
 var source = Marzipano.ImageUrlSource.fromString(
-  "//www.marzipano.net/media/outdoors/{z}/{f}/{y}/{x}.jpg",
-  { cubeMapPreviewUrl: "//www.marzipano.net/media/outdoors/preview.jpg" });
+  "//4lokielce.github.io/tree/main/tiles/3-s13/{z}/{f}/{y}/{x}.jpg",
+  { cubeMapPreviewUrl: "//4lokielce.github.io/tree/main/tiles/3-s13/preview.jpg" });
 
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
