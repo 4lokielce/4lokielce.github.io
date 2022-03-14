@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Documentation - Marzipano</title>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="favicon.png" />
 
+  <meta name="description" content="A lightweight and high-performance 360° media viewer. Supports all major desktop browsers and mobile devices. Embraces standard web technologies and provides a powerful Javascript API.">
+
+  <meta itemprop="image" content="http://www.marzipano.net/thumbnail-wide.jpg"/>
+
+  <meta property="og:image" content="http://www.marzipano.net/thumbnail-wide.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="http://www.marzipano.net/thumbnail-square.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style>@-ms-viewport { width: device-width; }</style>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="css/app.css?f501cae" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="vendor/modernizr.js"></script>
+
+</head>
+<body>
+  <div class="header_wrapper">
+    <div class="header">
+    <a href="./"><img class="logo-header" src="img/logo_header.png"></a>
+      <nav class="header_nav">
+        <ul>
+          <a href="./" class="nav-link">Home</a>
+          <a href="./demos.html" class="nav-link">Demos</a>
+          <a href="./docs.html" class="nav-link">Docs</a>
+        </ul>
+        <a class="btn marzi-btn" href="./tool" target="_blank">Marzipano Tool</a>
+      </nav>
+    </div>
+  </div>
+  <div class="demos_wrapper">
+    <!-- <div class="demos-top">
+      <h1>Demos</h1>
+      <p>Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div> -->
+    <div class="featured-demo">
+      <div class="featured-wrapper">
+        <a href="demos/sample-tour">
+          <div class="demo_fallback featured-img">
+            <div class="play_wrapper">
+              <img class="demo_fallback_play" src="img/play.png">
+            </div>
+            <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;simple-tour.jpg">
+          </div>
+        </a>
+
+        <div class="content">
+          <h5>Simple Tour</h5>
+          <p>Simple responsive tour generated with the Marzipano Tool. Includes features such as hotspots and autorotate.</p>
+          <a class="btn try_demo_btn" href="demos/sample-tour">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/sample-tour">View Source</a>
+        </div>
+      </div>
+    </div>
+    <div class="more-demos">
+      <h2>The demos below have not been extensively tested on multiple browsers.</h2>
+      <h2>If any of them to not work, try using the latest version of <span>Chrome</span> or <span>Firefox</span>.</h2>
+      <div class="more-demos-wrapper">
+        <div class="demo">
+          <a href="demos/cube-single-res">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;cube-single-res.jpg">
+            </div>
+          </a>
+          <h5>Single Resolution Cube</h5>
+          <p>Display a single resolution cubic image with Marzipano.</p>
+          <a class="btn try_demo_btn" href="demos/cube-single-res">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/cube-single-res">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/cube-multi-res">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;multires-cube.jpg">
+            </div>
+          </a>
+          <h5>Multiresolution Cube</h5>
+          <p>Display a multiresolution cubic gigapixel image with Marzipano.</p>
+          <a class="btn try_demo_btn" href="demos/cube-multi-res">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/cube-multi-res">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/flat">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;flat-square-tiles.jpg">
+            </div>
+          </a>
+          <h5>Multiresolution Flat</h5>
+          <p>Display a multiresolution flat gigapixel image with Marzipano.</p>
+          <a class="btn try_demo_btn" href="demos/flat">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/flat">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/equirect">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;equirectangular.jpg">
+            </div>
+          </a>
+          <h5>Equirectangular</h5>
+          <p>Display an equirectangular image with Marzipano.</p>
+          <a class="btn try_demo_btn" href="demos/equirect">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/equirect">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/video-multi-res">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;video-multi-res.jpg">
+            </div>
+          </a>
+          <h5>Video</h5>
+          <p>Play a 360° video in equirectangular format with Marzipano. It is possible to switch between different video resolutions. Marzipano does not have any special code to handle 360° video. This demo shows how it can be implemented.</p>
+          <a class="btn try_demo_btn" href="demos/video-multi-res">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/video-multi-res">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/cube-generated">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;cube-multi-res-generated.jpg">
+            </div>
+          </a>
+          <h5>Generated Cube</h5>
+          <p>Marzipano allows media to be generated procedurally. This demo displays a multiresolution cube which is generated in such a way. After level 16 (which corresponds to cubefaces of ~280 terapixel) it is possible to see issues due to lack of precision in the number types.</p>
+          <a class="btn try_demo_btn" href="demos/cube-generated">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/cube-generated">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/hotspot-styles">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;hotspot-styles.jpg">
+            </div>
+          </a>
+          <h5>Hotspot Styles</h5>
+          <p>Showcases some hotspot styles and effects that can be created with CSS.</p>
+          <a class="btn try_demo_btn" href="demos/hotspot-styles">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/hotspot-styles">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/embedded-hotspots">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;hotspots-embedded.jpg">
+            </div>
+          </a>
+          <h5>Embedded Hotspots</h5>
+          <p>Use embedded hotspots to overlay content from different sources on a 360º image (e.g. YouTube, Google Maps, Twitter).</p>
+          <a class="btn try_demo_btn" href="demos/embedded-hotspots">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/embedded-hotspots">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/device-orientation">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;device-orientation.jpg">
+            </div>
+          </a>
+          <h5>Device Orientation</h5>
+          <p>Control the panorama using the DeviceOrientation API (gyro) by implementing a custom ControlMethod.</p>
+          <a class="btn try_demo_btn" href="demos/device-orientation">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/device-orientation">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/touch-gestures">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;touch-gestures.jpg">
+            </div>
+          </a>
+          <h5>Extra Touch Gestures</h5>
+          <p>A 360º image gallery which hooks into <a href='http://hammerjs.github.io/' target='_blank'>Hammer.js</a> to add some extra touch (and mouse) gestures: double click/tap to zoom, swipe with two fingers to change panorama and press in a point to add a comment.</p>
+          <a class="btn try_demo_btn" href="demos/touch-gestures">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/touch-gestures">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/transitions">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;transitions.jpg">
+            </div>
+          </a>
+          <h5>Transitions</h5>
+          <p>Showcases some of the transitions that can be achieved by using a custom transitionUpdate() function and the <a href='https://github.com/danro/easing-js' target='_blank'>easing.js</a> library.</p>
+          <a class="btn try_demo_btn" href="demos/transitions">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/transitions">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/layer-effects">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;layers.jpg">
+            </div>
+          </a>
+          <h5>Layers</h5>
+          <p>Display layered equirectangular images by loading them from files on the local hard drive. Manipulate the effects parameter on each of the images.</p>
+          <a class="btn try_demo_btn" href="demos/layer-effects">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/layer-effects">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/editable">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;editable.jpg">
+            </div>
+          </a>
+          <h5>Editable</h5>
+          <p>Edit an equirectangular image and export it.</p>
+          <a class="btn try_demo_btn" href="demos/editable">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/editable">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/anaglyph">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;anaglyph.jpg">
+            </div>
+          </a>
+          <h5>Anaglyph</h5>
+          <p>Display a stereoscopic panorama as an anaglyph by adding a color transformation and changing the WebGL blending mode. Includes multiple anaglyph types.</p>
+          <a class="btn try_demo_btn" href="demos/anaglyph">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/anaglyph">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/side-by-side">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;side-by-side.jpg">
+            </div>
+          </a>
+          <h5>Side-by-side rendering</h5>
+          <p>Display a stereoscopic panorama side-by-side.</p>
+          <a class="btn try_demo_btn" href="demos/side-by-side">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/side-by-side">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/webvr">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;webvr.jpg">
+            </div>
+          </a>
+          <h5>WebVR</h5>
+          <p>Display a stereoscopic image using the WebVR API. Requires a browser with WebVR support.</p>
+          <a class="btn try_demo_btn" href="demos/webvr">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/webvr">View Source</a>
+        </div>
+        <div class="demo">
+          <a href="demos/hotspot-rect">
+            <div class="demo_fallback">
+              <div class="play_wrapper">
+                <img class="demo_fallback_play" src="img/play.png">
+              </div>
+              <img class="demo_fallback_img" src="img&#x2F;demos&#x2F;hotspots-rect.jpg">
+            </div>
+          </a>
+          <h5>Hotspots with rect effect</h5>
+          <p>Displays multiple layers containing hotspots with a different rect effect.</p>
+          <a class="btn try_demo_btn" href="demos/hotspot-rect">Try Demo</a>
+          <a class="btn_border source_btn" href="https://github.com/google/marzipano/tree/master/demos/hotspot-rect">View Source</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>  <div class="footer_wrapper">
+    <div class="footer">
+      <nav class="footer_nav">
+        <ul>
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./demos.html" class="nav-link">Demos</a>
+          <a href="./docs.html" class="nav-link">Docs</a>
+        </ul>
+      </nav>
+      <a class="btn marzi-btn btn_footer" href="./tool" target="_blank">Marzipano Tool</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
