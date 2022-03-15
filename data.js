@@ -505,7 +505,7 @@ var APP_DATA = {
     },
     {
       "id": "10-k-s17",
-      "name": "k s17",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
