@@ -20,8 +20,8 @@ var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
 // Create source.
 var source = Marzipano.ImageUrlSource.fromString(
-  "//4lokielce.github.io/dema/ramka/wosp2022/{z}/{f}/{y}/{x}.jpg",
-  { cubeMapPreviewUrl: "//4lokielce.github.io/dema/ramka/wosp2022/preview.jpg" });
+  "//4lokielce.github.io/dema/style/wosp2022/{z}/{f}/{y}/{x}.jpg",
+  { cubeMapPreviewUrl: "//4lokielce.github.io/dema/style/wosp2022/preview.jpg" });
 
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([
