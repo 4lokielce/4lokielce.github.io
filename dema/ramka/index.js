@@ -58,7 +58,7 @@ container.createHotspot(document.getElementById('iframeselect'), { yaw: -11.55, 
 // HTML sources.
 var hotspotHtml = {
   youtube: '<iframe id="youtube" width="1280" height="480" src="https://www.youtube.com/embed/a4YjKmsXyds?rel=0&amp;controls=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>',
-  youtubeWithControls: '<iframe id="youtubeWithControls" width="1280" height="480" src="https://www.youtube.com/embed/a4YjKmsXyds?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+  fb: '<iframe id="fb" loading="lazy" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fivlogim23%2Fposts%2F3780199742205197&amp;show_text=true&amp;width=500" style="border:none;overflow:hidden" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" width="500" height="371" frameborder="0"></iframe>',
   googleMaps: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3596684497369!2d20.63850022936096!3d50.8775192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827be2a813b97%3A0x2aa970b22d866bd8!2sIV%20LO%20-%20szko%C5%82a%20dla%20dzieci!5e1!3m2!1spl!2spl!4v1647339574293!5m2!1spl!2spl" width="1280" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
   www: '<iframe id="www" src="https://4lokielce.github.io/" type="text/html" width="1280" height="480" frameborder="0" scrolling="no" allowfullscreen="true"> </iframe>'
 };
