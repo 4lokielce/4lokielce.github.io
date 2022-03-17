@@ -1249,7 +1249,7 @@ var APP_DATA = {
           "target": "23-k-s24"
         },
         {
-          "yaw": -0.27589816104473144,
+          "yaw": -1.27589816104473144,
           "pitch": 0.28045034068821373,
           "rotation": 5.497787143782138,
           "target": "25-s26"
@@ -1260,7 +1260,7 @@ var APP_DATA = {
           "yaw": -0.0827869862142041,
           "pitch": -0.033622658850529064,
           "title": "Pedagog / Psycholog szkolny",
-          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Pedagog / Psycholog szkolny&nbsp;</span>"
+          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Pedagog / Psycholog szkolny</span>"
         },
         {
           "yaw": 1.9890240655483673,
