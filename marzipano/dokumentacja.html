@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Documentation - Marzipano</title>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <meta name="description" content="A lightweight and high-performance 360° media viewer. Supports all major desktop browsers and mobile devices. Embraces standard web technologies and provides a powerful Javascript API.">
+
+  <meta itemprop="image" content="http://www.marzipano.net/thumbnail-wide.jpg"/>
+
+  <meta property="og:image" content="http://www.marzipano.net/thumbnail-wide.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="http://www.marzipano.net/thumbnail-square.jpg" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style>@-ms-viewport { width: device-width; }</style>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="css/app.css?f501cae" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="vendor/modernizr.js"></script>
+
+</head>
+<body>
+<div class="header_wrapper">
+    <div class="header">
+    <a href="./"><img class="logo-header" src="img/logo_header.png"></a>
+      <nav class="header_nav">
+        <ul>
+          <a href="./" class="nav-link">Home</a>
+          <a href="./demos.html" class="nav-link">Demos</a>
+          <a href="./docs.html" class="nav-link">Docs</a>
+        </ul>
+        <a class="btn marzi-btn" href="./tool" target="_blank">Marzipano Tool</a>
+      </nav>
+    </div>
+  </div>
+<div class="docs_wrapper">
+  <!-- <div class="version_wrapper">
+    <div class="version">marzipano v.1.1 has been released</div>
+  </div> -->
+
+  <div class="docs">
+    <div class="sidebar"><div class="toc"><ul><li><a href="#getting-started">Getting started</a><ul><li><a href="#marzipano-tool">Marzipano Tool</a></li><li><a href="#setting-up-from-scratch">Setting up from scratch</a><ul><li><a href="#as-a-standalone-script">As a standalone script</a></li><li><a href="#as-a-node.js-package">As a Node.js package</a></li></ul></li></ul></li><li><a href="#usage">Usage</a><ul><li><a href="#initializing">Initializing</a></li><li><a href="#create-scene">Create Scene</a></li><li><a href="#change-scene">Change Scene</a></li><li><a href="#change-view">Change View</a></li><li><a href="#automatic-movement-and-autorotate">Automatic movement and autorotate</a></li><li><a href="#hotspots">Hotspots</a></li></ul></li><li><a href="#dependencies">Dependencies</a></li><li><a href="#apis-and-reference">APIs and Reference</a></li></ul></div></div><!-- 
+    --><div class="content_wrapper">
+    <div class="content"><p>See also the <a href="./reference">reference</a> for more detailed documentation.</p>
+<h2 id="getting-started"><a href="#getting-started" name="getting-started">Getting started</a></h2>
+<h3 id="marzipano-tool"><a href="#marzipano-tool" name="marzipano-tool">Marzipano Tool</a></h3>
+<p>The easiest way to get started with Marzipano is with the <a href="/tool">Marzipano Tool</a>.</p>
+<p>It processes your panoramas and generates a web application that can be deployed as-is or used as a boilerplate for a more complex application. The Marzipano Tool is currently free and does not require creating an account.</p>
+<h3 id="setting-up-from-scratch"><a href="#setting-up-from-scratch" name="setting-up-from-scratch">Setting up from scratch</a></h3>
+<h4 id="as-a-standalone-script"><a href="#as-a-standalone-script" name="as-a-standalone-script">As a standalone script</a></h4>
+<ol>
+<li><p>Download the <a href="http://www.marzipano.net/">latest release</a>.</p>
+</li>
+<li><p>Include the <code>marzipano.js</code> file in body section of your HTML code</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;marzipano.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+</li>
+</ol>
+<h4 id="as-a-nodejs-package"><a href="#as-a-node.js-package" name="as-a-node.js-package">As a Node.js package</a></h4>
+<pre><code>npm <span class="hljs-keyword">install</span> marzipano</code></pre>
+<pre><code class="language-js"><span class="hljs-attribute">var Marzipano</span> = require(<span class="hljs-string">&#x27;./marzipano&#x27;</span>);</code></pre>
+<h2 id="usage"><a href="#usage" name="usage">Usage</a></h2>
+<p>The <code>Marzipano.Viewer</code> and <code>Marzipano.Scene</code> classes provide a high-level API for the most common use cases.</p>
+<h3 id="initializing"><a href="#initializing" name="initializing">Initializing</a></h3>
+<p>A <code>Viewer</code> is initialized on a DOM element</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> panoElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;pano&#x27;</span>);
+<span class="hljs-keyword">var</span> viewerOpts = {
+  controls: {
+    mouseViewMode: <span class="hljs-string">&#x27;drag&#x27;</span>    <span class="hljs-comment">// drag|qtvr</span>
+  }
+};
+
+<span class="hljs-keyword">var</span> viewer = <span class="hljs-keyword">new</span> Marzipano.Viewer(panoElement, viewerOpts)</code></pre>
+<h3 id="create-scene"><a href="#create-scene" name="create-scene">Create Scene</a></h3>
+<p>The example below initializes a multiresolution cube scene which uses images inside the <code>tiles/</code> directory.</p>
+<pre><code class="language-js"><span class="hljs-built_in">var</span> levels = [
+  { tileSize: <span class="hljs-number">512</span>, size: <span class="hljs-number">512</span> },
+  { tileSize: <span class="hljs-number">512</span>, size: <span class="hljs-number">1024</span> }
+];
+
+<span class="hljs-built_in">var</span> geometry = <span class="hljs-built_in">new</span> Marzipano.CubeGeometry(levels);
+<span class="hljs-built_in">var</span> source = Marzipano.ImageUrlSource.fromString(<span class="hljs-string">&quot;tiles/{z}/{f}/{y}/{x}.jpg&quot;</span>);
+<span class="hljs-built_in">var</span> <span class="hljs-built_in">view</span> = <span class="hljs-built_in">new</span> Marzipano.RectilinearView();
+
+<span class="hljs-built_in">var</span> <span class="hljs-built_in">scene</span> = viewer.createScene({
+  source: source,
+  geometry: geometry,
+  <span class="hljs-built_in">view</span>: <span class="hljs-built_in">view</span>
+});</code></pre>
+<p>The more complex example below also:</p>
+<ul>
+<li>adds a (cubeMap) preview level which is cached when the scene is created</li>
+<li>initializes the view</li>
+<li>limits the view to a maximum fov of 120°</li>
+<li>limits the view to a minimum fov for a maximum face resolution of 1024x1024</li>
+</ul>
+<p>Note that the yaw, pitch and fov values are in radians.</p>
+<pre><code class="language-js"><span class="hljs-string">var</span> <span class="hljs-string">levels</span> <span class="hljs-string">=</span> [
+  { <span class="hljs-attr">tileSize:</span> <span class="hljs-number">256</span>, <span class="hljs-attr">size:</span> <span class="hljs-number">256</span>, <span class="hljs-attr">fallbackOnly:</span> <span class="hljs-literal">true</span> },
+  { <span class="hljs-attr">tileSize:</span> <span class="hljs-number">512</span>, <span class="hljs-attr">size:</span> <span class="hljs-number">512</span> },
+  { <span class="hljs-attr">tileSize:</span> <span class="hljs-number">512</span>, <span class="hljs-attr">size:</span> <span class="hljs-number">1024</span> }
+]<span class="hljs-string">;</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">geometry</span> <span class="hljs-string">=</span> <span class="hljs-string">new</span> <span class="hljs-string">Marzipano.CubeGeometry(levels);</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">source</span> <span class="hljs-string">=</span> <span class="hljs-string">Marzipano.ImageUrlSource.fromString(&quot;tiles/{z}/{f}/{y}/{x}.jpg&quot;,</span> {
+  <span class="hljs-attr">cubeMapPreviewUrl:</span> <span class="hljs-string">&quot;tiles/preview.jpg&quot;</span>
+}<span class="hljs-string">);</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">initialView</span> <span class="hljs-string">=</span> {
+  <span class="hljs-attr">yaw:</span> <span class="hljs-number">90</span> <span class="hljs-string">*</span> <span class="hljs-string">Math.PI/180</span>,
+  <span class="hljs-attr">pitch:</span> <span class="hljs-number">-30</span> <span class="hljs-string">*</span> <span class="hljs-string">Math.PI/180</span>,
+  <span class="hljs-attr">fov:</span> <span class="hljs-number">90</span> <span class="hljs-string">*</span> <span class="hljs-string">Math.PI/180</span>
+}<span class="hljs-string">;</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">limiter</span> <span class="hljs-string">=</span> <span class="hljs-string">Marzipano.RectilinearView.limit.traditional(1024,</span> <span class="hljs-number">120</span><span class="hljs-string">*Math.PI/180);</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">view</span> <span class="hljs-string">=</span> <span class="hljs-string">new</span> <span class="hljs-string">Marzipano.RectilinearView(initialView,</span> <span class="hljs-string">limiter);</span>
+
+<span class="hljs-string">var</span> <span class="hljs-string">scene</span> <span class="hljs-string">=</span> <span class="hljs-string">viewer.createScene({</span>
+  <span class="hljs-attr">source:</span> <span class="hljs-string">source,</span>
+  <span class="hljs-attr">geometry:</span> <span class="hljs-string">geometry,</span>
+  <span class="hljs-attr">view:</span> <span class="hljs-string">view,</span>
+  <span class="hljs-attr">pinFirstLevel:</span> <span class="hljs-literal">true</span>
+<span class="hljs-string">});</span></code></pre>
+<h3 id="change-scene"><a href="#change-scene" name="change-scene">Change Scene</a></h3>
+<p>The <code>Scene.switchTo()</code> method displays the scene on its viewer, performing a fade in transition.</p>
+<pre><code class="language-js"><span class="hljs-selector-tag">scene</span><span class="hljs-selector-class">.switchTo</span>({
+  <span class="hljs-attribute">transitionDuration</span>: <span class="hljs-number">1000</span>
+});</code></pre>
+<h3 id="change-view"><a href="#change-view" name="change-view">Change View</a></h3>
+<p>The <code>Scene.lookTo()</code> method changes the view by performing a tweening animation. Note that the values are in radians.</p>
+<pre><code class="language-js">var destinationViewParameters = {
+  <span class="hljs-attribute">yaw</span>: 10 * Math<span class="hljs-variable">.PI</span>/180,
+  pitch: 15 * Math<span class="hljs-variable">.PI</span>/180,
+  fov: 60 * Math<span class="hljs-variable">.PI</span>/180
+};
+
+<span class="hljs-attribute">var options = {
+  transitionDuration</span>: 2000
+}
+
+scene<span class="hljs-variable">.lookTo</span>(destinationViewParameters, options);</code></pre>
+<p>For more control each <code>Scene</code> has a <code>View</code> object which can be acessed by the <code>view()</code> getter.</p>
+<pre><code class="language-js"><span class="hljs-built_in">var</span> <span class="hljs-built_in">scene</span> = viewer.<span class="hljs-built_in">scene</span>(); // <span class="hljs-built_in">get</span> the current <span class="hljs-built_in">scene</span>
+<span class="hljs-built_in">var</span> <span class="hljs-built_in">view</span> = <span class="hljs-built_in">scene</span>.<span class="hljs-built_in">view</span>();    // <span class="hljs-built_in">get</span> the <span class="hljs-built_in">scene</span>&#x27;s <span class="hljs-built_in">view</span>
+
+
+// Get the <span class="hljs-built_in">view</span> <span class="hljs-built_in">values</span>
+
+<span class="hljs-built_in">var</span> yaw = <span class="hljs-built_in">view</span>.yaw();
+<span class="hljs-built_in">var</span> pitch = <span class="hljs-built_in">view</span>.pitch();
+<span class="hljs-built_in">var</span> fov = <span class="hljs-built_in">view</span>.fov();      // fov <span class="hljs-built_in">is</span> horizontal
+<span class="hljs-built_in">var</span> vfov = <span class="hljs-built_in">view</span>.vfov();
+<span class="hljs-built_in">var</span> hfov = <span class="hljs-built_in">view</span>.hfov();    // same as <span class="hljs-built_in">view</span>.fov()
+
+
+// Change the <span class="hljs-built_in">values</span>
+
+<span class="hljs-built_in">view</span>.setYaw(<span class="hljs-number">45</span> * Math.PI/<span class="hljs-number">180</span>);
+<span class="hljs-built_in">view</span>.setPitch(<span class="hljs-number">30</span> * Math.PI/<span class="hljs-number">180</span>);
+<span class="hljs-built_in">view</span>.setFov(<span class="hljs-number">60</span> * Math.PI/<span class="hljs-number">180</span>);
+
+<span class="hljs-built_in">view</span>.setParameters({
+  yaw: <span class="hljs-number">45</span> * Math.PI/<span class="hljs-number">180</span>,
+  pitch: <span class="hljs-number">30</span> * Math.PI/<span class="hljs-number">180</span>,
+  fov: <span class="hljs-number">60</span> * Math.PI/<span class="hljs-number">180</span>
+});
+
+
+// Offset the <span class="hljs-built_in">values</span> by <span class="hljs-built_in">some</span> amount
+
+<span class="hljs-built_in">view</span>.offsetYaw(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);
+<span class="hljs-built_in">view</span>.offsetPitch(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);
+<span class="hljs-built_in">view</span>.offsetFov(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);</code></pre>
+<h3 id="automatic-movement-and-autorotate"><a href="#automatic-movement-and-autorotate" name="automatic-movement-and-autorotate">Automatic movement and autorotate</a></h3>
+<p><code>Viewer.setIdleMovement()</code> defines a movement to be automatically started when the view has not changed for some amount of time.</p>
+<p>The <code>Viewer.startMovement()</code> and <code>Viewer.stopMovement()</code> methods allow you to start and stop a movement manually.</p>
+<p>The <code>autorotate()</code> method creates an automatic rotation movement which can be used with the methods above.</p>
+<pre><code class="language-js">var autorotate = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Marzipano</span>.</span></span>autorotate({
+  yawSpeed: <span class="hljs-number">0.1</span>,         <span class="hljs-comment">// Yaw rotation speed</span>
+  targetPitch: <span class="hljs-number">0</span>,        <span class="hljs-comment">// Pitch value to converge to</span>
+  targetFov: Math.PI/<span class="hljs-number">2</span>   <span class="hljs-comment">// Fov value to converge to</span>
+});
+
+<span class="hljs-comment">// Autorotate will start after 3s of idle time</span>
+viewer.set<span class="hljs-constructor">IdleMovement(3000, <span class="hljs-params">autorotate</span>)</span>;  
+<span class="hljs-comment">// Disable idle movement</span>
+viewer.set<span class="hljs-constructor">IdleMovement(Infinity)</span>;
+
+<span class="hljs-comment">// Start autorotation immediately</span>
+viewer.start<span class="hljs-constructor">Movement(<span class="hljs-params">autorotate</span>)</span>; 
+<span class="hljs-comment">// Stop any ongoing automatic movement</span>
+viewer.stop<span class="hljs-constructor">Movement()</span>;</code></pre>
+<h3 id="hotspots"><a href="#hotspots" name="hotspots">Hotspots</a></h3>
+<p>Hotspots are DOM elements which are positioned at a fixed point in the panorama, so that their position on the screen changes when the scene view changes.</p>
+<p>Hotspots are associated with a scene and are automatically displayed with that scene.</p>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> element = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;spot&#x27;</span>);
+<span class="hljs-keyword">var</span> position = { <span class="hljs-attr">yaw</span>: <span class="hljs-built_in">Math</span>.PI/<span class="hljs-number">4</span>, pitch, <span class="hljs-built_in">Math</span>.PI/<span class="hljs-number">8</span> };
+scene.hotspotContainer().createHotspot(element, position)</code></pre>
+<p>The example below creates an image and uses it as a hotspot</p>
+<pre><code class="language-js">  var imgHotspot = document.create<span class="hljs-constructor">Element(&#x27;<span class="hljs-params">img</span>&#x27;)</span>;
+  imgHotspot.src = &#x27;img/hotspot.png&#x27;;
+  imgHotspot.classList.add(&#x27;hotspot&#x27;);
+  imgHotspot.add<span class="hljs-constructor">EventListener(&#x27;<span class="hljs-params">click</span>&#x27;, <span class="hljs-params">function</span>()</span> {
+    switch<span class="hljs-constructor">Scene(<span class="hljs-params">findSceneById</span>(<span class="hljs-params">hotspot</span>.<span class="hljs-params">target</span>)</span>);
+  });
+
+  var position = { yaw: Math.PI/<span class="hljs-number">4</span>, pitch: Math.PI/<span class="hljs-number">8</span> };
+
+  marzipanoScene.hotspot<span class="hljs-constructor">Container()</span>.create<span class="hljs-constructor">Hotspot(<span class="hljs-params">imgHotspot</span>, <span class="hljs-params">position</span>)</span>;</code></pre>
+<h2 id="dependencies"><a href="#dependencies" name="dependencies">Dependencies</a></h2>
+<p>Marzipano has a few dependencies. These are included in <code>marzipano.js</code>, so you do not have to set them up separately.</p>
+<ul>
+<li><a href="https://github.com/ded/bowser">bowser</a></li>
+<li><a href="http://hammerjs.github.io/">hammerjs</a></li>
+<li><a href="http://glmatrix.net/">gl-matrix</a></li>
+</ul>
+<h2 id="apis-and-reference"><a href="#apis-and-reference" name="apis-and-reference">APIs and Reference</a></h2>
+<p>The <code>Viewer</code> and <code>Scene</code> classes above are a high level API designed to make Marzipano simple to use. However the lower level components that they use, such as the <code>Layer</code> and <code>Stage</code> classes, are also exposed. These can be used when more control is necessary or to implement features which are not present on the high level API yet.</p>
+<p>See the <a href="./reference">reference</a> for more detailed documentation.</p>
+</div></div>
+  </div>
+</div>
+</body>
+</html>
