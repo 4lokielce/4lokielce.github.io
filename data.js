@@ -1664,6 +1664,47 @@ var APP_DATA = {
           "text": "Pracownia językowa"
         }
       ]
+    },
+        {
+      "id": "0-pano1",
+      "name": "pano(1)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1000,
+      "initialViewParameters": {
+        "yaw": -2.4783323572023974,
+        "pitch": 0.18633876768969415,
+        "fov": 1.2408012651501612
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.8128759147070426,
+          "pitch": 0.6874702611829413,
+          "rotation": 0,
+          "target": "0-pano1"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -3.057837215353933,
+          "pitch": 0.21402232597542437,
+          "title": "O projekcie<br>",
+          "text": "Text"
+        }
+      ]
     }
   ],
   "name": "Wirtualny spacer po szkole",
