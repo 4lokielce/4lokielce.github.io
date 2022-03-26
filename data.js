@@ -1,6 +1,1629 @@
 var APP_DATA = {
   "scenes": [
+      {
+      "id": "0-biblioteka",
+      "name": "Biblioteka",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.2610320585481176,
+          "pitch": 0.510615076002777,
+          "rotation": 0,
+          "target": "1-czytelnia"
+        },
+        {
+          "yaw": -1.1351859438704714,
+          "pitch": 0.2682199085074668,
+          "rotation": 0,
+          "target": "3-k-sklepik"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -1.4309065265289789,
+          "pitch": 0.49859507557199834,
+          "title": "Biblioteka szkolna",
+          "text": "Biblioteka szkolna. Tu wypożyczysz nie tylko lektury."
+        }
+      ]
+    },
     {
+      "id": "1-czytelnia",
+      "name": "Czytelnia",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.087918343351366,
+          "pitch": 0.3272210276621159,
+          "rotation": 0,
+          "target": "0-biblioteka"
+        },
+        {
+          "yaw": -2.5290758995214038,
+          "pitch": 0.18230172550189927,
+          "rotation": 0.7853981633974483,
+          "target": "3-k-sklepik"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.6153971588294702,
+          "pitch": 0.04895128712906072,
+          "title": "Sztandar Szkoły",
+          "text": "Sztandar Szkoły<div><br></div>"
+        }
+      ]
+    },
+    {
+      "id": "2-k-sekretariat",
+      "name": "k sekretariat",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 3.027205217075096,
+        "pitch": 0.07743475361919039,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.921049137390817,
+          "pitch": 0.2790115359082268,
+          "rotation": 0,
+          "target": "30-wejcie-nauczycieli"
+        },
+        {
+          "yaw": 2.4804005539710694,
+          "pitch": 0.6372163008380305,
+          "rotation": 0,
+          "target": "3-k-sklepik"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.282909315234779,
+          "pitch": 0.06443279866740426,
+          "title": "WOŚP 2022",
+          "text": "Zebrana suma: 45 280,21zł"
+        }
+      ]
+    },
+    {
+      "id": "3-k-sklepik",
+      "name": "k sklepik",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -1.1577350704895544,
+        "pitch": -0.06021251864732058,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.2069652047669681,
+          "pitch": 0.2649649127381579,
+          "rotation": 0,
+          "target": "0-biblioteka"
+        },
+        {
+          "yaw": -0.4253628991158731,
+          "pitch": 0.24242035396843775,
+          "rotation": 0,
+          "target": "1-czytelnia"
+        },
+        {
+          "yaw": -1.614722889979852,
+          "pitch": 0.3140411729536403,
+          "rotation": 0,
+          "target": "23-sklepik-szkolny"
+        },
+        {
+          "yaw": 0.9374701654604287,
+          "pitch": 0.3612435298257335,
+          "rotation": 0.7853981633974483,
+          "target": "5-korytarz-siownia"
+        },
+        {
+          "yaw": 3.04983136485352,
+          "pitch": 0.5133463835741505,
+          "rotation": 0,
+          "target": "2-k-sekretariat"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.0959650877360385,
+          "pitch": 0.06203239665058469,
+          "title": "\"Dziurka\"",
+          "text": "Sklepik Szkolny"
+        }
+      ]
+    },
+    {
+      "id": "4-korytarz-sala-gimnatyczna",
+      "name": "Korytarz Sala Gimnatyczna",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -3.1193544499106824,
+          "pitch": 0.2258344403479633,
+          "rotation": 0,
+          "target": "5-korytarz-siownia"
+        },
+        {
+          "yaw": -0.48598173374940856,
+          "pitch": 0.17065494906015033,
+          "rotation": 5.497787143782138,
+          "target": "20-sala-gimnastyczna"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.06705503849642547,
+          "pitch": 0.059756352291046255,
+          "title": "Wyjście ewakuacyjne",
+          "text": "Wyjście ewakuacyjne&nbsp;"
+        },
+        {
+          "yaw": 2.7926232898919032,
+          "pitch": 0.17437671642717945,
+          "title": "Szatnia damska",
+          "text": "Szatnia damska"
+        },
+        {
+          "yaw": -2.777013500735448,
+          "pitch": 0.21015588991808798,
+          "title": "Toaleta damska",
+          "text": "Toaleta damska"
+        },
+        {
+          "yaw": 0.5340222469621345,
+          "pitch": 0.10299191822582188,
+          "title": "Kantorek&nbsp;",
+          "text": "Tu znajduje się sprzęt sportowy."
+        }
+      ]
+    },
+    {
+      "id": "5-korytarz-siownia",
+      "name": "Korytarz Siłownia",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 0.14785768884548744,
+        "pitch": 0.1266163982857691,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.8734529342965907,
+          "pitch": 0.45779635969575594,
+          "rotation": 5.497787143782138,
+          "target": "22-siownia"
+        },
+        {
+          "yaw": -0.041927205904279674,
+          "pitch": 0.17898713252003873,
+          "rotation": 0,
+          "target": "4-korytarz-sala-gimnatyczna"
+        },
+        {
+          "yaw": 2.9523796414009027,
+          "pitch": 0.2321844095381298,
+          "rotation": 0,
+          "target": "3-k-sklepik"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.4569552747645673,
+          "pitch": 0.2525700551194703,
+          "title": "Pokój nauczycieli WF-u",
+          "text": "Pokój nauczycieli WF-u"
+        },
+        {
+          "yaw": 2.2077132914743753,
+          "pitch": 0.3515890768224441,
+          "title": "Szatnia męska",
+          "text": "Szatnia męska"
+        }
+      ]
+    },
+    {
+      "id": "6-ks1",
+      "name": "ks1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.054407126388149,
+        "pitch": 0.07993758418437302,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.7906800178402076,
+          "pitch": 0.2183769820975101,
+          "rotation": 0,
+          "target": "30-wejcie-nauczycieli"
+        },
+        {
+          "yaw": 2.186419287278002,
+          "pitch": 0.26076965733140156,
+          "rotation": 0,
+          "target": "27-szatnia4"
+        },
+        {
+          "yaw": 1.5101702158380785,
+          "pitch": 0.3113963909799615,
+          "rotation": 5.497787143782138,
+          "target": "12-s1"
+        },
+        {
+          "yaw": -1.6440270025762231,
+          "pitch": 0.0833795329212137,
+          "rotation": 0,
+          "target": "28-wejcie-na-1-pitro"
+        },
+        {
+          "yaw": -1.1232142627956527,
+          "pitch": 0.22295220729956888,
+          "rotation": 0,
+          "target": "7-ks2"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.4211574368524307,
+          "pitch": 0.03585159930755211,
+          "title": "Plan lekcji",
+          "text": "Plan lekcji oraz najważniejsze informacje."
+        }
+      ]
+    },
+    {
+      "id": "7-ks2",
+      "name": "ks2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.032804437315437696,
+        "pitch": 0.20141814768885524,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.1392373763513897,
+          "pitch": 0.24810102726310745,
+          "rotation": 0,
+          "target": "6-ks1"
+        },
+        {
+          "yaw": 2.4808915808547454,
+          "pitch": 0.38303198740402244,
+          "rotation": 5.497787143782138,
+          "target": "14-s2"
+        },
+        {
+          "yaw": -0.011237596659899651,
+          "pitch": 0.16584519432955958,
+          "rotation": 0,
+          "target": "8-ks3"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.5629474449032372,
+          "pitch": 0.22791238744232345,
+          "title": "Toaleta męska",
+          "text": "Toaleta męska"
+        }
+      ]
+    },
+    {
+      "id": "8-ks3",
+      "name": "ks3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -1.4447441637782,
+        "pitch": 0.254188760092795,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.7063647771548265,
+          "pitch": 0.20773582898114462,
+          "rotation": 0,
+          "target": "7-ks2"
+        },
+        {
+          "yaw": -1.3673891737125103,
+          "pitch": 0.2273128348442004,
+          "rotation": 0,
+          "target": "9-ks4"
+        },
+        {
+          "yaw": -0.8688599639782062,
+          "pitch": 0.2650348716788997,
+          "rotation": 0.7853981633974483,
+          "target": "15-s3"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -1.7061824480046361,
+          "pitch": 0.016257674892633744,
+          "title": "Kadry",
+          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Kadry</span>"
+        },
+        {
+          "yaw": -1.9838104281780424,
+          "pitch": 0.34451218840682785,
+          "title": "Izolatka",
+          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Izolatka</span>"
+        }
+      ]
+    },
+    {
+      "id": "9-ks4",
+      "name": "ks4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 1.316535580787587,
+        "pitch": 0.12382095501612866,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.166976147288125,
+          "pitch": 0.31677631646735627,
+          "rotation": 10.995574287564278,
+          "target": "16-s4"
+        },
+        {
+          "yaw": -1.6549038323308807,
+          "pitch": 0.18809630070737526,
+          "rotation": 0,
+          "target": "8-ks3"
+        },
+        {
+          "yaw": 1.289057865834387,
+          "pitch": 0.3619243879784335,
+          "rotation": 0,
+          "target": "28-wejcie-na-1-pitro"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-ks5-i-6",
+      "name": "ks5 i 6",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 1.262637736353632,
+        "pitch": 0.22800462158613044,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.722762737207134,
+          "pitch": 0.3295887283330714,
+          "rotation": 0.7853981633974483,
+          "target": "28-wejcie-na-1-pitro"
+        },
+        {
+          "yaw": -2.293390509177174,
+          "pitch": 0.20043533846210693,
+          "rotation": 5.497787143782138,
+          "target": "17-s5"
+        },
+        {
+          "yaw": 2.4659853838347043,
+          "pitch": 0.34943990214012643,
+          "rotation": 0,
+          "target": "18-s6"
+        },
+        {
+          "yaw": 1.2024201046716385,
+          "pitch": 0.21316886695182546,
+          "rotation": 0,
+          "target": "19-sala-7b"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.8564622183755901,
+          "pitch": 0.15561175997154209,
+          "title": "Toaleta damska",
+          "text": "Toaleta damska"
+        }
+      ]
+    },
+    {
+      "id": "11-portiernia",
+      "name": "Portiernia",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 2.786482505109797,
+        "pitch": 0.4889114013649003,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.0255037634136173,
+          "pitch": 0.3606994418195342,
+          "rotation": 0,
+          "target": "24-szatnia1"
+        },
+        {
+          "yaw": -0.20080001986016427,
+          "pitch": 0.34987163459037873,
+          "rotation": 0,
+          "target": "29-wejcie"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 1.3317504291307554,
+          "pitch": 0.34483384971785114,
+          "title": "Portiernia&nbsp;",
+          "text": "Wyjście ewakuacyjne"
+        }
+      ]
+    },
+    {
+      "id": "12-s1",
+      "name": "s1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.420207253054045,
+        "pitch": 0.06255399617502455,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0465772164660034,
+          "pitch": 0.08995141719116084,
+          "rotation": 0.7853981633974483,
+          "target": "6-ks1"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.8536706249458366,
+          "pitch": 0.07282945635544813,
+          "title": "Sala nr 1",
+          "text": "Pracownia muzyczna&nbsp;"
+        }
+      ]
+    },
+    {
+      "id": "13-s1a",
+      "name": "s1A",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -3.126841416690528,
+        "pitch": 0.07564935551241625,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.290721758389477,
+          "pitch": 0.19763142239491138,
+          "rotation": 0.7853981633974483,
+          "target": "23-sklepik-szkolny"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -3.097316851229806,
+          "pitch": 0.09953461579945433,
+          "title": "Sala nr 1A",
+          "text": "Sala Religijna"
+        }
+      ]
+    },
+    {
+      "id": "14-s2",
+      "name": "s2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.07990783402855861,
+        "pitch": -0.0042222221378853675,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.030715466620772958,
+          "pitch": 0.05245326047758958,
+          "rotation": 7.0685834705770345,
+          "target": "7-ks2"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.8161080203683149,
+          "pitch": -0.017871071465981103,
+          "title": "Sala nr 2",
+          "text": "Pracownia matematyczna"
+        }
+      ]
+    },
+    {
+      "id": "15-s3",
+      "name": "s3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.5519474711307399,
+        "pitch": 0.015707613560172362,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.2073443587566004,
+          "pitch": 0.038628637497444274,
+          "rotation": 0.7853981633974483,
+          "target": "8-ks3"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -0.6740469273520091,
+          "pitch": -0.019429624520038047,
+          "title": "Sala nr 3",
+          "text": "Pracownia polonistyczna"
+        }
+      ]
+    },
+    {
+      "id": "16-s4",
+      "name": "s4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -1.0320331021586462,
+        "pitch": 0.09689732654837258,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.3885173126353294,
+          "pitch": 0.07329151963660507,
+          "rotation": 13.351768777756625,
+          "target": "9-ks4"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -1.1604871703083326,
+          "pitch": -0.01205047240961754,
+          "title": "Sala nr 4",
+          "text": "Sala historyczna"
+        }
+      ]
+    },
+    {
+      "id": "17-s5",
+      "name": "s5",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 1.888379622803603,
+        "pitch": 0.12659580047392183,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.0556984336965591,
+          "pitch": 0.1642848254257494,
+          "rotation": 11.780972450961727,
+          "target": "10-ks5-i-6"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 2.125753970726006,
+          "pitch": 0.06428277937534688,
+          "title": "Sala nr 5&nbsp;",
+          "text": "Pracownia językowa"
+        }
+      ]
+    },
+    {
+      "id": "18-s6",
+      "name": "s6",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 0.26179938779914025,
+        "pitch": 0.04712284068051176,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.8469461851393163,
+          "pitch": 0.13131716993218134,
+          "rotation": 0.7853981633974483,
+          "target": "10-ks5-i-6"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.23806026607114994,
+          "pitch": -0.033910320521316706,
+          "title": "Sala nr 6",
+          "text": "Pracownia matematyczna"
+        }
+      ]
+    },
+    {
+      "id": "19-sala-7b",
+      "name": "Sala 7B",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.19004436518498125,
+        "pitch": 0.2853658293160919,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 3.10326510637344,
+          "pitch": 0.14837175949645243,
+          "rotation": 0,
+          "target": "10-ks5-i-6"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.5183874098660617,
+          "pitch": 0.07909154911157046,
+          "title": "Sala nr 7B",
+          "text": "Sala konferencyjna"
+        }
+      ]
+    },
+    {
+      "id": "20-sala-gimnastyczna",
+      "name": "Sala Gimnastyczna",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -3.083707269108899,
+        "pitch": 0.38169737943106163,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.6930024134113602,
+          "pitch": 0.11090400540518175,
+          "rotation": 0,
+          "target": "4-korytarz-sala-gimnatyczna"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -3.01575221898986,
+          "pitch": 0.3619263945297302,
+          "title": "Sala gimnastyczna",
+          "text": "Sala gimnastyczna"
+        },
+        {
+          "yaw": 3.00279545538155,
+          "pitch": 0.07279911283501228,
+          "title": "Wyjście ewakuacyjne",
+          "text": "Wyjście ewakuacyjne"
+        }
+      ]
+    },
+    {
+      "id": "21-sekretariat",
+      "name": "Sekretariat",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.3222797248506417,
+        "pitch": 0.252463352928638,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.6984320128122992,
+          "pitch": 0.18397095882143866,
+          "rotation": 4.71238898038469,
+          "target": "30-wejcie-nauczycieli"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.355922472037925,
+          "pitch": 0.6689002603105401,
+          "title": "Sekretariat szkolny",
+          "text": "Sekretariat szkolny"
+        },
+        {
+          "yaw": 2.2089704586715957,
+          "pitch": 0.17648754946467093,
+          "title": "Gabinet dyrektora",
+          "text": "Gabinet dyrektora&nbsp;"
+        }
+      ]
+    },
+    {
+      "id": "22-siownia",
+      "name": "Siłownia",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 2.305662696928363,
+        "pitch": 0.32463476079295006,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.1439427234145523,
+          "pitch": 0.1264071525530639,
+          "rotation": 11.780972450961727,
+          "target": "5-korytarz-siownia"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 1.750953651109703,
+          "pitch": 0.18168223659960248,
+          "title": "Siłownia szkolna",
+          "text": "Siłownia szkolna"
+        }
+      ]
+    },
+    {
+      "id": "23-sklepik-szkolny",
+      "name": "Sklepik szkolny",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -3.0240284840615175,
+        "pitch": 0.15905005611973166,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.4652887193365949,
+          "pitch": 0.2474030351432006,
+          "rotation": 0,
+          "target": "3-k-sklepik"
+        },
+        {
+          "yaw": -2.0868372466396075,
+          "pitch": 0.1650560629658191,
+          "rotation": 0.7853981633974483,
+          "target": "13-s1a"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.419093449823686,
+          "pitch": 0.1171835832215109,
+          "title": "Wyjście ewakuacyjne",
+          "text": "Wyjście ewakuacyjne"
+        }
+      ]
+    },
+    {
+      "id": "24-szatnia1",
+      "name": "Szatnia1",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": 2.1467676173990142,
+        "pitch": 0.31869702217951,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.10069944568745193,
+          "pitch": 0.36897797522604847,
+          "rotation": 0,
+          "target": "11-portiernia"
+        },
+        {
+          "yaw": -2.4010778358244806,
+          "pitch": 0.23391169048268523,
+          "rotation": 0,
+          "target": "25-szatnia2"
+        },
+        {
+          "yaw": 2.0731611489432407,
+          "pitch": 0.22610995233262798,
+          "rotation": 0,
+          "target": "27-szatnia4"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "25-szatnia2",
+      "name": "szatnia2",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -1.411777439390967,
+        "pitch": -0.021045711136759238,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.5181789142822257,
+          "pitch": 0.1091464610541042,
+          "rotation": 0,
+          "target": "26-szatnia3"
+        },
+        {
+          "yaw": 1.766478467295114,
+          "pitch": 0.3062683421849215,
+          "rotation": 1.5707963267948966,
+          "target": "24-szatnia1"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "26-szatnia3",
+      "name": "szatnia3",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.485387470885801,
+        "pitch": 0.1600952647290761,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.5875656513323992,
+          "pitch": 0.5915196432135428,
+          "rotation": 0,
+          "target": "27-szatnia4"
+        },
+        {
+          "yaw": 2.012298129025374,
+          "pitch": 0.31079108162582614,
+          "rotation": 0,
+          "target": "25-szatnia2"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "27-szatnia4",
+      "name": "szatnia4",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -0.6035022037162108,
+        "pitch": 0.20575317763505474,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.5041934764998537,
+          "pitch": 0.3638758328575715,
+          "rotation": 0,
+          "target": "6-ks1"
+        },
+        {
+          "yaw": 1.1674042313782529,
+          "pitch": 0.4921319707583063,
+          "rotation": 0,
+          "target": "26-szatnia3"
+        },
+        {
+          "yaw": 2.576526308323521,
+          "pitch": 0.22745560176854873,
+          "rotation": 0,
+          "target": "24-szatnia1"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "28-wejcie-na-1-pitro",
+      "name": "wejście na 1 piętro",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.732111577360147,
+        "pitch": 0.08774881757874198,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.3632978769670103,
+          "pitch": 0.259140490757682,
+          "rotation": 0,
+          "target": "9-ks4"
+        },
+        {
+          "yaw": -2.3500245827517876,
+          "pitch": 0.3528846189052359,
+          "rotation": 11.780972450961727,
+          "target": "10-ks5-i-6"
+        },
+        {
+          "yaw": 3.0100490986449024,
+          "pitch": -0.022783003859675688,
+          "rotation": 0,
+          "target": "28-wejcie-na-1-pitro"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.896855092951192,
+          "pitch": 0.27617771550819725,
+          "title": "Wyjście ewakuacyjne",
+          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Wyjście ewakuacyjne</span>"
+        }
+      ]
+    },
+    {
+      "id": "29-wejcie",
+      "name": "Wejście",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.329890643656121,
+        "pitch": -0.10123160694198852,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.600820175388959,
+          "pitch": -0.09231643805652823,
+          "rotation": 0,
+          "target": "11-portiernia"
+        },
+        {
+          "yaw": -3.131621651503881,
+          "pitch": 0.0533694436946881,
+          "rotation": 0,
+          "target": "30-wejcie-nauczycieli"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "30-wejcie-nauczycieli",
+      "name": "Wejście Nauczycieli",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -1.815671309726234,
+        "pitch": 0.23037849758147644,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.705231613175484,
+          "pitch": 0.20794829112768554,
+          "rotation": 0,
+          "target": "29-wejcie"
+        },
+        {
+          "yaw": -2.0203663114574795,
+          "pitch": 0.3413612152716965,
+          "rotation": 0,
+          "target": "2-k-sekretariat"
+        },
+        {
+          "yaw": 0.9555043587480938,
+          "pitch": 0.20249397791110013,
+          "rotation": 0,
+          "target": "6-ks1"
+        },
+        {
+          "yaw": -1.2475585735931727,
+          "pitch": 0.16401745388381528,
+          "rotation": 0.7853981633974483,
+          "target": "21-sekretariat"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 0.36878629879685576,
+          "pitch": 0.027890464208777388,
+          "title": "Kantorek Woźnych",
+          "text": "Wyjście ewakuacyjne"
+        },
+        {
+          "yaw": 2.3439841930210816,
+          "pitch": 0.2891337120813926,
+          "title": "Wejście/Wyjście Nauczycieli",
+          "text": "Wyjście ewakuacyjne"
+        }
+      ]
+    },
+      {
       "id": "0-s11",
       "name": "Sala 11",
       "levels": [
