@@ -1498,7 +1498,7 @@ var APP_DATA = {
           "yaw": 3.0100490986449024,
           "pitch": -0.022783003859675688,
           "rotation": 0,
-          "target": "28-wejcie-na-1-pitro"
+          "target": "12-k-s18"
         }
       ],
       "infoHotspots": [
