@@ -1853,7 +1853,7 @@ var APP_DATA = {
           "yaw": -2.9240762063351607,
           "pitch": -0.044650524350664966,
           "rotation": 3.14,
-          "target": "20-k-pracownia-chemiczna"
+          "target": "6-ks1"
         },
         {
           "yaw": 0.3301245920884597,
