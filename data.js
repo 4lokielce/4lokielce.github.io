@@ -1849,6 +1849,12 @@ var APP_DATA = {
           "rotation": 0,
           "target": "20-k-pracownia-chemiczna"
         },
+         {
+          "yaw": -2.9240762063351607,
+          "pitch": -0.044650524350664966,
+          "rotation": 3.14,
+          "target": "20-k-pracownia-chemiczna"
+        },
         {
           "yaw": 0.3301245920884597,
           "pitch": 0.41186956208330017,
