@@ -1,5 +1,49 @@
 var APP_DATA = {
   "scenes": [
+        {
+      "id": "29-wejcie",
+      "name": "Wejście",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -2.329890643656121,
+        "pitch": -0.10123160694198852,
+        "fov": 1.4581901255025689
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.600820175388959,
+          "pitch": -0.09231643805652823,
+          "rotation": 0,
+          "target": "11-portiernia"
+        },
+        {
+          "yaw": -3.131621651503881,
+          "pitch": 0.0533694436946881,
+          "rotation": 0,
+          "target": "30-wejcie-nauczycieli"
+        }
+      ],
+      "infoHotspots": []
+    },
       {
       "id": "0-biblioteka",
       "name": "Biblioteka",
@@ -1509,50 +1553,6 @@ var APP_DATA = {
           "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Wyjście ewakuacyjne</span>"
         }
       ]
-    },
-    {
-      "id": "29-wejcie",
-      "name": "Wejście",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1344,
-      "initialViewParameters": {
-        "yaw": -2.329890643656121,
-        "pitch": -0.10123160694198852,
-        "fov": 1.4581901255025689
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.600820175388959,
-          "pitch": -0.09231643805652823,
-          "rotation": 0,
-          "target": "11-portiernia"
-        },
-        {
-          "yaw": -3.131621651503881,
-          "pitch": 0.0533694436946881,
-          "rotation": 0,
-          "target": "30-wejcie-nauczycieli"
-        }
-      ],
-      "infoHotspots": []
     },
     {
       "id": "30-wejcie-nauczycieli",
