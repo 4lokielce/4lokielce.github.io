@@ -405,7 +405,7 @@ var APP_DATA = {
           "yaw": -1.6440270025762231,
           "pitch": 0.0833795329212137,
           "rotation": 0,
-          "target": "28-wejcie-na-1-pitro"
+          "target": "4-k-pielgniarka"
         },
         {
           "yaw": -1.1232142627956527,
