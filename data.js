@@ -632,7 +632,7 @@ var APP_DATA = {
           "yaw": 1.289057865834387,
           "pitch": 0.3619243879784335,
           "rotation": 0,
-          "target": "28-wejcie-na-1-pitro"
+          "target": "10-ks5-i-6"
         }
       ],
       "infoHotspots": []
