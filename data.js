@@ -1158,7 +1158,7 @@ var APP_DATA = {
           "yaw": -3.01575221898986,
           "pitch": 0,
           "title": "Zdjęcia z drona Tello",
-          "text": "<a href='img/sala_gimnastyczna_tello.png'><img src='img/sala_gimnastyczna_tello.png' width='260px' controls></a>"
+          "text": "<a href='img/sala_gimnastyczna_tello.png' target='_blank'><img src='img/sala_gimnastyczna_tello.png' width='260px' controls></a>"
         },
         {
           "yaw": 3.00279545538155,
