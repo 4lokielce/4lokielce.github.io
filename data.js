@@ -2958,7 +2958,7 @@ var APP_DATA = {
     },
     {
       "id": "26-k-s27",
-      "name": "k s27",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
