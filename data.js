@@ -1152,7 +1152,7 @@ var APP_DATA = {
           "yaw": -3.01575221898986,
           "pitch": 0.3619263945297302,
           "title": "Sala gimnastyczna",
-          "text": "Sala gimnastyczna"
+          "text": "<video src='video/salagimnastyczna.mp4' width='290px' controls>"
         },
         {
           "yaw": 3.00279545538155,
@@ -1209,7 +1209,7 @@ var APP_DATA = {
           "yaw": 2.2089704586715957,
           "pitch": 0.17648754946467093,
           "title": "Gabinet dyrektora",
-          "text": "Gabinet dyrektora&nbsp;"
+          "text": "Gabinet dyrektora"
         }
       ]
     },
