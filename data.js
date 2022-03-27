@@ -1152,13 +1152,13 @@ var APP_DATA = {
           "yaw": -3.01575221898986,
           "pitch": -0.3619263945297302,
           "title": "Sala gimnastyczna",
-          "text": "<video src='video/sala_gimnastyczna_tello.mp4' width='280px' controls> Film z drona Tello"
+          "text": "Film z drona Tello <video src='video/sala_gimnastyczna_tello.mp4' width='280px' controls>"
         },
         {
           "yaw": -3.01575221898986,
           "pitch": 0.3619263945297302,
           "title": "Sala gimnastyczna",
-          "text": "<img src='img/sala_gimnastyczna_tello.png' width='280px' controls> Zdjęcie z drona Tello"
+          "text": "<img src='img/sala_gimnastyczna_tello.png' width='260px' controls> Zdjęcie z drona Tello"
         },
         {
           "yaw": 3.00279545538155,
