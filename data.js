@@ -1158,7 +1158,7 @@ var APP_DATA = {
           "yaw": -3.01575221898986,
           "pitch": 0.3619263945297302,
           "title": "Sala gimnastyczna",
-          "text": "<img src='img/sala_gimnastyczna_tello.jpg' width='280px' controls> Zdjęcie z drona Tello"
+          "text": "<img src='img/sala_gimnastyczna_tello.png' width='280px' controls> Zdjęcie z drona Tello"
         },
         {
           "yaw": 3.00279545538155,
