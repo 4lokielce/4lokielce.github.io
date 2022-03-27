@@ -3329,7 +3329,7 @@ var APP_DATA = {
           "yaw": -2.8128759147070426,
           "pitch": 0.6874702611829413,
           "rotation": 0,
-          "target": "0-s11"
+          "target": "20-sala-gimnastyczna"
         }
       ],
       "infoHotspots": [
