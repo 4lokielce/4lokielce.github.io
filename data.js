@@ -2298,6 +2298,12 @@ var APP_DATA = {
           "pitch": 0.31219881410980044,
           "rotation": 0,
           "target": "14-k-s19"
+        },
+        {
+          "yaw": -1.7847156502133323,
+          "pitch": 0.31219881410980044,
+          "rotation": 0,
+          "target": "10-k-s17"
         }
       ],
       "infoHotspots": []
