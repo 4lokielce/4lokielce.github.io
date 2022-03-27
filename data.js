@@ -148,7 +148,7 @@ var APP_DATA = {
     },
     {
       "id": "2-k-sekretariat",
-      "name": "k sekretariat",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
