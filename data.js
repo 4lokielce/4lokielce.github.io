@@ -463,7 +463,7 @@ var APP_DATA = {
           "yaw": -2.4211574368524307,
           "pitch": 0.03585159930755211,
           "title": "Plan lekcji",
-          "text": "Plan lekcji oraz najważniejsze informacje."
+          "text": "Plan lekcji<br><iframe src='https://plan.4lokielce.pl/' width='100%'></iframe><br>oraz najważniejsze informacje."
         }
       ]
     },
