@@ -1113,7 +1113,7 @@ var APP_DATA = {
     },
     {
       "id": "20-sala-gimnastyczna",
-      "name": "Sala Gimnastyczna",
+      "name": "Sala gimnastyczna",
       "levels": [
         {
           "tileSize": 256,
