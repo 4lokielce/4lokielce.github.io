@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
         {
       "id": "29-wejcie",
-      "name": "Wejście",
+      "name": "Wirtualny spacer po IV LO w Kielcach",
       "levels": [
         {
           "tileSize": 256,
