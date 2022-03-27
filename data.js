@@ -2197,7 +2197,7 @@ var APP_DATA = {
           "yaw": 0.29580847427961743,
           "pitch": -0.051938979195128354,
           "title": "Plan lekcji",
-          "text": "<a href='https://plan.4lokielce.pl/' target='_blank'>Plan lekcji</a> oraz zmiany w planie"
+          "text": "Plan lekcji (<a href='https://plan.4lokielce.pl/' target='_blank'>https://plan.4lokielce.pl/</a>) oraz zmiany w planie"
         }
       ]
     },
