@@ -42,7 +42,14 @@ var APP_DATA = {
           "target": "30-wejcie-nauczycieli"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -2.35,
+          "pitch": -0.07,
+          "title": "IV LO w Kielcach",
+          "text": "Zapraszmy na wirtualny spacer<br><img src='img/SzkicWejscie.jpg' width='260px' alt='Szkic wejście do szkoły'>"
+        }      
+      ]
     },
       {
       "id": "0-biblioteka",
