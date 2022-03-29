@@ -2140,8 +2140,8 @@ var APP_DATA = {
         {
           "yaw": -0.15124132858588268,
           "pitch": -0.029915430628655315,
-          "title": "Title",
-          "text": "Text"
+          "title": "Pokój nauczycielski",
+          "text": "Pokój nauczycielski"
         }
       ]
     },
