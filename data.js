@@ -42,7 +42,14 @@ var APP_DATA = {
           "target": "30-wejcie-nauczycieli"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -2.35,
+          "pitch": -0.07,
+          "title": "IV LO w Kielcach",
+          "text": "Zapraszmy na Wirtualny spacer po szkole"
+        }      
+      ]
     },
       {
       "id": "0-biblioteka",
