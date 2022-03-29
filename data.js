@@ -47,7 +47,7 @@ var APP_DATA = {
           "yaw": -2.35,
           "pitch": -0.07,
           "title": "IV LO w Kielcach",
-          "text": "Zapraszmy na Wirtualny spacer po szkole"
+          "text": "Zapraszmy na wirtualny spacer<br><img src='img/szkicwejscie'>"
         }      
       ]
     },
