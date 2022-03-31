@@ -800,7 +800,7 @@ body.view-control-buttons .viewControlButton {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   viewControlButton-5, .viewControlButton-6 {
     display: none;
   }
