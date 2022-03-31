@@ -800,6 +800,11 @@ body.view-control-buttons .viewControlButton {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  viewControlButton-5, .viewControlButton-6 {
+    display: none;
+  }
+}
 
 .viewControlButton .icon {
   position: absolute;
