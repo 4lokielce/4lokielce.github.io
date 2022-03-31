@@ -805,16 +805,16 @@ body.view-control-buttons .viewControlButton {
     display: none !important;
   }
   .viewControlButton-1 {
-  margin-left: -95px;
+  margin-left: -95px !important;
   }
   .viewControlButton-2 {
-  margin-left: -45px;
+  margin-left: -45px !important;
   }
   .viewControlButton-3 {
-  margin-left: 5px;
+  margin-left: 5px !important;
   }
   .viewControlButton-4 {
-  margin-left: 55px;
+  margin-left: 55px !important;
   }
 }
 
