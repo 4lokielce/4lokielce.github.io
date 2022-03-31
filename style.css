@@ -804,6 +804,18 @@ body.view-control-buttons .viewControlButton {
   .viewControlButton-5 , .viewControlButton-6 {
     display: none !important;
   }
+  .viewControlButton-1 {
+  margin-left: -95px;
+  }
+  .viewControlButton-2 {
+  margin-left: -45px;
+  }
+  .viewControlButton-3 {
+  margin-left: 5px;
+  }
+  .viewControlButton-4 {
+  margin-left: 55px;
+  }
 }
 
 .viewControlButton .icon {
