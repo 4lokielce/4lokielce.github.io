@@ -801,8 +801,8 @@ body.view-control-buttons .viewControlButton {
   }
 }
 @media (max-width: 600px) {
-  viewControlButton-5, .viewControlButton-6 {
-    display: none;
+  viewControlButton-5 , .viewControlButton-6 {
+    display: none !important;
   }
 }
 
