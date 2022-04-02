@@ -206,7 +206,7 @@ var APP_DATA = {
     },
     {
       "id": "3-k-sklepik",
-      "name": "k sklepik",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -275,7 +275,7 @@ var APP_DATA = {
     },
     {
       "id": "4-korytarz-sala-gimnatyczna",
-      "name": "Korytarz Sala Gimnatyczna",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -344,7 +344,7 @@ var APP_DATA = {
     },
     {
       "id": "5-korytarz-siownia",
-      "name": "Korytarz Siłownia",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -407,7 +407,7 @@ var APP_DATA = {
     },
     {
       "id": "6-ks1",
-      "name": "ks1",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -476,7 +476,7 @@ var APP_DATA = {
     },
     {
       "id": "7-ks2",
-      "name": "ks2",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -533,7 +533,7 @@ var APP_DATA = {
     },
     {
       "id": "8-ks3",
-      "name": "ks3",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -596,7 +596,7 @@ var APP_DATA = {
     },
     {
       "id": "9-ks4",
-      "name": "ks4",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -639,14 +639,14 @@ var APP_DATA = {
           "yaw": 1.289057865834387,
           "pitch": 0.3619243879784335,
           "rotation": 0,
-          "target": "10-ks5-i-6"
+          "target": "28-wejcie-na-1-pitro"
         }
       ],
       "infoHotspots": []
     },
     {
       "id": "10-ks5-i-6",
-      "name": "ks5 i 6",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -760,7 +760,7 @@ var APP_DATA = {
     },
     {
       "id": "12-s1",
-      "name": "s1",
+      "name": "Sala nr 1",
       "levels": [
         {
           "tileSize": 256,
@@ -805,7 +805,7 @@ var APP_DATA = {
     },
     {
       "id": "13-s1a",
-      "name": "s1A",
+      "name": "Sala nr 1A",
       "levels": [
         {
           "tileSize": 256,
@@ -850,7 +850,7 @@ var APP_DATA = {
     },
     {
       "id": "14-s2",
-      "name": "s2",
+      "name": "Sala nr 2",
       "levels": [
         {
           "tileSize": 256,
@@ -895,7 +895,7 @@ var APP_DATA = {
     },
     {
       "id": "15-s3",
-      "name": "s3",
+      "name": "Sala nr 3",
       "levels": [
         {
           "tileSize": 256,
@@ -940,7 +940,7 @@ var APP_DATA = {
     },
     {
       "id": "16-s4",
-      "name": "s4",
+      "name": "Sala nr 4",
       "levels": [
         {
           "tileSize": 256,
@@ -985,7 +985,7 @@ var APP_DATA = {
     },
     {
       "id": "17-s5",
-      "name": "s5",
+      "name": "Sala nr 5",
       "levels": [
         {
           "tileSize": 256,
@@ -1030,7 +1030,7 @@ var APP_DATA = {
     },
     {
       "id": "18-s6",
-      "name": "s6",
+      "name": "Sala nr 6",
       "levels": [
         {
           "tileSize": 256,
@@ -1075,7 +1075,7 @@ var APP_DATA = {
     },
     {
       "id": "19-sala-7b",
-      "name": "Sala 7B",
+      "name": "Sala nr 7B",
       "levels": [
         {
           "tileSize": 256,
@@ -1324,7 +1324,7 @@ var APP_DATA = {
     },
     {
       "id": "24-szatnia1",
-      "name": "Szatnia1",
+      "name": "Szatnia",
       "levels": [
         {
           "tileSize": 256,
@@ -1374,7 +1374,7 @@ var APP_DATA = {
     },
     {
       "id": "25-szatnia2",
-      "name": "szatnia2",
+      "name": "Szatnia",
       "levels": [
         {
           "tileSize": 256,
@@ -1418,7 +1418,7 @@ var APP_DATA = {
     },
     {
       "id": "26-szatnia3",
-      "name": "szatnia3",
+      "name": "Szatnia",
       "levels": [
         {
           "tileSize": 256,
@@ -1462,7 +1462,7 @@ var APP_DATA = {
     },
     {
       "id": "27-szatnia4",
-      "name": "szatnia4",
+      "name": "Szatnia",
       "levels": [
         {
           "tileSize": 256,
@@ -1512,7 +1512,7 @@ var APP_DATA = {
     },
     {
       "id": "28-wejcie-na-1-pitro",
-      "name": "wejście na 1 piętro",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -1569,7 +1569,7 @@ var APP_DATA = {
     },
     {
       "id": "30-wejcie-nauczycieli",
-      "name": "Wejście Nauczycieli",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -1638,7 +1638,7 @@ var APP_DATA = {
     },
       {
       "id": "0-s11",
-      "name": "Sala 11",
+      "name": "Sala nr 11",
       "levels": [
         {
           "tileSize": 256,
@@ -1683,7 +1683,7 @@ var APP_DATA = {
     },
     {
       "id": "1-k-s11",
-      "name": "k s11",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -1739,7 +1739,7 @@ var APP_DATA = {
     },
     {
       "id": "2-s12",
-      "name": "s12",
+      "name": "Sala nr 12",
       "levels": [
         {
           "tileSize": 256,
@@ -1784,7 +1784,7 @@ var APP_DATA = {
     },
     {
       "id": "3-s13",
-      "name": "s13",
+      "name": "Sala nr 13",
       "levels": [
         {
           "tileSize": 256,
@@ -1829,7 +1829,7 @@ var APP_DATA = {
     },
     {
       "id": "4-k-pielgniarka",
-      "name": "k pielęgniarka",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -1892,7 +1892,7 @@ var APP_DATA = {
     },
     {
       "id": "5-s14",
-      "name": "s14",
+      "name": "Sala nr 14",
       "levels": [
         {
           "tileSize": 256,
@@ -1937,7 +1937,7 @@ var APP_DATA = {
     },
     {
       "id": "6-k-s14",
-      "name": "k s14",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -1994,7 +1994,7 @@ var APP_DATA = {
     },
     {
       "id": "7-s15",
-      "name": "s15",
+      "name": "Sala nr 15",
       "levels": [
         {
           "tileSize": 256,
@@ -2039,7 +2039,7 @@ var APP_DATA = {
     },
     {
       "id": "8-k-pokj-nauczycielski",
-      "name": "k pokój nauczycielski",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2210,7 +2210,7 @@ var APP_DATA = {
     },
     {
       "id": "11-s17",
-      "name": "s17",
+      "name": "Sala nr 17",
       "levels": [
         {
           "tileSize": 256,
@@ -2255,7 +2255,7 @@ var APP_DATA = {
     },
     {
       "id": "12-k-s18",
-      "name": "k s18",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2286,7 +2286,7 @@ var APP_DATA = {
           "yaw": 2.840941424399195,
           "pitch": 0.15415450138913656,
           "rotation": 3.14,
-          "target": "10-ks5-i-6"
+          "target": "28-wejcie-na-1-pitro"
         },
         {
           "yaw": 3.040941424399195,
@@ -2317,7 +2317,7 @@ var APP_DATA = {
     },
     {
       "id": "13-s18",
-      "name": "s18",
+      "name": "Sala nr 18",
       "levels": [
         {
           "tileSize": 256,
@@ -2362,7 +2362,7 @@ var APP_DATA = {
     },
     {
       "id": "14-k-s19",
-      "name": "k s19",
+      "name": "Pierwsze piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2419,7 +2419,7 @@ var APP_DATA = {
     },
     {
       "id": "15-s19",
-      "name": "s19",
+      "name": "Sala nr 19",
       "levels": [
         {
           "tileSize": 256,
@@ -2464,7 +2464,7 @@ var APP_DATA = {
     },
     {
       "id": "16-s21",
-      "name": "s21",
+      "name": "Sala nr 21",
       "levels": [
         {
           "tileSize": 256,
@@ -2515,7 +2515,7 @@ var APP_DATA = {
     },
     {
       "id": "17-labchem",
-      "name": "labchem",
+      "name": "Pracownia chemiczna",
       "levels": [
         {
           "tileSize": 256,
@@ -2559,7 +2559,7 @@ var APP_DATA = {
     },
     {
       "id": "18-k-s23-s22-s21",
-      "name": "k s23 s22 s21",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2615,7 +2615,7 @@ var APP_DATA = {
     },
     {
       "id": "19-s22",
-      "name": "s22",
+      "name": "Sala nr 22",
       "levels": [
         {
           "tileSize": 256,
@@ -2660,7 +2660,7 @@ var APP_DATA = {
     },
     {
       "id": "20-k-pracownia-chemiczna",
-      "name": "k pracownia chemiczna",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2716,7 +2716,7 @@ var APP_DATA = {
     },
     {
       "id": "21-s23",
-      "name": "s23",
+      "name": "Sala nr 23",
       "levels": [
         {
           "tileSize": 256,
@@ -2761,7 +2761,7 @@ var APP_DATA = {
     },
     {
       "id": "22-s24",
-      "name": "s24",
+      "name": "Sala nr 24",
       "levels": [
         {
           "tileSize": 256,
@@ -2806,7 +2806,7 @@ var APP_DATA = {
     },
     {
       "id": "23-k-s24",
-      "name": "k s24",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2863,7 +2863,7 @@ var APP_DATA = {
     },
     {
       "id": "24-k-s26",
-      "name": "k s26",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -2926,7 +2926,7 @@ var APP_DATA = {
     },
     {
       "id": "25-s26",
-      "name": "s26",
+      "name": "Sala nr 26",
       "levels": [
         {
           "tileSize": 256,
@@ -3028,7 +3028,7 @@ var APP_DATA = {
     },
     {
       "id": "27-s27",
-      "name": "s27",
+      "name": "Sala nr 27",
       "levels": [
         {
           "tileSize": 256,
@@ -3073,7 +3073,7 @@ var APP_DATA = {
     },
     {
       "id": "28-k-s28",
-      "name": "k s28",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -3129,7 +3129,7 @@ var APP_DATA = {
     },
     {
       "id": "29-s28",
-      "name": "s28",
+      "name": "Sala nr 28",
       "levels": [
         {
           "tileSize": 256,
@@ -3174,7 +3174,7 @@ var APP_DATA = {
     },
     {
       "id": "30-k-s29",
-      "name": "k s29",
+      "name": "Drugie piętro",
       "levels": [
         {
           "tileSize": 256,
@@ -3231,7 +3231,7 @@ var APP_DATA = {
     },
     {
       "id": "31-s29",
-      "name": "s29",
+      "name": "Sala nr 29",
       "levels": [
         {
           "tileSize": 256,
@@ -3276,7 +3276,7 @@ var APP_DATA = {
     },
     {
       "id": "32-s30",
-      "name": "s30",
+      "name": "Sala nr 30",
       "levels": [
         {
           "tileSize": 256,
