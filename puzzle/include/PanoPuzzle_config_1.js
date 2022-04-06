@@ -97,19 +97,11 @@ PP_config = {
 "demo_1" : [
 	[4,"Demonstration of puzzles from different<br>directories but one collection only","Bernd Kronmueller","30th January 2021"],
 	 
-	["<h2 class='txt'>Pano with lines</h2>",
-	 1,77,0xFF0000,"pano1","gr_44"
-	],	
-
-	["<h2 class='txt'>Plain maze</h2>",
-	 3,75,0xC0392B ,"pano2","maze_4"
-	],
-	
-	["<h2 class='txt'>Maze side names</h2>",
+	["<h2 class='txt'>WOŚP 2022 - Liczymy kasę</h2>",
 	 4,80,0x000000,"collection2/pano1","CMN_3"
 	],
 
-	["<h2 class='txt'>Coloured maze</h2>",
+	["<h2 class='txt'>WOŚP 2022 - Jeszcze więcej kasy</h2>",
 	 7,75,0xC0392B ,"collection2/pano2","CM_4"
 	]
 
