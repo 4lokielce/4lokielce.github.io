@@ -1,31 +1,31 @@
 # PanoPuzzle
 <img src="screenshots/PanoPuzzleLogo_4.png" align="right" width="320" height="320">
 <br>
-A 360 panoramic puzzle game - create longer interactions with your 360 images
+Panoramiczna gra logiczna 360 - twórz dłuższe interakcje ze swoimi zdjęciami 360
 <br><br>
-The game subdivides the cubefaces of a 360 panorama and rotates some of them.<br> 
-It is your job to find and rotate all the wrongly rotated ones and restore the 360 panorama to it's original glory.
+Gra dzieli sześciany panoramy 360 i obraca niektóre z nich.<br> 
+Twoim zadaniem jest znaleźć i obrócić wszystkie źle obrócone i przywrócić panoramę 360 do jej pierwotnej świetności.
 
 <br><br><br><br><br><br>
-When starting the game it will look like this
+Po uruchomieniu gry będzie to wyglądać tak
 <img src="screenshots/MainInfo.jpg" width=1000><br>
-This gives you all the information you need to play the game - just look around by dragging the panoramic image with the finger/mouse or move your mobile device around and click/tap on a tile to rotate it until all the tiles are pointing in the right direction.<br>
-Some settings can be changed, puzzles can be selected directly and puzzle categories can be changed by clicking/tapping the settings cog-icon at the bottom left of the screen which will open up a small settings panel.
+Daje to wszystkie informacje potrzebne do grania w grę — po prostu rozejrzyj się, przeciągając obraz panoramiczny palcem/myszą lub poruszaj urządzeniem mobilnym i kliknij/dotknij kafelek, aby go obrócić, aż wszystkie kafelki będą wskazywać dobry kierunek.<br>
+Niektóre ustawienia można zmienić, łamigłówki można wybrać bezpośrednio, a kategorie łamigłówek można zmienić, klikając / dotykając ikony ustawień w lewym dolnym rogu ekranu, co otworzy mały panel ustawień.
 <img src="screenshots/SettingsAndCollections.jpg" width=1000><br>
-The game also allows you to zoom out and solve the puzzle looking at the cube from the outside, a tile counter can be en/disabled to make it easier/harder and you can share a specific puzzle via the share button on the bottom right.
+Gra pozwala również oddalić i rozwiązać łamigłówkę patrząc na kostkę z zewnątrz, licznik kafelków można włączyć/wyłączyć, aby ułatwić/utrudnić, a także możesz udostępnić konkretną łamigłówkę za pomocą przycisku udostępniania w prawym dolnym rogu.
 <img src="screenshots/UI2a.jpg" width=1000><br>
 
 
-## Getting PanoPuzzle for your own web site
+## Zdobywanie PanoPuzzle na własną stronę internetową
 
-### Getting the code
+### Pobieranie kodu
 
---- Still working on it<br>
-You can always just get the whole thing as a zip file - the directory structure needs to be observed.
-Will try to put some zip files as releases together.
+--- Nadal nad tym pracuję<br>
+Zawsze możesz pobrać całość jako plik zip - należy przestrzegać struktury katalogów.
+Spróbuje połączyć kilka plików zip jako wydania.
 
-### Preparing the panoramic images
-The directory is the path relative to the images directory
+### Przygotowanie zdjęć panoramicznych
+Katalog jest ścieżką względem katalogu obrazów
 
 ```bash
 ├───images
@@ -63,10 +63,10 @@ The directory is the path relative to the images directory
            top.jpg
 ```
 
-In the directory (e.g. pano1) the script expects the cube faces named back.jpg, bottom.jpg, front.jpg, left.jpg, right.jpg and top.jpg as you can see in the directory tree above. The directories are specified in the <a href="https://github.com/kronpano/PanoPuzzle/blob/main/README.md#creating-and-changing-the-configuration-file">configuration file</a> 
+W katalogu (np. pano1) skrypt oczekuje ścian sześcianu o nazwach back.jpg, bottom.jpg, front.jpg, left.jpg, right.jpg i top.jpg, jak widać w drzewie katalogów powyżej. Katalogi są określone w <a href="https://github.com/kronpano/PanoPuzzle/blob/main/README.md#creating-and-changing-the-configuration-file">pliku konfiguracyjnym</a>
 
-Please create the cube faces so that they are sized to a power of 2 e.g. 1024x1024 or 2048x2048
-This will prevent the script from complaining (warnings) that the texture is not a power of 2
+Proszę utwórz ściany sześcianu tak, aby były zwymiarowane do potęgi 2, np. 1024x1024 lub 2048x2048
+Dzięki temu skrypt nie będzie narzekał (ostrzeżenia), że tekstura nie jest potęgą 2
 
 I use PTGui to make this conversion - this allows to set the size and jpg compression - smaller files load quicker BUT you might get compression artifacts
 
