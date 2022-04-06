@@ -39,7 +39,7 @@ const ConfigName ="OneCollection"
 const whichDefaultConfig = "demo_1";   //possible values come out of the PanoPuzzle_config.js 
 
 // time in ms the info stays before before going by itself
-const infoTime = 15000;
+const infoTime = 1500;
 
 // percentage of tiles shuffeld on easy or hard
 // the default is specified in PanoText.js for each panorama individually
