@@ -4,20 +4,20 @@
 <head>	
 	<title>PanoPuzzle</title>
 	<meta charset="utf-8">
-	<meta name="keywords" content="panorama, puzzle, 360,panopuzzle, game">
+	<meta name="keywords" content="panorama, puzzle, 360, panopuzzle, game">
 	<meta name="description" content="A panorama puzzle game for 360 panoramas">
-	<meta name="author" content="kronpano">
-	<meta name="copyright" content="Bernd Kronmueller">
+	<meta name="author" content=" ">
+	<meta name="copyright" content=" ">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
 	<link rel="stylesheet" href="css/base.css" />
-	<link rel="canonical" href="//panopuzzle.created-by.me" />
+	<link rel="canonical" href=" " />
 	<link rel="icon" href="favicon.png">
 
 	<meta property="og:type"        	content="website" />
 	<meta property="og:title"       	content="PanoPuzzle" />
 	<meta property="og:description" 	content="A 360 panoramic puzzle game" />
-	<meta property="og:image"       	content="https://raw.githubusercontent.com/kronpano/PanoPuzzle/main/screenshots/MainInfo.jpg" />
-	<meta property="og:url"         	content="https://panopuzzle.created-by.me" />		
+	<meta property="og:image"       	content=" " />
+	<meta property="og:url"         	content=" " />		
 </head>
 
 <body>
@@ -39,9 +39,9 @@
         <!-- Taken out for the OnePuzzleAndOut demo - there is only one puzzle so there is no point in having it
         <button title="Jump directly to a puzzle or&#10;choose another puzzle collection" class="showall_btn" onclick="ShowAllIcon(event);" ontouchstart="ShowAllIcon(event);"><i class="fa fa-th"></i></button>
         -->
-		<button title="Get some info and instructions" class="btn" onclick="InfoIcon(event);" ontouchstart="InfoIcon(event);"><i class="fa fa-info"></i>	</button>
+		<button title="Get some info and instructions" class="btn" onclick="InfoIcon(event);" ontouchstart="InfoIcon(event);"><i class="fa fa-info"></i></button>
 	
-		<div style="text-align: left;padding: 5px 0 0 10px;">Rotation</div>
+		<div style="text-align: left;padding: 5px 0 0 10px;">Obrót</div>
 		<div class="rotateswitch">
 			<input type="checkbox" name="rotateswitch" class="rotateswitch-checkbox" id="myrotateswitch" onclick="RotateToggle()" ontouchstart="RotateToggle()" checked>
 			<label class="rotateswitch-label" for="myrotateswitch">
@@ -50,7 +50,7 @@
 			</label>
 		</div>
 		
-		<div style="text-align: left;padding: 5px 0 0 10px">Drag direction</div>
+		<div style="text-align: left;padding: 5px 0 0 10px">Kierunek przeciągania</div>
 		<div class="dragswitch">
 			<input type="checkbox" name="dragswitch" class="dragswitch-checkbox" id="mydragswitch" onclick="DragToggle()" ontouchstart="DragToggle()" checked>
 			<label class="dragswitch-label" for="mydragswitch">
@@ -59,7 +59,7 @@
 			</label>
 		</div> 
 		
-		<div style="text-align: left;padding: 5px 0 0 10px;">Tile counter</div>
+		<div style="text-align: left;padding: 5px 0 0 10px;">Licznik płytek</div>
 		<div class="countswitch">
 			<input type="checkbox" name="countswitch" class="countswitch-checkbox" id="mycountswitch" onclick="CountToggle()" ontouchstart="CountToggle()">
 			<label class="countswitch-label" for="mycountswitch">
@@ -68,7 +68,7 @@
 			</label>
 		</div>
 		
-		<div style="text-align: left;padding: 5px 0 0 10px;">Hints</div>
+		<div style="text-align: left;padding: 5px 0 0 10px;">Poradnik</div>
 		<div class="hintswitch">
 			<input type="checkbox" name="hintswitch" class="hintswitch-checkbox" id="myhintswitch" onclick="HintToggle()" ontouchstart="HintToggle()">
 			<label class="hintswitch-label" for="myhintswitch">
@@ -78,17 +78,17 @@
 		</div>
 	
 		<div class="slidecontainer" id="HintTimeSlider">
-			<div style="text-align: left;padding: 5px 0 0 10px;">Delay time: <span id="dtime"></span>s</div>
+			<div style="text-align: left;padding: 5px 0 0 10px;">Czas zwłoki: <span id="dtime"></span>s</div>
 			<input type="range" min="5" max="40" value="20" class="slider" id="myRange">
 		</div>
 	
 	
 		<div class="parent">
-			<div style="text-align: left;padding: 5px 0 0 10px;">Difficulty</div>
+			<div style="text-align: left;padding: 5px 0 0 10px;">Trudność</div>
 			<div class="switch_3_ways">
-				<div id="easy" class="switch easy" onclick="difficulty('easy','UI')">Easy</div>
-				<div id="normal" class="switch normal" onclick="difficulty('normal','UI')">Normal</div>
-				<div id="hard" class="switch hard" onclick="difficulty('hard','UI')">Hard</div>
+				<div id="easy" class="switch easy" onclick="difficulty('easy','UI')">Łatwy</div>
+				<div id="normal" class="switch normal" onclick="difficulty('normal','UI')">Normalny</div>
+				<div id="hard" class="switch hard" onclick="difficulty('hard','UI')">Trudny</div>
 				<div id="selector" class="selector"></div>
 			</div>
 		</div>
