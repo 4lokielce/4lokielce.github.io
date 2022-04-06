@@ -88,7 +88,7 @@ PP_config = {
 	[4,"A single PanoPuzzle demo <br> finish it and move on","Bernd Kronmueller","13th March 2021"],
     // The text here is shown in the info screen - the rest is not really important for the OnePuzzleAndOut
 	 
-	["<h4 class='txt'>Fajnie – ułożyłeś puzzle<br>Kliknij<a id='Link4Next' href='https://4lokielce.github.io/puzzle/'>link</a> aby pójść dalej</h4>",
+	["<h4 class='txt'>Fajnie – ułożyłeś puzzle<br>Kliknij <a id='Link4Next' href='https://4lokielce.github.io/puzzle/'>link</a> aby pójść dalej</h4>",
     // this is a html formatted text that will be shown once a puzzle is solved 
     // if you want to link away from panopuzzle you just need to provide the element with the Link4Next id like this  <a id='Link4Next' href='URL'>link</a>
     // then a user can click on that link directly and leave the puzzle or you can close the "end of puzzle" message by clicking in the box - look around and the "Next" link at the top right will get you to the link as well
