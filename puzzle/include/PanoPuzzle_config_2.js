@@ -112,19 +112,19 @@ PP = {
 		"links":{
 			"maze": {title:"A puzzle of a maze",
 			 			href:baseURL+"?config=maze&pano=2",
-			 			text:"Maze Puzzle plain"
+			 			text:"Zwykłe Puzzle"
 						},
 			"grid":	{title:"Not really a puzzle - shows the build-in grid patterns if you want to use it yourself", 
 						href:baseURL+"?config=grid",
-						text:"Grid demo - shows build-in grid patterns of PanoPuzzle"
+						text:"Demo siatki — pokazuje wbudowane wzory siatki PanoPuzzle"
 						}, 			 
 			"ColouredMazeNames":	{title:"Coloured maze with names", 
 						href:baseURL+"?config=ColouredMazeNames",
-						text:"Coloured maze with names different subdirectory"
+						text:"Kolorowy labirynt z nazwami różnych podkatalogów"
 						}, 
 			"ColouredMaze":{title:"Coloured maze", 
 						href:baseURL+"?config=ColouredMaze&pano=3",
-						text:"Coloured maze from different subdirectory"
+						text:"Kolorowy labirynt z innego podkatalogu"
 						}			 			 
 		},
 		// here you define which of the links above will be shown for a certain configuration	
