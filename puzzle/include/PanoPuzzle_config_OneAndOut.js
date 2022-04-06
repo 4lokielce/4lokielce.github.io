@@ -74,9 +74,9 @@ PP = {
 	// THIS TEXT CAN/SHOULD BE CHANGED BY THE USER - it is sort of the intro text of the puzzle
 	//Your html formatted info text  - CAREFUL - this needs to be in single forward quotes  ` if you have multi line text !!!
 		"info":`
-		<h4>PanoPuzzle - Single puzzle demo</h4>
-		<h6><div id='instruction'>Click/touch the puzzle pieces to rotate them until the puzzle is solved.<br>Zoom out lets you look at/solve the puzzle from the outside of a cube.</div></h6>
-		<h5><div id='currentlyPlaying' class='glow'>info of config</div></h5>
+		<h4>PanoPuzzle - Demo pojedynczego puzzle</h4>
+		<h6><div id='instruction'>Kliknij/dotknij elementów układanki, aby je obracać, aż układanka zostanie rozwiązana.<br>Pomniejsz pozwala spojrzeć na/rozwiązać układankę z zewnątrz kostki.</div></h6>
+		<h5><div id='currentlyPlaying' class='glow'>informacje o konfiguracji</div></h5>
 		<h6>Created by Bernd Kronmueller © &nbsp&nbspv1.3</h6>
         `						
 	}
