@@ -935,7 +935,7 @@
 				removeGrid();
 
 			} else {
-				document.getElementById("status").innerHTML = connectedFaces.length + " of " + scene.data.face.length + " correct"
+				document.getElementById("status").innerHTML = connectedFaces.length + " z " + scene.data.face.length + " poprawnych"
 			}
 		}
 
