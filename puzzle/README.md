@@ -280,14 +280,14 @@ Using the <a href="include/PanoPuzzle_config_2.js">PanoPuzzle_config_2.js</a> co
 https://kronpano.github.io/PanoPuzzle/PanoPuzzleGridDemo.html<br><br>
 Using the <a href="include/PanoPuzzle_config_grid.js">PanoPuzzle_config_grid.js</a> config file called by <a href="PanoPuzzleGridDemo.html">PanoPuzzleGridDemo.html</a>  creates the web page which demonstrates the different built in grid patterns.
 
-### - on GitHub a "one puzzle and out" demo
+### - na GitHub demo „jedna łamigłówka i wyjście”
 https://kronpano.github.io/PanoPuzzle/OnePuzzleAndOut.html<br><br>
-Using the <a href="include/PanoPuzzle_config_OneAndOut.js">PanoPuzzle_config_OneAndOut.js</a> config file called by <a href="OnePuzzleAndOut.html">OnePuzzleAndOut.html</a>  creates a single puzzle. The config file via the Link4Next element provides a link on where to go when the puzzle is finished.
+Użycie pliku konfiguracyjnego <a href="include/PanoPuzzle_config_OneAndOut.js">PanoPuzzle_config_OneAndOut.js</a> wywołanego przez <a href="OnePuzzleAndOut.html">OnePuzzleAndOut.html</a> tworzy pojedynczą układankę. Plik konfiguracyjny za pośrednictwem elementu Link4Next zawiera link do miejsca, w którym należy się udać po zakończeniu układanki.
 
-## ToDo
-#### Configuration file validation
-The configuration file is the heart and soul which contains all the information - a simple typo in there can mean everything works fine - EXCEPT for this one puzzle which will leave the screen blank because - the directory can not be found, the colour/pattern of the grid not defined because of a typo, .....
-Thought it would be a good idea to have some sort of "Config file validator" which will create a html page which shows all the information and flags up potential errors.
+## Do zrobienia
+#### Walidacja pliku konfiguracyjnego
+Plik konfiguracyjny to serce i dusza, które zawiera wszystkie informacje - prosta literówka może oznaczać, że wszystko działa dobrze - Z WYJĄTKIEM tej jednej zagadki, która pozostawi pusty ekran, ponieważ - nie można znaleźć katalogu, koloru/wzoru siatka nie zdefiniowana z powodu literówki, .....
+Pomyślałem, że dobrym pomysłem byłoby posiadanie pewnego rodzaju „walidatora plików konfiguracyjnych”, który utworzy stronę html, która pokazuje wszystkie informacje i sygnalizuje potencjalne błędy.
 
-#### Audio option
-Thought it would be nice to have an audio option which will start playing information or music once a certain percentage of the puzzle is solved. Should be an optional entry in the config file.
+#### Opcja dźwięku
+Pomyślałem, że fajnie byłoby mieć opcję audio, która zacznie odtwarzać informacje lub muzykę po rozwiązaniu pewnego procentu zagadki. Powinien być opcjonalnym wpisem w pliku konfiguracyjnym.
