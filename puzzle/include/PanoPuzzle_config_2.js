@@ -112,7 +112,7 @@ PP = {
 		"links":{
 			"maze": {title:"A puzzle of a maze",
 			 			href:baseURL+"?config=maze&pano=2",
-			 			text:"Zwykłe Puzzle"
+			 			text:"Zwykłe Puzzle (zdjęcia z drona z zawodów )"
 						},
 			"grid":	{title:"Not really a puzzle - shows the build-in grid patterns if you want to use it yourself", 
 						href:baseURL+"?config=grid",
