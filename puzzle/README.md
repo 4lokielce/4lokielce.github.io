@@ -81,14 +81,14 @@ Zrobienie tego w javascripcie oznacza użycie urządzenia do konwersji, która w
 
 Robienie tego "offline" daje również użytkownikowi możliwość wybrania kompresji jpg, która sprawia, że pliki graficzne są wystarczająco małe, ale nie pozostawiają zbyt wielu artefaktów kompresji. Zwykle używam kompresji między 50-70 - używając wyższej kompresji dla plików 2048x2048, aby je nieco zmniejszyć.
 
-### Creating and changing the configuration file
+### Tworzenie i zmiana pliku konfiguracyjnego
 
---- Still working on it<br>
-The example configuration files like <a href="include/PanoPuzzle_config_1.js">PanoPuzzle_config_1.js</a> have a comment section at the start and a descriptiopn of all the grid patterns at the end but a better explanation will follow soon.
+--- Nadal nad tym pracuję<br>
+Przykładowe pliki konfiguracyjne, takie jak <a href="include/PanoPuzzle_config_1.js">PanoPuzzle_config_1.js</a>, mają na początku sekcję komentarzy i opis wszystkich wzorców siatki, ale wkrótce pojawi się lepsze wyjaśnienie.
 
-The configuration file is divided into a couple of sections:<br>
-- head<br>
-  the head contains the following code and is the same no matter if you have a config with one or many collections
+Plik konfiguracyjny jest podzielony na kilka sekcji:<br>
+- nagłówek<br>
+  nagłówek zawiera następujący kod i jest taki sam bez względu na to, czy masz konfigurację z jedną czy wieloma kolekcjami
   ```
   // this is the first .js file to be included in the HTML so I need to define it here
   // because a multi collection puzzle might need this value
@@ -241,23 +241,23 @@ The configuration file is divided into a couple of sections:<br>
           5,50,0xF7DC6F,"Dir1","PP1_1"
         ],	
         ```
-      - pattern of the grid<br>
-      there are 13 build in patterns which are described in the sample config files and there is the <a href="./PanoPuzzleGridDemo">grid demo</a> which shows all the implemented patterns
-      - percent scrambled<br>
-      percentage of wrongly rotated tiles when played in "normal" setting - for hard and easy the values are defined in the head of the config file.
-      - color of the grid<br>
-      color in "0xFF0000" format - you sometimes need to adjust the grid coulour so it is actually visible
-      - directory<br>
-      the path to the directory of the cube face images relative to images as described under <a href="https://github.com/kronpano/PanoPuzzle/blob/main/README.md#preparing-the-panoramic-images">preparing the panoramic images</a>
-      - a unique ID<br>
-      the unique ID is used when sharing a puzzle via a share button - this makes sure that even if the configuration of a puzzle has changed that the link still points to the correct puzzle. If you add new puzzles to a collection you might want to add them to the beginning to show them first - that means the array of the configuration has changed and puzzle 5 is now puzzle 6 so referencing it via ?config=configA&pano=5 would point to the wrong puzzle
-      PanoPuzzle creates in internal lookup table that is used when a link in the ?uid=CMN_6 format comes in. <br>
-      That UID will be translated to point to the correct puzzle.<br>
-      My way of creating unique IDs is to just take the category name (in some abbreviated form) and add _\<number\> from the bottom to the top.
+      - wzór siatki<br>
+      jest 13 wbudowanych wzorców, które są opisane w przykładowych plikach konfiguracyjnych oraz jest <a href="./PanoPuzzleGridDemo">demo siatki</a>, które pokazuje wszystkie zaimplementowane wzorce
+      - procent kodowany<br>
+      procent błędnie obróconych kafelków podczas odtwarzania w "normalnym" ustawieniu - dla trudnych i łatwych wartości są zdefiniowane w nagłówku pliku konfiguracyjnego.
+      - kolor siatki<br>
+      kolor w formacie "0xFF0000" - czasami trzeba dopasować kolor siatki, aby był faktycznie widoczny
+      - katalog<br>
+      ścieżka do katalogu obrazów ścian sześcianu w odniesieniu do obrazów, jak opisano w<a href="https://github.com/kronpano/PanoPuzzle/blob/main/README.md#preparing-the-panoramic-images">preparing the panoramic images</a>
+      - unikalny identyfikator<br>
+      unikalny identyfikator jest używany podczas udostępniania łamigłówki za pomocą przycisku udostępniania - zapewnia to, że nawet jeśli konfiguracja łamigłówki uległa zmianie, łącze nadal wskazuje właściwą łamigłówkę. Jeśli dodasz nowe łamigłówki do kolekcji, możesz chcieć dodać je na początku, aby pokazać je jako pierwsze - oznacza to, że tablica konfiguracji uległa zmianie i łamigłówka 5 jest teraz łamigłówką 6, więc odwołanie się do niej przez ?config=configA&pano=5 będzie wskazywać do złej zagadki
+      PanoPuzzle tworzy wewnętrzną tabelę przeglądową, która jest używana, gdy pojawia się łącze w formacie ?uid=CMN_6.<br>
+      Ten UID zostanie przetłumaczony tak, aby wskazywał właściwą łamigłówkę.<br>
+      Mój sposób na tworzenie unikalnych identyfikatorów polega po prostu na wzięciu nazwy kategorii (w jakiejś skróconej formie) i dodaniu _\<numer\> od dołu do góry.
 
-Errors in this file can mean that PanoPuzzle shows black tiles (can't find the image directories, wrongly defined colour...) which will only be shown in the console of the developer tools.<br>
+Błędy w tym pliku mogą oznaczać, że PanoPuzzle pokazuje czarne kafelki (nie można znaleźć katalogów z obrazkami, źle zdefiniowany kolor...), które będą wyświetlane tylko w konsoli narzędzi deweloperskich.<br>
 <br>
-Because that file is so important there is a ToDo point of writing a validator for this file so a user can see if everything points to the right places....
+Ponieważ ten plik jest tak ważny, istnieje punkt Do zrobienia napisania walidatora dla tego pliku, aby użytkownik mógł zobaczyć, czy wszystko wskazuje na właściwe miejsca....
 
 
 ## żywe przykłady
