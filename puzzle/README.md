@@ -68,19 +68,18 @@ W katalogu (np. pano1) skrypt oczekuje ścian sześcianu o nazwach back.jpg, bot
 Proszę utwórz ściany sześcianu tak, aby były zwymiarowane do potęgi 2, np. 1024x1024 lub 2048x2048
 Dzięki temu skrypt nie będzie narzekał (ostrzeżenia), że tekstura nie jest potęgą 2
 
-I use PTGui to make this conversion - this allows to set the size and jpg compression - smaller files load quicker BUT you might get compression artifacts
-
-There are also free online services you can use to convert an equirectangular image to cube faces like<br>
+Do tej konwersji używam PTGui - pozwala to ustawić rozmiar i kompresję jpg - mniejsze pliki ładują się szybciej, ALE mogą pojawić się artefakty kompresji
+Istnieją również bezpłatne usługi online, za pomocą których można przekonwertować obraz równoprostokątny na twarze sześcienne, takie jak<br>
 https://360toolkit.co/convert-spherical-equirectangular-to-cubemap<br>
-or<br>
+lub<br>
 https://jaxry.github.io/panorama-to-cubemap/<br>
-and free tools for download (windows)<br>
+i darmowe narzędzia do pobrania (windows)<br>
 https://pragmar.com/qbit/
 
-This conversion could be implemented in javascript as well but it would need to run every time again to convert an equirectangular input to cubemap images.
-Doing it in javascript means it would use the device for the conversion which takes time/proessing power...
+Ta konwersja może być również zaimplementowana w javascript, ale musiałaby być uruchamiana za każdym razem, aby przekonwertować równoprostokątne dane wejściowe na obrazy cubemapy.
+Zrobienie tego w javascripcie oznacza użycie urządzenia do konwersji, która wymaga czasu/mocy obliczeniowej...
 
-Doing it "offline" also gives the user the possibility to choose a jpg compression which makes the image files small enough but doesn't leave too many compression artifacts. I usually end up using a compression between 50-70 - using a higher compression for 2048x2048 files to shrink them a bit more.
+Robienie tego "offline" daje również użytkownikowi możliwość wybrania kompresji jpg, która sprawia, że pliki graficzne są wystarczająco małe, ale nie pozostawiają zbyt wielu artefaktów kompresji. Zwykle używam kompresji między 50-70 - używając wyższej kompresji dla plików 2048x2048, aby je nieco zmniejszyć.
 
 ### Creating and changing the configuration file
 
@@ -261,24 +260,24 @@ Errors in this file can mean that PanoPuzzle shows black tiles (can't find the i
 Because that file is so important there is a ToDo point of writing a validator for this file so a user can see if everything points to the right places....
 
 
-## live examples
-### - the live <a href="https://panopuzzle.created-by.me">PanoPuzzle</a>
-My PanoPuzzle web page - which started all of this can be seen under https://panopuzzle.created-by.me <br>
-it consists of several collections with over 80 panorama puzzles at the moment
+## żywe przykłady
+### - na żywo <a href="https://panopuzzle.created-by.me">PanoPuzzle</a>
+Moja strona internetowa PanoPuzzle - od której to wszystko się zaczęło, można zobaczyć pod adresem https://panopuzzle.created-by.me <br>
+składa się z kilku kolekcji z ponad 80 zagadkami panoramicznymi w tej chwili
 
-### - on GitHub to show a configuration with only one collection
+### - na GitHub, aby pokazać konfigurację z tylko jedną kolekcją
 https://kronpano.github.io/PanoPuzzle/PanoPuzzleOneCollection.html<br><br>
-The configuration file has only one collection so there will be no possibility to change the collection.<br>
-Using the <a href="include/PanoPuzzle_config_1.js">PanoPuzzle_config_1.js</a> config file in <a href="PanoPuzzleOneCollection.html">PanoPuzzleOneCollection.html</a> 
+Plik konfiguracyjny ma tylko jedną kolekcję, więc nie będzie możliwości zmiany kolekcji.<br>
+Korzystanie z pliku konfiguracyjnego <a href="include/PanoPuzzle_config_1.js">PanoPuzzle_config_1.js</a> w <a href="PanoPuzzleOneCollection.html">PanoPuzzleOneCollection.html</a> 
 
-### - on GitHub to show a configuration with several collections
+### - na GitHub, aby pokazać konfigurację z kilkoma kolekcjami
 https://kronpano.github.io/PanoPuzzle/PanoPuzzleTwoCollection.html<br><br>
-The configuration file has four collections so you can choose which collection you want to play.<br>
-Using the <a href="include/PanoPuzzle_config_2.js">PanoPuzzle_config_2.js</a> config file in <a href="PanoPuzzleTwoCollection.html">PanoPuzzleTwoCollection.html</a> 
+Plik konfiguracyjny zawiera cztery kolekcje, więc możesz wybrać, którą kolekcję chcesz odtworzyć.<br>
+Korzystanie z pliku konfiguracyjnego <a href="include/PanoPuzzle_config_2.js">PanoPuzzle_config_2.js</a> w <a href="PanoPuzzleTwoCollection.html">PanoPuzzleTwoCollection.html</a>
 
-### - on GitHub to show all the build in subdivision patterns
+### - na GitHub, aby pokazać wszystkie kompilacje we wzorcach podziału
 https://kronpano.github.io/PanoPuzzle/PanoPuzzleGridDemo.html<br><br>
-Using the <a href="include/PanoPuzzle_config_grid.js">PanoPuzzle_config_grid.js</a> config file called by <a href="PanoPuzzleGridDemo.html">PanoPuzzleGridDemo.html</a>  creates the web page which demonstrates the different built in grid patterns.
+Za pomocą pliku konfiguracyjnego <a href="include/PanoPuzzle_config_grid.js">PanoPuzzle_config_grid.js</a> wywołanego przez <a href="PanoPuzzleGridDemo.html">PanoPuzzleGridDemo.html</a> tworzysz stronę internetową, która demonstruje różne wbudowany we wzory siatki.
 
 ### - na GitHub demo „jedna łamigłówka i wyjście”
 https://kronpano.github.io/PanoPuzzle/OnePuzzleAndOut.html<br><br>
