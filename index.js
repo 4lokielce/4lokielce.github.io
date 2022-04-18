@@ -392,6 +392,6 @@
   //Losowa scena
   setInterval(function() {
    switchScene(scenes[parseInt(scenes.length*Math.random())]);
-  }, 20000);
+  }, 30000);
   
 })();
