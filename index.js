@@ -389,4 +389,9 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
+  //Losowa scena
+  setInterval(function() {
+   switchScene(scenes[parseInt(scenes.length*Math.random())]);
+  }, 20000);
+  
 })();
