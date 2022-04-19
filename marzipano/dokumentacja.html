@@ -44,17 +44,17 @@
   <div class="docs">
     <div class="sidebar"><div class="toc"><ul><li><a href="#getting-started">Getting started</a><ul><li><a href="#marzipano-tool">Marzipano Tool</a></li><li><a href="#setting-up-from-scratch">Setting up from scratch</a><ul><li><a href="#as-a-standalone-script">As a standalone script</a></li><li><a href="#as-a-node.js-package">As a Node.js package</a></li></ul></li></ul></li><li><a href="#usage">Usage</a><ul><li><a href="#initializing">Initializing</a></li><li><a href="#create-scene">Create Scene</a></li><li><a href="#change-scene">Change Scene</a></li><li><a href="#change-view">Change View</a></li><li><a href="#automatic-movement-and-autorotate">Automatic movement and autorotate</a></li><li><a href="#hotspots">Hotspots</a></li></ul></li><li><a href="#dependencies">Dependencies</a></li><li><a href="#apis-and-reference">APIs and Reference</a></li></ul></div></div><!-- 
     --><div class="content_wrapper">
-    <div class="content"><p>See also the <a href="./reference">reference</a> for more detailed documentation.</p>
-<h2 id="getting-started"><a href="#getting-started" name="getting-started">Getting started</a></h2>
-<h3 id="marzipano-tool"><a href="#marzipano-tool" name="marzipano-tool">Marzipano Tool</a></h3>
-<p>The easiest way to get started with Marzipano is with the <a href="/tool">Marzipano Tool</a>.</p>
-<p>It processes your panoramas and generates a web application that can be deployed as-is or used as a boilerplate for a more complex application. The Marzipano Tool is currently free and does not require creating an account.</p>
-<h3 id="setting-up-from-scratch"><a href="#setting-up-from-scratch" name="setting-up-from-scratch">Setting up from scratch</a></h3>
-<h4 id="as-a-standalone-script"><a href="#as-a-standalone-script" name="as-a-standalone-script">As a standalone script</a></h4>
+    <div class="content"><p>Zobacz także <a href="./reference">odnośnik</a> do bardziej szczegółowej dokumentacji.</p>
+<h2 id="getting-started"><a href="#getting-started" name="getting-started">Rozpoczęcie pracy</a></h2>
+<h3 id="marzipano-tool"><a href="#marzipano-tool" name="marzipano-tool">Marzipano</a></h3>
+<p>Najprostszym sposobem na rozpoczęcie korzystania z Marzipano jest użycie <a href="/tool">Marzipano</a>.</p>
+<p>Przetwarza Twoje panoramy i generuje aplikację internetową, którą można wdrożyć bez zmian lub wykorzystać jako szablon dla bardziej złożonej aplikacji. Narzędzie Marzipano jest obecnie bezpłatne i nie wymaga zakładania konta.</p>
+<h3 id="setting-up-from-scratch"><a href="#setting-up-from-scratch" name="setting-up-from-scratch">Konfiguracja od podstaw</a></h3>
+<h4 id="as-a-standalone-script"><a href="#as-a-standalone-script" name="as-a-standalone-script">Jako samodzielny skrypt</a></h4>
 <ol>
-<li><p>Download the <a href="http://www.marzipano.net/">latest release</a>.</p>
+<li><p>Pobierz <a href="http://www.marzipano.net/">najnowszą wersję</a>.</p>
 </li>
-<li><p>Include the <code>marzipano.js</code> file in body section of your HTML code</p>
+<li><p>Dołącz plik <code>marzipano.js</code> do sekcji treści swojego kodu HTML</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;marzipano.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -62,10 +62,10 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
 </li>
 </ol>
-<h4 id="as-a-nodejs-package"><a href="#as-a-node.js-package" name="as-a-node.js-package">As a Node.js package</a></h4>
+<h4 id="as-a-nodejs-package"><a href="#as-a-node.js-package" name="as-a-node.js-package">Jako pakiet Node.js</a></h4>
 <pre><code>npm <span class="hljs-keyword">install</span> marzipano</code></pre>
 <pre><code class="language-js"><span class="hljs-attribute">var Marzipano</span> = require(<span class="hljs-string">&#x27;./marzipano&#x27;</span>);</code></pre>
-<h2 id="usage"><a href="#usage" name="usage">Usage</a></h2>
+<h2 id="usage"><a href="#usage" name="usage">Stosowanie</a></h2>
 <p>The <code>Marzipano.Viewer</code> and <code>Marzipano.Scene</code> classes provide a high-level API for the most common use cases.</p>
 <h3 id="initializing"><a href="#initializing" name="initializing">Initializing</a></h3>
 <p>A <code>Viewer</code> is initialized on a DOM element</p>
