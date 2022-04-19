@@ -799,7 +799,7 @@ var APP_DATA = {
           "yaw": -2.8536706249458366,
           "pitch": 0.07282945635544813,
           "title": "Sala nr 1",
-          "text": "Pracownia muzyczna&nbsp;"
+          "text": "Pracownia muzyczna [<a href='https://plan.4lokielce.pl/plany/s1.html' target='_blank'>Plan</a>]"
         }
       ]
     },
