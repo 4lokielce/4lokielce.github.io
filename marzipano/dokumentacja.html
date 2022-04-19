@@ -179,10 +179,10 @@ scene<span class="hljs-variable">.lookTo</span>(destinationViewParameters, optio
 <span class="hljs-built_in">view</span>.offsetYaw(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);
 <span class="hljs-built_in">view</span>.offsetPitch(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);
 <span class="hljs-built_in">view</span>.offsetFov(<span class="hljs-number">10</span> * Math.PI/<span class="hljs-number">180</span>);</code></pre>
-<h3 id="automatic-movement-and-autorotate"><a href="#automatic-movement-and-autorotate" name="automatic-movement-and-autorotate">Automatic movement and autorotate</a></h3>
-<p><code>Viewer.setIdleMovement()</code> defines a movement to be automatically started when the view has not changed for some amount of time.</p>
-<p>The <code>Viewer.startMovement()</code> and <code>Viewer.stopMovement()</code> methods allow you to start and stop a movement manually.</p>
-<p>The <code>autorotate()</code> method creates an automatic rotation movement which can be used with the methods above.</p>
+<h3 id="automatic-movement-and-autorotate"><a href="#automatic-movement-and-autorotate" name="automatic-movement-and-autorotate">Automatyczny ruch i autorotacja</a></h3>
+<p><code>Viewer.setIdleMovement()</code> definiuje ruch, który ma być uruchamiany automatycznie, gdy widok nie uległ zmianie przez pewien czas.</p>
+<p>Metody <code>Viewer.startMovement()</code> i <code>Viewer.stopMovement()</code> umożliwiają ręczne uruchamianie i zatrzymywanie ruchu.</p>
+<p>Metoda <code>autorotate()</code> tworzy automatyczny ruch obrotowy, który można wykorzystać z powyższymi metodami.</p>
 <pre><code class="language-js">var autorotate = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Marzipano</span>.</span></span>autorotate({
   yawSpeed: <span class="hljs-number">0.1</span>,         <span class="hljs-comment">// Yaw rotation speed</span>
   targetPitch: <span class="hljs-number">0</span>,        <span class="hljs-comment">// Pitch value to converge to</span>
@@ -198,13 +198,13 @@ viewer.set<span class="hljs-constructor">IdleMovement(Infinity)</span>;
 viewer.start<span class="hljs-constructor">Movement(<span class="hljs-params">autorotate</span>)</span>; 
 <span class="hljs-comment">// Stop any ongoing automatic movement</span>
 viewer.stop<span class="hljs-constructor">Movement()</span>;</code></pre>
-<h3 id="hotspots"><a href="#hotspots" name="hotspots">Hotspots</a></h3>
-<p>Hotspots are DOM elements which are positioned at a fixed point in the panorama, so that their position on the screen changes when the scene view changes.</p>
-<p>Hotspots are associated with a scene and are automatically displayed with that scene.</p>
+<h3 id="hotspots"><a href="#hotspots" name="hotspots">Hotspoty</a></h3>
+<p>Hotspoty to elementy DOM, które są umieszczone w stałym punkcie panoramy, dzięki czemu ich pozycja na ekranie zmienia się wraz ze zmianą widoku sceny.</p>
+<p>Punkty aktywne są powiązane ze sceną i są automatycznie wyświetlane razem z tą sceną.</p>
 <pre><code class="language-js"><span class="hljs-keyword">var</span> element = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;spot&#x27;</span>);
 <span class="hljs-keyword">var</span> position = { <span class="hljs-attr">yaw</span>: <span class="hljs-built_in">Math</span>.PI/<span class="hljs-number">4</span>, pitch, <span class="hljs-built_in">Math</span>.PI/<span class="hljs-number">8</span> };
 scene.hotspotContainer().createHotspot(element, position)</code></pre>
-<p>The example below creates an image and uses it as a hotspot</p>
+<p>Poniższy przykład tworzy obraz i używa go jako hotspota</p>
 <pre><code class="language-js">  var imgHotspot = document.create<span class="hljs-constructor">Element(&#x27;<span class="hljs-params">img</span>&#x27;)</span>;
   imgHotspot.src = &#x27;img/hotspot.png&#x27;;
   imgHotspot.classList.add(&#x27;hotspot&#x27;);
@@ -215,16 +215,16 @@ scene.hotspotContainer().createHotspot(element, position)</code></pre>
   var position = { yaw: Math.PI/<span class="hljs-number">4</span>, pitch: Math.PI/<span class="hljs-number">8</span> };
 
   marzipanoScene.hotspot<span class="hljs-constructor">Container()</span>.create<span class="hljs-constructor">Hotspot(<span class="hljs-params">imgHotspot</span>, <span class="hljs-params">position</span>)</span>;</code></pre>
-<h2 id="dependencies"><a href="#dependencies" name="dependencies">Dependencies</a></h2>
-<p>Marzipano has a few dependencies. These are included in <code>marzipano.js</code>, so you do not have to set them up separately.</p>
+<h2 id="dependencies"><a href="#dependencies" name="dependencies">Zależności</a></h2>
+<p>Marzipano ma kilka zależności. Są one zawarte w programie marzipano.js<code>marzipano.js</code>, więc nie trzeba ich osobno konfigurować.</p>
 <ul>
 <li><a href="https://github.com/ded/bowser">bowser</a></li>
 <li><a href="http://hammerjs.github.io/">hammerjs</a></li>
 <li><a href="http://glmatrix.net/">gl-matrix</a></li>
 </ul>
-<h2 id="apis-and-reference"><a href="#apis-and-reference" name="apis-and-reference">APIs and Reference</a></h2>
-<p>The <code>Viewer</code> and <code>Scene</code> classes above are a high level API designed to make Marzipano simple to use. However the lower level components that they use, such as the <code>Layer</code> and <code>Stage</code> classes, are also exposed. These can be used when more control is necessary or to implement features which are not present on the high level API yet.</p>
-<p>See the <a href="./reference">reference</a> for more detailed documentation.</p>
+<h2 id="apis-and-reference"><a href="#apis-and-reference" name="apis-and-reference">Interfejsy API i odniesienia</a></h2>
+<p>Powyższe klasy <code>Viewer</code> and <code>Scene</code> są wysokopoziomowym interfejsem API zaprojektowanym, aby uczynić Marzipano prostym w użyciu. Jednak komponenty niższego poziomu, których używają, takie jak <code>Layer</code> and <code>Stage</code>, również są odsłonięte. Można ich używać, gdy potrzebna jest większa kontrola lub do implementacji funkcji, które nie są jeszcze obecne w interfejsie API wysokiego poziomu.</p>
+<p>Zobacz <a href="./reference">odnośnik</a>, aby uzyskać bardziej szczegółową dokumentację.</p>
 </div></div>
   </div>
 </div>
