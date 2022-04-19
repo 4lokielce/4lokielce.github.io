@@ -3356,7 +3356,7 @@ var APP_DATA = {
           "yaw": -3.057837215353933,
           "pitch": 0.21402232597542437,
           "title": "O projekcie",
-          "text": "<p>Wirtualny spacer po szkole zastał wykonany przez uczniów IV LO w Kielcach.</p><p>W projekcie wykorzystano:</p><ul><li>Aplikacje <a href='https://4lokielce.github.io/marzipano/' target='_blank'>Marzipano</a></li><li>Hostingu <a href='https://github.com/' target='_blank'>GitHub</a></li><li>Kamerę 360° <a href='https://theta360.com/pl/about/theta/v.html' target='_blank'>RICOH THETA V</a></li><li>Drony Tello</li></ul>"
+          "text": "<p>Wirtualny spacer po szkole zastał wykonany przez uczniów IV LO w Kielcach.</p><p>W projekcie wykorzystano:</p><ul><li>Aplikacje <a href='https://www.marzipano.net/' target='_blank'>Marzipano</a></li><li>Hostingu <a href='https://github.com/' target='_blank'>GitHub</a></li><li>Kamerę 360° <a href='https://theta360.com/pl/about/theta/v.html' target='_blank'>RICOH THETA V</a></li><li>Drony Tello</li><li>Grę <a href='https://panopuzzle.created-by.me/' target='_blank'>PanoPuzzle</a></li></ul>"
         }
       ]
     }
