@@ -66,9 +66,9 @@
 <pre><code>npm <span class="hljs-keyword">install</span> marzipano</code></pre>
 <pre><code class="language-js"><span class="hljs-attribute">var Marzipano</span> = require(<span class="hljs-string">&#x27;./marzipano&#x27;</span>);</code></pre>
 <h2 id="usage"><a href="#usage" name="usage">Stosowanie</a></h2>
-<p>The <code>Marzipano.Viewer</code> and <code>Marzipano.Scene</code> classes provide a high-level API for the most common use cases.</p>
-<h3 id="initializing"><a href="#initializing" name="initializing">Initializing</a></h3>
-<p>A <code>Viewer</code> is initialized on a DOM element</p>
+<p>Klasy <code>Marzipano.Viewer</code> i <code>Marzipano.Scene</code> zapewniają interfejs API wysokiego poziomu dla najczęstszych przypadków użycia.</p>
+<h3 id="initializing"><a href="#initializing" name="initializing">Inicjowanie</a></h3>
+<p><code>Viewer</code> jest inicjowane na elemencie DOM</p>
 <pre><code class="language-js"><span class="hljs-keyword">var</span> panoElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;pano&#x27;</span>);
 <span class="hljs-keyword">var</span> viewerOpts = {
   controls: {
@@ -77,8 +77,8 @@
 };
 
 <span class="hljs-keyword">var</span> viewer = <span class="hljs-keyword">new</span> Marzipano.Viewer(panoElement, viewerOpts)</code></pre>
-<h3 id="create-scene"><a href="#create-scene" name="create-scene">Create Scene</a></h3>
-<p>The example below initializes a multiresolution cube scene which uses images inside the <code>tiles/</code> directory.</p>
+<h3 id="create-scene"><a href="#create-scene" name="create-scene">Utwórz scenę</a></h3>
+<p>Poniższy przykład inicjuje scenę kostki o wielu rozdzielczościach, która używa obrazów w katalogu <code>tiles/</code> .</p>
 <pre><code class="language-js"><span class="hljs-built_in">var</span> levels = [
   { tileSize: <span class="hljs-number">512</span>, size: <span class="hljs-number">512</span> },
   { tileSize: <span class="hljs-number">512</span>, size: <span class="hljs-number">1024</span> }
@@ -93,14 +93,14 @@
   geometry: geometry,
   <span class="hljs-built_in">view</span>: <span class="hljs-built_in">view</span>
 });</code></pre>
-<p>The more complex example below also:</p>
+<p>Bardziej złożony przykład poniżej również:</p>
 <ul>
-<li>adds a (cubeMap) preview level which is cached when the scene is created</li>
-<li>initializes the view</li>
-<li>limits the view to a maximum fov of 120°</li>
-<li>limits the view to a minimum fov for a maximum face resolution of 1024x1024</li>
+<li>dodaje poziom podglądu (cubeMap), który jest buforowany podczas tworzenia sceny</li>
+<li>inicjuje widok</li>
+<li>ogranicza widok do maksymalnego pola widzenia 120°</li>
+<li>ogranicza widok do minimalnego pola widzenia dla maksymalnej rozdzielczości twarzy 1024x1024</li>
 </ul>
-<p>Note that the yaw, pitch and fov values are in radians.</p>
+<p>Zwróć uwagę, że wartości odchylenia, nachylenia i fov są podane w radianach.</p>
 <pre><code class="language-js"><span class="hljs-string">var</span> <span class="hljs-string">levels</span> <span class="hljs-string">=</span> [
   { <span class="hljs-attr">tileSize:</span> <span class="hljs-number">256</span>, <span class="hljs-attr">size:</span> <span class="hljs-number">256</span>, <span class="hljs-attr">fallbackOnly:</span> <span class="hljs-literal">true</span> },
   { <span class="hljs-attr">tileSize:</span> <span class="hljs-number">512</span>, <span class="hljs-attr">size:</span> <span class="hljs-number">512</span> },
@@ -129,13 +129,13 @@
   <span class="hljs-attr">view:</span> <span class="hljs-string">view,</span>
   <span class="hljs-attr">pinFirstLevel:</span> <span class="hljs-literal">true</span>
 <span class="hljs-string">});</span></code></pre>
-<h3 id="change-scene"><a href="#change-scene" name="change-scene">Change Scene</a></h3>
-<p>The <code>Scene.switchTo()</code> method displays the scene on its viewer, performing a fade in transition.</p>
+<h3 id="change-scene"><a href="#change-scene" name="change-scene">Zmień scenę</a></h3>
+<p>Metoda <code>Scene.switchTo()</code> wyświetla scenę w przeglądarce, wykonując przejście w zanikaniu.</p>
 <pre><code class="language-js"><span class="hljs-selector-tag">scene</span><span class="hljs-selector-class">.switchTo</span>({
   <span class="hljs-attribute">transitionDuration</span>: <span class="hljs-number">1000</span>
 });</code></pre>
-<h3 id="change-view"><a href="#change-view" name="change-view">Change View</a></h3>
-<p>The <code>Scene.lookTo()</code> method changes the view by performing a tweening animation. Note that the values are in radians.</p>
+<h3 id="change-view"><a href="#change-view" name="change-view">Zmień widok</a></h3>
+<p>Metoda <code>Scene.lookTo()</code> zmienia widok, wykonując animację animacji. Zauważ, że wartości są podane w radianach.</p>
 <pre><code class="language-js">var destinationViewParameters = {
   <span class="hljs-attribute">yaw</span>: 10 * Math<span class="hljs-variable">.PI</span>/180,
   pitch: 15 * Math<span class="hljs-variable">.PI</span>/180,
@@ -147,7 +147,7 @@
 }
 
 scene<span class="hljs-variable">.lookTo</span>(destinationViewParameters, options);</code></pre>
-<p>For more control each <code>Scene</code> has a <code>View</code> object which can be acessed by the <code>view()</code> getter.</p>
+<p>Aby uzyskać większą kontrolę, każdy <code>Scene</code> ma <code>View</code> do którego może uzyskać dostęp <code>view()</code>.</p>
 <pre><code class="language-js"><span class="hljs-built_in">var</span> <span class="hljs-built_in">scene</span> = viewer.<span class="hljs-built_in">scene</span>(); // <span class="hljs-built_in">get</span> the current <span class="hljs-built_in">scene</span>
 <span class="hljs-built_in">var</span> <span class="hljs-built_in">view</span> = <span class="hljs-built_in">scene</span>.<span class="hljs-built_in">view</span>();    // <span class="hljs-built_in">get</span> the <span class="hljs-built_in">scene</span>&#x27;s <span class="hljs-built_in">view</span>
 
