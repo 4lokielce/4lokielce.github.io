@@ -53,7 +53,7 @@ var APP_DATA = {
           "yaw": 0.0,
           "pitch": 0.05,
           "title": "IV LO w Kielcach",
-          "text": "<a href='radiowa1.html target='_blank'>Kielce, ulica Radiowa 1</a>"
+          "text": "<a href='radiowa1.html' target='_blank'>Kielce, ulica Radiowa 1</a>"
         }
       ]
     },
