@@ -48,7 +48,13 @@ var APP_DATA = {
           "pitch": -0.07,
           "title": "IV LO w Kielcach",
           "text": "Zapraszamy na wirtualny spacer<br><img src='img/SzkicWejscie.jpg' width='260px' alt='Szkic wejście do szkoły'>"
-        }      
+        },
+        { 
+          "yaw": 0.0,
+          "pitch": 0.05,
+          "title": "IV LO w Kielcach",
+          "text": "<a href='radiowa1.html target='_blank'>Kielce, ulica Radiowa 1</a>"
+        }
       ]
     },
       {
