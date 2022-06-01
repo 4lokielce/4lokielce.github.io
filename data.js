@@ -3368,7 +3368,7 @@ var APP_DATA = {
           "yaw": 0.1,
           "pitch": 0.2,
           "title": "O projekcie",
-          "text": "<iframe src='https://www.google.com/maps/embed?pb=!4v1654050009923!6m8!1m7!1s2ZftFDXX-23_AE9YUMUq_g!2m2!1d50.87816147964919!2d20.63999933743794!3f209.4135342066174!4f0.6647588372671009!5f0.7820865974627469' width='600' height='450' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+          "text": "<iframe src='https://www.google.com/maps/embed?pb=!4v1654050009923!6m8!1m7!1s2ZftFDXX-23_AE9YUMUq_g!2m2!1d50.87816147964919!2d20.63999933743794!3f209.4135342066174!4f0.6647588372671009!5f0.7820865974627469' width='100%' height='100%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         }
       ]
     }
