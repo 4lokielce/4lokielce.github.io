@@ -3363,6 +3363,12 @@ var APP_DATA = {
           "pitch": 0.21402232597542437,
           "title": "O projekcie",
           "text": "<p>Wirtualny spacer po szkole zastał wykonany przez uczniów IV LO w Kielcach.</p><p>W projekcie wykorzystano:</p><ul><li>Aplikacje <a href='https://www.marzipano.net/' target='_blank'>Marzipano</a></li><li>Hostingu <a href='https://github.com/' target='_blank'>GitHub</a></li><li>Kamerę 360° <a href='https://theta360.com/pl/about/theta/v.html' target='_blank'>RICOH THETA V</a></li><li>Drony Tello</li><li>Grę <a href='https://panopuzzle.created-by.me/' target='_blank'>PanoPuzzle</a></li></ul>"
+        },
+        {
+          "yaw": 0.1,
+          "pitch": 0.2,
+          "title": "O projekcie",
+          "text": "<iframe src='https://www.google.com/maps/embed?pb=!4v1654050009923!6m8!1m7!1s2ZftFDXX-23_AE9YUMUq_g!2m2!1d50.87816147964919!2d20.63999933743794!3f209.4135342066174!4f0.6647588372671009!5f0.7820865974627469' width='600' height='450' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         }
       ]
     }
