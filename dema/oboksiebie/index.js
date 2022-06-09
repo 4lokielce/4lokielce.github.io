@@ -46,7 +46,7 @@ stage.addLayer(leftLayer);
 stage.addLayer(rightLayer);
 
 function createLayer(stage, view, geometry, eye, rect) {
-  var urlPrefix = "//4lokielce.github.io/dema/style/wosp2022/";
+  var urlPrefix = "//4lokielce.github.io/dema/style/wosp2022";
   var source = new Marzipano.ImageUrlSource.fromString(
     urlPrefix + "/" + eye + "/{z}/{f}/{y}/{x}.jpg",
     { cubeMapPreviewUrl: urlPrefix + "/" + eye + "/preview.jpg" });
