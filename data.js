@@ -601,8 +601,8 @@ var APP_DATA = {
       ]
     },
     {
-      "id": "9-ks4",
-      "name": "Parter",
+      "id": "0-k-s4",
+      "name": "k s4",
       "levels": [
         {
           "tileSize": 256,
@@ -624,90 +624,109 @@ var APP_DATA = {
       ],
       "faceSize": 1344,
       "initialViewParameters": {
-        "yaw": 1.316535580787587,
-        "pitch": 0.12382095501612866,
-        "fov": 1.4581901255025689
+        "yaw": 1.050498715603025,
+        "pitch": 0.036115310963126035,
+        "fov": 1.3223956836693749
       },
       "linkHotspots": [
         {
-          "yaw": -2.166976147288125,
-          "pitch": 0.31677631646735627,
-          "rotation": 10.995574287564278,
-          "target": "16-s4"
-        },
-        {
-          "yaw": -1.6549038323308807,
-          "pitch": 0.18809630070737526,
+          "yaw": 0.7082422593526854,
+          "pitch": 0.08613747564370655,
           "rotation": 0,
-          "target": "8-ks3"
+          "target": "1-k-s6"
         },
         {
-          "yaw": 1.289057865834387,
-          "pitch": 0.3619243879784335,
+          "yaw": 1.0028190534138517,
+          "pitch": 0.24194263870509047,
           "rotation": 0,
-          "target": "28-wejcie-na-1-pitro"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "10-ks5-i-6",
-      "name": "Parter",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
+          "target": "1-k-s6"
         },
         {
-          "tileSize": 512,
-          "size": 512
+          "yaw": -2.5083345223094824,
+          "pitch": 0.1237359839767116,
+          "rotation": 0,
+          "target": "1-k-s6"
         },
         {
-          "tileSize": 512,
-          "size": 1024
+          "yaw": -2.7452704631245712,
+          "pitch": 0.18609490266543638,
+          "rotation": 11.780972450961727,
+          "target": "1-k-s6"
         },
         {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1344,
-      "initialViewParameters": {
-        "yaw": 1.262637736353632,
-        "pitch": 0.22800462158613044,
-        "fov": 1.4581901255025689
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.722762737207134,
-          "pitch": 0.3295887283330714,
-          "rotation": 0.7853981633974483,
-          "target": "28-wejcie-na-1-pitro"
-        },
-        {
-          "yaw": -2.293390509177174,
-          "pitch": 0.20043533846210693,
+          "yaw": 0.09836555099408173,
+          "pitch": 0.15506779946247917,
           "rotation": 5.497787143782138,
-          "target": "17-s5"
-        },
-        {
-          "yaw": 2.4659853838347043,
-          "pitch": 0.34943990214012643,
-          "rotation": 0,
-          "target": "18-s6"
-        },
-        {
-          "yaw": 1.2024201046716385,
-          "pitch": 0.21316886695182546,
-          "rotation": 0,
-          "target": "19-sala-7b"
+          "target": "1-k-s6"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": 0.8564622183755901,
-          "pitch": 0.15561175997154209,
+          "yaw": -1.9674488248134505,
+          "pitch": 0.5095649811989809,
+          "title": "Kącik wypoczynkowy",
+          "text": "Szkolny kącik wypoczynkowy"
+        }
+      ]
+    },
+    {
+      "id": "1-k-s6",
+      "name": "k s6",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1344,
+      "initialViewParameters": {
+        "yaw": -3.0245218789651194,
+        "pitch": 0.13250665905708559,
+        "fov": 1.3223956836693749
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.07574765954490026,
+          "pitch": 0.13921040646731697,
+          "rotation": 0,
+          "target": "0-k-s4"
+        },
+        {
+          "yaw": -0.39206894309838347,
+          "pitch": 0.21517253009825055,
+          "rotation": 11.780972450961727,
+          "target": "0-k-s4"
+        },
+        {
+          "yaw": 3.0222885500313534,
+          "pitch": 0.2544383493381055,
+          "rotation": 0,
+          "target": "0-k-s4"
+        },
+        {
+          "yaw": -1.2651953967288598,
+          "pitch": 0.42862576798086316,
+          "rotation": 0,
+          "target": "0-k-s4"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": 2.6072210855112132,
+          "pitch": 0.2576089953606129,
           "title": "Toaleta damska",
           "text": "Toaleta damska"
         }
@@ -1516,64 +1535,7 @@ var APP_DATA = {
       ],
       "infoHotspots": []
     },
-    {
-      "id": "28-wejcie-na-1-pitro",
-      "name": "Parter",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1344,
-      "initialViewParameters": {
-        "yaw": -2.732111577360147,
-        "pitch": 0.08774881757874198,
-        "fov": 1.4581901255025689
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.3632978769670103,
-          "pitch": 0.259140490757682,
-          "rotation": 0,
-          "target": "9-ks4"
-        },
-        {
-          "yaw": -2.3500245827517876,
-          "pitch": 0.3528846189052359,
-          "rotation": 11.780972450961727,
-          "target": "10-ks5-i-6"
-        },
-        {
-          "yaw": 3.0100490986449024,
-          "pitch": -0.022783003859675688,
-          "rotation": 0,
-          "target": "12-k-s18"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 0.896855092951192,
-          "pitch": 0.27617771550819725,
-          "title": "Wyjście ewakuacyjne",
-          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Wyjście ewakuacyjne</span>"
-        }
-      ]
-    },
-    {
+   {
       "id": "30-wejcie-nauczycieli",
       "name": "Parter",
       "levels": [
