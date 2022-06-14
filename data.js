@@ -996,7 +996,7 @@ var APP_DATA = {
           "yaw": -0.3885173126353294,
           "pitch": 0.07329151963660507,
           "rotation": 13.351768777756625,
-          "target": "9-ks4"
+          "target": "0-k-s4"
         }
       ],
       "infoHotspots": [
@@ -1041,7 +1041,7 @@ var APP_DATA = {
           "yaw": 1.0556984336965591,
           "pitch": 0.1642848254257494,
           "rotation": 11.780972450961727,
-          "target": "10-ks5-i-6"
+          "target": "1-k-s6"
         }
       ],
       "infoHotspots": [
@@ -1086,7 +1086,7 @@ var APP_DATA = {
           "yaw": 0.8469461851393163,
           "pitch": 0.13131716993218134,
           "rotation": 0.7853981633974483,
-          "target": "10-ks5-i-6"
+          "target": "1-k-s6"
         }
       ],
       "infoHotspots": [
@@ -1131,7 +1131,7 @@ var APP_DATA = {
           "yaw": 3.10326510637344,
           "pitch": 0.14837175949645243,
           "rotation": 0,
-          "target": "10-ks5-i-6"
+          "target": "1-k-s6"
         }
       ],
       "infoHotspots": [
