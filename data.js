@@ -2254,7 +2254,7 @@ var APP_DATA = {
           "yaw": 2.840941424399195,
           "pitch": 0.15415450138913656,
           "rotation": 3.14,
-          "target": "28-wejcie-na-1-pitro"
+          "target": "0-k-s4"
         },
         {
           "yaw": 3.040941424399195,
