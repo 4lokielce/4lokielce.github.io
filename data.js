@@ -657,7 +657,7 @@ var APP_DATA = {
           "yaw": 0.09836555099408173,
           "pitch": 0.15506779946247917,
           "rotation": 5.497787143782138,
-          "target": "1-k-s6"
+          "target": "12-k-s18"
         }
       ],
       "infoHotspots": [
