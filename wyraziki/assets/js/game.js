@@ -459,7 +459,7 @@ function gameStart(){
 
 		let enterKey = document.createElement('span');
 		enterKey.className = 'keyboardKey_l';
-		enterKey.innerText = 'Enter';
+		enterKey.innerText = 'En';
 		enterKey.addEventListener("click", enterClick);
 		botKeys.append(enterKey);
 		keyboard.append(botKeys);
