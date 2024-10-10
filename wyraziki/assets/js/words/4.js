@@ -1,8 +1,8 @@
 custom = [];
 
-beginner = ["CMYK", "DHCP", "HTML", "HTTP", "JPEG", "JSON", "SMTP", "TIFF"];
+beginner = ["BAJT","CMYK","DHCP","HDMI","HTML","HTTP","IMAP","JPEG","MOLP","NTFS","SMTP","TIFF"];
 
-intermediate = beginner.concat([]);
+intermediate = beginner.concat(["JSON"]);
 
 advanced = intermediate.concat([]);
 
