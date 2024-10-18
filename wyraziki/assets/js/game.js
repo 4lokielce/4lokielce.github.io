@@ -440,7 +440,7 @@ function gameStart(){
 
 		let plKeys = document.createElement('div');
 		plKeys.id = 'plKeys';
-		addKeys(topKeys, keyLayoutPl, 'keyboardKey_pl');
+		addKeys(plKeys, keyLayoutPl, 'keyboardKey_pl');
 		keyboard.append(plKeys);
 
 		let topKeys = document.createElement('div');
