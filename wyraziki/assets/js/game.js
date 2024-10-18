@@ -720,7 +720,7 @@ function checkAnswer(wordRow, answer){
 		}, 250);
 	}
 	else if(currentRow == 5){
-		let url = '<a href="https://duckduckgo.com/?q=%22'+ chosenWord +'%22+%22definition%22&ia=definition" target="_blank">' + chosenWord + '</a>';
+		let url = '<a href="https://matura-z-informatyki.blogspot.com/search?q=%22'+ chosenWord +'%22+%22definition%22&ia=definition" target="_blank">' + chosenWord + '</a>';
 		let notification = 'You lost. The word was ' + url + '. Click to play again';
 		userScore = userScore - 10;
 		currentStreak = 0;
