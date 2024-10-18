@@ -502,7 +502,7 @@ function keyPress(event) {
 
 function quitQlick(){
 	if(gameFin == 0){
-		let url = '<a href="https://matura-z-informatyki.blogspot.com/?q=%22'+ chosenWord +'%22" target="_blank">' + chosenWord + '</a>';
+		let url = '<a href="https://matura-z-informatyki.blogspot.com/search?q=%22'+ chosenWord +'%22" target="_blank">' + chosenWord + '</a>';
 		notification = 'The word was ' + url + '. Click to play again';
 		currentStreak = 0;
 		userScore = userScore - 15;
