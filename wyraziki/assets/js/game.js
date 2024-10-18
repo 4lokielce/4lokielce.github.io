@@ -430,10 +430,10 @@ function gameStart(){
 	notification.innerText = 'Start guessing!'
 	container.append(notification);
 
-	let keyLayoutTop = 'QWEĘRTYUIOÓP';
-	let keyLayoutMid = 'AĄSŚDFGHJKLŁ';
-	let keyLayoutBot = 'ZŻŹXCĆVBNŃM';
-	let keyLayoutPl = 'ĄĘŁŃÓŚŻŹ'; 
+	let keyLayoutTop = 'QWERTYUIOP';
+	let keyLayoutMid = 'ASDFGHJKL';
+	let keyLayoutBot = 'ZXCVBNM';
+	let keyLayoutPl = 'ĄĆĘŁŃÓŚŻŹ'; 
 
 	let keyboard = document.createElement('div');
 	keyboard.id = 'keyboard';
@@ -465,7 +465,7 @@ function gameStart(){
 
 		let enterKey = document.createElement('span');
 		enterKey.className = 'keyboardKey_l';
-		enterKey.innerText = 'En';
+		enterKey.innerText = 'Enter';
 		enterKey.addEventListener("click", enterClick);
 		botKeys.append(enterKey);
 		keyboard.append(botKeys);
