@@ -432,10 +432,16 @@ function gameStart(){
 
 	let keyLayoutTop = 'QWEĘRTYUIOÓP';
 	let keyLayoutMid = 'AĄSŚDFGHJKLŁ';
-	let keyLayoutBot = 'ZŻŹXC\nĆVBNŃM';
+	let keyLayoutBot = 'ZŻŹXCĆVBNŃM';
+	let keyLayoutPl = 'ĄĘŁŃÓŚŻŹ'; 
 
 	let keyboard = document.createElement('div');
 	keyboard.id = 'keyboard';
+
+		let plKeys = document.createElement('div');
+		plKeys.id = 'plKeys';
+		addKeys(topKeys, keyLayoutPl, 'keyboardKey_pl');
+		keyboard.append(plKeys);
 
 		let topKeys = document.createElement('div');
 		topKeys.id = 'topKeys';
