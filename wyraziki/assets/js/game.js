@@ -483,7 +483,7 @@ function difficultyModal(){
 
 function keyPress(event) {
 	if(gameFin == 0){
-		let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+		let alphabet = 'abcdefghijklmnopqrstuvwxyząćęłńóśżź';
 		let wordRow = document.getElementsByClassName('row')[currentRow];
 		let rowBlockEl = wordRow.childNodes;
 		for(i = 0; i < alphabet.length; i++){
