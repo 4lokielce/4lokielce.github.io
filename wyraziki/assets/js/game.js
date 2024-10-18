@@ -432,7 +432,7 @@ function gameStart(){
 
 	let keyLayoutTop = 'QWEĘRTYUIOÓP';
 	let keyLayoutMid = 'AĄSŚDFGHJKLŁ';
-	let keyLayoutBot = 'ZŻŹXC<br>ĆVBNŃM';
+	let keyLayoutBot = 'ZŻŹXC\nĆVBNŃM';
 
 	let keyboard = document.createElement('div');
 	keyboard.id = 'keyboard';
