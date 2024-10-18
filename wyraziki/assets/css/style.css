@@ -125,7 +125,7 @@ a{
 	margin-top: 5px;
 }
 
-#topKeys, #midKeys, #botKeys, plKeys{
+#topKeys, #midKeys, #botKeys, #plKeys{
 	display: flex;
 	justify-content:center;
 }
