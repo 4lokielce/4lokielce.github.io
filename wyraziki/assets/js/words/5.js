@@ -1,4 +1,4 @@
-custom = ["LOGIN","HASŁO"];
+custom = ["LOGIN"];
 beginner = ["ADRES","BUFOR","DYSKI","HASŁO","KLUCZ","HTTPS"];
 intermediate = beginner.concat(["BAJTY"]);
 advanced = intermediate.concat(["LOGIN","HASŁO"]);
