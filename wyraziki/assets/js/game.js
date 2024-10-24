@@ -1,4 +1,4 @@
-let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'beginner';let difficulty = 'easy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'score';let scoreDiff = 'easy';
+let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'Początkujący';let difficulty = 'easy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'score';let scoreDiff = 'easy';
 
 const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 
@@ -15,7 +15,7 @@ function showScores(modal, type, diff){
 	for(i = 0; i < 4; i++){
 		let modalScoreBlock = document.createElement('div');
 		modalScoreBlock.className = 'msBlock';
-			let msHeadContent = (i == 0)? 'BEGINNER' : ((i == 1)? 'INTERMEDIATE' : ((i == 2)? 'ADVANCED' : 'GOD MODE'));
+			let msHeadContent = (i == 0)? 'Początkujący' : ((i == 1)? 'Średniozaawansowany' : ((i == 2)? 'Zaawansowany' : 'Ekspert'));
 			let modalScoreHead = document.createElement('span');
 			modalScoreHead.className = 'msHead';
 			modalScoreHead.innerText = msHeadContent;
@@ -77,7 +77,7 @@ function openModal(type, notification){
 		for(i = 0; i < 5; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtn';
-			modalBtn.innerText = (i == 0)? 'Beginner' : ((i == 1)? 'Intermediate' : ((i == 2)? 'Advanced' : ((i == 3)? 'God Mode' : 'Custom')));
+			modalBtn.innerText = (i == 0)? 'Początkujący' : ((i == 1)? 'Średniozaawansowany' : ((i == 2)? 'Zaawansowany' : ((i == 3)? 'Ekspert' : 'Wszystko')));
 			modalBtn.addEventListener('click', levelSelect);
 			modal.append(modalBtn);
 		}
@@ -86,7 +86,7 @@ function openModal(type, notification){
 		for(i = 2; i < 6; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtnL';
-			modalBtn.innerText = i + ' letters';
+			modalBtn.innerText = i + ' zn.';
 			modalBtn.addEventListener('click', charSelect);
 			modal.append(modalBtn);
 			setTimeout(function(){
@@ -354,7 +354,7 @@ function startMenu(){
 		let j = i;
 		let menuBtn = document.createElement('button');
 		menuBtn.className = 'menuBtn';
-		menuBtn.innerText = (i == 0)? maxBlock + ' letters' : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
+		menuBtn.innerText = (i == 0)? maxBlock + ' znaków' : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
 		menuBtn.j = i;
 
 		menuBtn.addEventListener("click", menuClick);
@@ -379,7 +379,7 @@ function gameOver(){
 function gameStart(){
 	setGlobal();
 	container.innerHTML = '';
-	let wordType = (level == 'beginner')? beginner : ((level == 'intermediate')? intermediate : ((level == 'advanced')? advanced : ((level == 'godmode')? fullList : custom)));
+	let wordType = (level == 'Początkujący')? beginner : ((level == 'Średniozaawansowany')? intermediate : ((level == 'Zaawansowany')? advanced : ((level == 'Ekspert')? fullList : custom)));
 	let rand = Math.floor(Math.random() * wordType.length);
 	chosenWord = wordType[rand].toUpperCase();
 
@@ -700,7 +700,7 @@ function checkAnswer(wordRow, answer){
 	}
 
 	if(score === maxBlock){
-		let scoreLevel = (level == 'beginner')? 1 : ((level == 'intermediate')? 2 : ((level == 'advanced')? 3 : 4));
+		let scoreLevel = (level == 'Początkujący')? 1 : ((level == 'Średniozaawansowany')? 2 : ((level == 'Zaawansowany')? 3 : 4));
 		userScore = userScore + ((scoreLevel * 10) - ((scoreLevel + 1) * currentRow));
 
 		if(userScore > localStorage.getItem('score' + difficulty + level)){
