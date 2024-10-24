@@ -83,7 +83,7 @@ function openModal(type, notification){
 		}
 	}
 	else if(type == 'charSelect'){
-		for(i = 3; i < 6; i++){
+		for(i = 2; i < 6; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtnL';
 			modalBtn.innerText = i + ' letters';
