@@ -86,7 +86,7 @@ function openModal(type, notification){
 		for(i = 2; i < 6; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtnL';
-			modalBtn.innerText = i + ' zn.';
+			modalBtn.innerText = i + ((i<5)?' znaki':' znaków');
 			modalBtn.addEventListener('click', charSelect);
 			modal.append(modalBtn);
 			setTimeout(function(){
@@ -354,7 +354,7 @@ function startMenu(){
 		let j = i;
 		let menuBtn = document.createElement('button');
 		menuBtn.className = 'menuBtn';
-		menuBtn.innerText = (i == 0)? maxBlock + ' znaków' : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
+		menuBtn.innerText = (i == 0)? maxBlock + ((maxBlock>4)?' znaków':' znaki') : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
 		menuBtn.j = i;
 
 		menuBtn.addEventListener("click", menuClick);
