@@ -1,4 +1,4 @@
-let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'Początkujący';let difficulty = 'easy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'score';let scoreDiff = 'easy';
+let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'Początkujący';let difficulty = 'Łatwy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'Wynik';let scoreDiff = 'Łatwy';
 
 const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 
@@ -15,7 +15,7 @@ function showScores(modal, type, diff){
 	for(i = 0; i < 4; i++){
 		let modalScoreBlock = document.createElement('div');
 		modalScoreBlock.className = 'msBlock';
-			let msHeadContent = (i == 0)? 'Początkujący' : ((i == 1)? 'Średniozaawansowany' : ((i == 2)? 'Zaawansowany' : 'Ekspert'));
+			let msHeadContent = (i == 0)? 'Początkujący' : ((i == 1)? 'Średni' : ((i == 2)? 'Zaawansowany' : 'Ekspert'));
 			let modalScoreHead = document.createElement('span');
 			modalScoreHead.className = 'msHead';
 			modalScoreHead.innerText = msHeadContent;
@@ -77,7 +77,7 @@ function openModal(type, notification){
 		for(i = 0; i < 5; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtn';
-			modalBtn.innerText = (i == 0)? 'Początkujący' : ((i == 1)? 'Średniozaawansowany' : ((i == 2)? 'Zaawansowany' : ((i == 3)? 'Ekspert' : 'Wszystko')));
+			modalBtn.innerText = (i == 0)? 'Początkujący' : ((i == 1)? 'Średni' : ((i == 2)? 'Zaawansowany' : ((i == 3)? 'Ekspert' : 'Wszystko')));
 			modalBtn.addEventListener('click', levelSelect);
 			modal.append(modalBtn);
 		}
@@ -98,7 +98,7 @@ function openModal(type, notification){
 		for(i = 0; i < 2; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtnL';
-			modalBtn.innerText = (i == 0)? 'Easy' : 'Difficult';
+			modalBtn.innerText = (i == 0)? 'Łatwy' : 'Trudny';
 			modalBtn.addEventListener('click', difficultySelect);
 			modal.append(modalBtn);
 			setTimeout(function(){
@@ -117,13 +117,13 @@ function openModal(type, notification){
 		for(i = 0; i < 4; i++){
 			let modalScoreBlock = document.createElement('div');
 			modalScoreBlock.className = 'msBlock';
-				let msHeadContent = (i == 0)? 'SCORE' : ((i == 1)? 'TOP SCORE' : ((i == 2)? 'STREAK' : 'BEST STREAK'));
+				let msHeadContent = (i == 0)? 'Wynik' : ((i == 1)? 'Najlepszy Wynik' : ((i == 2)? 'Seria Zwycięstw' : 'Najlepsza Seria'));
 				let modalScoreHead = document.createElement('span');
 				modalScoreHead.className = 'msHead';
 				modalScoreHead.innerText = msHeadContent;
 				modalScoreBlock.append(modalScoreHead);
 				
-				let msBodyContent = (i == 0)? userScore : ((i == 1)? localStorage.getItem('score' + difficulty + level) : ((i == 2)? currentStreak : localStorage.getItem('streak' + difficulty + level)));
+				let msBodyContent = (i == 0)? userScore : ((i == 1)? localStorage.getItem('Wynik' + difficulty + level) : ((i == 2)? currentStreak : localStorage.getItem('Seria Zwycięstw' + difficulty + level)));
 				let modalScoreBody = document.createElement('span');
 				modalScoreBody.className = 'msBody';
 				modalScoreBody.innerText = (msBodyContent == null)? 0 : msBodyContent;
@@ -139,22 +139,22 @@ function openModal(type, notification){
 		for(i = 0; i < 2; i++){
 			let scoreType = document.createElement('div');
 			scoreType.className = 'scoreType';
-			scoreType.innerText = (i == 0)? 'SCORE' : 'STREAK';
+			scoreType.innerText = (i == 0)? 'Wynik' : 'Seria Zwycięstw';
 			modal.append(scoreType);
 		}
 
 		for(i = 0; i < 4; i++){
 			let scoreBtn = document.createElement('button');
 			scoreBtn.className = (i == 0)? 'scoreBtnActive' : 'scoreBtn';
-			scoreBtn.innerText = (i == 0 || i == 2)? 'EASY' : 'DIFFICULT';
+			scoreBtn.innerText = (i == 0 || i == 2)? 'Łatwy' : 'Trudny';
 			scoreBtn.j = i;
 			scoreBtn.modal = modal;
 			scoreBtn.addEventListener('click', changeScore);
 			modal.append(scoreBtn);
 		}
-		showScores(modal, 'score', 'easy');
+		showScores(modal, 'Wynik', 'Łatwy');
 	}
-	else if(type == 'help'){
+	else if(type == 'Pomoc'){
 		for(i = 0; i < 2; i++){
 			let helpBtn = document.createElement('button');
 			helpBtn.className = (i == 0)? 'helpBtnActive' : 'helpBtn';
@@ -181,7 +181,7 @@ function openModal(type, notification){
 
 	let modalClose = document.createElement('button');
 	modalClose.id = 'modalClose';
-	modalClose.innerText = 'close';
+	modalClose.innerText = 'zamknij';
 	modalClose.modal = modal;
 	modalClose.shadowBack = shadowBack;
 	modalClose.addEventListener('click', closeModal);
@@ -354,7 +354,7 @@ function startMenu(){
 		let j = i;
 		let menuBtn = document.createElement('button');
 		menuBtn.className = 'menuBtn';
-		menuBtn.innerText = (i == 0)? maxBlock + ((maxBlock>4)?' znaków':' znaki') : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
+		menuBtn.innerText = (i == 0)? maxBlock + ((maxBlock>4)?' znaków':' znaki') : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'Statystyki' : ((i == 4)? 'Pomoc' : 'Start gry'))));
 		menuBtn.j = i;
 
 		menuBtn.addEventListener("click", menuClick);
@@ -379,7 +379,7 @@ function gameOver(){
 function gameStart(){
 	setGlobal();
 	container.innerHTML = '';
-	let wordType = (level == 'Początkujący')? beginner : ((level == 'Średniozaawansowany')? intermediate : ((level == 'Zaawansowany')? advanced : ((level == 'Ekspert')? fullList : custom)));
+	let wordType = (level == 'Początkujący')? beginner : ((level == 'Średni')? intermediate : ((level == 'Zaawansowany')? advanced : ((level == 'Ekspert')? fullList : custom)));
 	let rand = Math.floor(Math.random() * wordType.length);
 	chosenWord = wordType[rand].toUpperCase();
 
@@ -397,7 +397,7 @@ function gameStart(){
 		let giveUpBtn = document.createElement('button');
 		giveUpBtn.id = 'giveUpBtn';
 		giveUpBtn.className = 'btn';
-		giveUpBtn.innerText = 'give up';
+		giveUpBtn.innerText = 'poddaj się';
 		giveUpBtn.addEventListener('click', quitQlick);
 		navBar.append(giveUpBtn);
 
@@ -427,7 +427,7 @@ function gameStart(){
 
 	let notification = document.createElement('div');
 	notification.id = 'notification';
-	notification.innerText = 'Start guessing!'
+	notification.innerText = 'Zgaduj!'
 	container.append(notification);
 
 	let keyLayoutTop = 'QWERTYUIOP';
@@ -503,7 +503,7 @@ function keyPress(event) {
 function quitQlick(){
 	if(gameFin == 0){
 		let url = '<a href="https://matura-z-informatyki.blogspot.com/search?q=%22'+ chosenWord +'%22" target="_blank">' + chosenWord + '</a>';
-		notification = 'The word was ' + url + '. Click to play again';
+		notification = 'Hasłem było ' + url + '. Kliknij aby zagrać ponownie';
 		currentStreak = 0;
 		userScore = userScore - 15;
 		gameOver();
@@ -530,7 +530,7 @@ function logoClick(event) {
 
 function menuClick(event) {
 	let j = event.currentTarget.j;
-	let modalType = (j == 0)? 'charSelect' : ((j == 1)? 'levelSelect' : ((j == 2)? 'difficultySelect' : ((j == 3)? 'highScores' : 'help')));
+	let modalType = (j == 0)? 'charSelect' : ((j == 1)? 'levelSelect' : ((j == 2)? 'difficultySelect' : ((j == 3)? 'highScores' : 'Pomoc')));
 	if(j < 5){
 		openModal(modalType);
 	}else{
@@ -585,10 +585,10 @@ function changeScore(){
 	this.className = 'scoreBtnActive';
 	if(j == 0 || j == 1){
 		document.getElementById('msBlock').remove();
-		showScores(modal, 'score', this.innerText.toLowerCase());
+		showScores(modal, 'Wynik', this.innerText.toLowerCase());
 	}else{
 		document.getElementById('msBlock').remove();
-		showScores(modal, 'streak', this.innerText.toLowerCase());
+		showScores(modal, 'Seria Zwycięstw', this.innerText.toLowerCase());
 	}
 }
 
@@ -700,16 +700,16 @@ function checkAnswer(wordRow, answer){
 	}
 
 	if(score === maxBlock){
-		let scoreLevel = (level == 'Początkujący')? 1 : ((level == 'Średniozaawansowany')? 2 : ((level == 'Zaawansowany')? 3 : 4));
+		let scoreLevel = (level == 'Początkujący')? 1 : ((level == 'Średni')? 2 : ((level == 'Zaawansowany')? 3 : 4));
 		userScore = userScore + ((scoreLevel * 10) - ((scoreLevel + 1) * currentRow));
 
-		if(userScore > localStorage.getItem('score' + difficulty + level)){
-			localStorage.setItem('score' + difficulty + level, userScore);
+		if(userScore > localStorage.getItem('Wynik' + difficulty + level)){
+			localStorage.setItem('Wynik' + difficulty + level, userScore);
 		}
 
 		currentStreak++;
-		if(currentStreak > localStorage.getItem('streak' + difficulty + level)){
-			localStorage.setItem('streak' + difficulty + level, currentStreak);
+		if(currentStreak > localStorage.getItem('Seria Zwycięstw' + difficulty + level)){
+			localStorage.setItem('Seria Zwycięstw' + difficulty + level, currentStreak);
 		}
 
 		let notification = 'Well done, you won! Click to play again';
@@ -741,7 +741,7 @@ function submitWord(wordRow){
 	if(nextRowBlock > 0 && nextRowBlock % maxBlock == 0){
 		let answer = wordRow.innerText.replace(/[\n\r]/g, '');
 		if(fullList.includes(answer)){
-			if(difficulty == 'difficult'){
+			if(difficulty == 'Trudny'){
 				for(i = 0; i < mustUse.length; i++){
 					if(!answer.includes(mustUse[i])){
 						remNotification = 0;
