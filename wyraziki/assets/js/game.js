@@ -31,12 +31,12 @@ function showScores(modal, type, diff){
 }
 
 function showHelp(modal, type){
-	let exampleWords = ['SUNNY', 'WORLD', 'TITAN'];
+	let exampleWords = ['INTEL', 'APPLE', 'BUFOR'];
 	let mhBlock = document.createElement('div');
 	mhBlock.id = 'mhBlock';
 	mhbHead = document.createElement('div');
 	mhbHead.className = 'mhbHead';
-	mhbHead.innerText = (type == 'game')? 'You have 6 tries to guess the word.\n\nOnly valid words are allowed. Hit enter to submit your guess.\n\nWith each guess, the colour of the tiles will change to show you how close your guess is to the word.' : 'There are 4 different levels ranging between beginner and God mode. The higher the level, the more words will be in play and the harder it will be to guess.\n\nYou can change the level either in the main menu or in play by clicking on the currently stated level.';
+	mhbHead.innerText = (type == 'game')? 'Masz 6 prób odgadnięcia słowa.\n\nDozwolone są tylko prawidłowe słowa. Naciśnij Enter, aby przesłać swoją odpowiedź.\n\nPrzy każdym odgadnięciu kolor kafelków będzie się zmieniał, aby pokazać, jak blisko słowa jest Twoje przypuszczenie.' : 'Istnieją 4 różne poziomy, od początkującego do trybu eksperta. Im wyższy poziom, tym więcej słów będzie w grze i tym trudniej będzie je odgadnąć.\n\nMożesz zmienić poziom w menu głównym lub w grze, klikając aktualnie określony poziom.';
 	mhBlock.append(mhbHead);
 
 	let mhbBody = document.createElement('div');
@@ -56,7 +56,7 @@ function showHelp(modal, type){
 				exampleRow.append(exampleTile);
 				exNotification += (j == rand)? '<strong>' + exampleWords[i][j] + '</strong>' : '';
 			}
-			exNotification += (i == 0)? ' is in the word and in the correct place' : ((i == 1)? ' is in the word but in the wrong place' : ' is not in the word');
+			exNotification += (i == 0)? ' jest w słowie i na właściwym miejscu' : ((i == 1)? ' jest w słowie, ale na złym  miejscu' : ' nie jest w słowie');
 			let exNotRow = document.createElement('div');
 			exNotRow.innerHTML = exNotification;
 			exampleRow.append(exNotRow);
@@ -64,7 +64,7 @@ function showHelp(modal, type){
 		}
 	}else{
 		mhbBody.className = 'mhbHead';
-		mhbBody.innerText = '\nIn addition to the levels, there are 2 difficulty modes - easy and difficult. You can use any valid words within your guesses in easy mode.\n\nIn difficult mode, you must reuse any letters that you have previously chosen and are found to be within the word.\n\nYou can quit the game at any time by clicking on the give up button, which will deduct 15 points from your score and show you the current word.';
+		mhbBody.innerText = '\nOprócz poziomów istnieją 2 tryby trudności – łatwy i trudny. W trybie łatwym możesz użyć dowolnych prawidłowych słów w swoim odgadnięciu.\n\nW trybie trudnym musisz ponownie użyć dowolnych liter, które wcześniej wybrałeś i które znajdują się w słowie.\n\nMożesz zakończyć grę w dowolnym momencie klikając na przycisk rezygnacji, który odejmie 15 punktów od Twojego wyniku i pokaże Ci aktualne słowo.';
 	}
 	mhBlock.append(mhbBody);
 	modal.append(mhBlock);
@@ -712,7 +712,7 @@ function checkAnswer(wordRow, answer){
 			localStorage.setItem('Seria Zwycięstw' + difficulty + level, currentStreak);
 		}
 
-		let notification = 'Well done, you won! Click to play again';
+		let notification = 'Gratulacje, wygrałeś! Kliknij aby zagrać ponownie';
 		gameOver();
 
 		setTimeout(function(){
@@ -721,7 +721,7 @@ function checkAnswer(wordRow, answer){
 	}
 	else if(currentRow == 5){
 		let url = '<a href="https://matura-z-informatyki.blogspot.com/search?q=%22'+ chosenWord +'%22" target="_blank">' + chosenWord + '</a>';
-		let notification = 'You lost. The word was ' + url + '. Click to play again';
+		let notification = 'Przegrałeś. Hasłem było ' + url + '. Kliknij aby zagrać ponownie';
 		userScore = userScore - 10;
 		currentStreak = 0;
 		gameOver();
@@ -745,7 +745,7 @@ function submitWord(wordRow){
 				for(i = 0; i < mustUse.length; i++){
 					if(!answer.includes(mustUse[i])){
 						remNotification = 0;
-						document.getElementById('notification').innerText = 'You must use found characters';
+						document.getElementById('notification').innerText = 'Musisz użyć znalezionych znaków';
 						return;
 					}
 				}
@@ -753,11 +753,11 @@ function submitWord(wordRow){
 			checkAnswer(wordRow, answer);		
 		}else{
 			remNotification = 0;
-			document.getElementById('notification').innerText = 'Word not in list';
+			document.getElementById('notification').innerText = 'Hasło nie jest na liście';
 		}
 	}else{
 		remNotification = 0;
-		document.getElementById('notification').innerText = 'You must enter ' + maxBlock + ' characters';
+		document.getElementById('notification').innerText = 'Musisz wpisać maksymalnie ' + maxBlock + ' znaków';
 	}
 }
 
