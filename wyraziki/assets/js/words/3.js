@@ -1,5 +1,5 @@
-custom = [];
-beginner = ["AND", "API", "BIT","BMP","CPU", "CSS","DNS","FAT","FTP","GIF","GPU", "JPG", "LAN","NFC", "NOT", "PIN","PDF","PHP","PNG", "RAM", "RGB","ROM", "SSL","SVG","SQL","URL", "USB", "VPN","XML","WWW","ZIP"];
-intermediate = beginner.concat(["DOS", "IDE"]);
-advanced = intermediate.concat([]);
-fullList = advanced.concat([]);
+custom = ["HEX"];
+beginner = ["AND", "API","AVI", "BIT","BMP","CPU", "CSS","DPI","DNS","FAT","FTP","GIF","GPU","HUB", "JPG", "LAN","NFC","MAX","MIN","MOD","MOV","NOT", "ONP","PIN","PDF","PHP","PNG", "RAM", "RGB","ROM", "SSL","SVG","SQL","SUM","URL", "USB", "VPN","XML","WMA","WWW","ZIP"];
+intermediate = beginner.concat(["AVG","BIN","DOS", "IDE","GPL","HEX","OCR","RSA","WAV",]);
+advanced = intermediate.concat(["GNU","HEX","DEC","MAC","PGP",]);
+fullList = advanced.concat(["HEX"]);
