@@ -24,7 +24,7 @@ a{
 	cursor:pointer;
 	text-shadow: 2px 3px 2px #000;
 	transition: .5s;
-	font-family: fantasy;
+	font-family: arial;
 }
 
 .logo:hover{
@@ -302,6 +302,7 @@ a{
 .socialNav{
 	height: 42px;
 	text-align: center;
+	display: none;
 }
 
 .modalSocialIcon{
