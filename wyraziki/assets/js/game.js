@@ -1,4 +1,4 @@
-let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'Początkujący';let difficulty = 'Łatwy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner2 = 0;let scoreEasyIntermediate2 = 0;let scoreEasyAdvanced2 = 0;let scoreEasyGod2 = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner2 = 0;let scoreDifficultIntermediate2 = 0;let scoreDifficultAdvanced2 = 0;let scoreDifficultGod2 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner2 = 0;let streakEasyIntermediate2 = 0;let streakEasyAdvanced2 = 0;let streakEasyGod2 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner2 = 0;let streakDifficultIntermediate2 = 0;let streakDifficultAdvanced2 = 0;let streakDifficultGod2 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'Wynik';let scoreDiff = 'Łatwy';
+let beginner;let intermediate;let advanced;let fullList;let currentRow = 0;let nextRowBlock = 0;let score = 0;let remNotification = 0;let gameFin = 0;let gameOn = 0;let maxBlock = 5;let level = 'początkujący';let difficulty = 'łatwy';let mustUse = '';let bestStreak = 0;let currentStreak = 0;let userScore = 0;let scoreEasyBeginner2 = 0;let scoreEasyIntermediate2 = 0;let scoreEasyAdvanced2 = 0;let scoreEasyGod2 = 0;let scoreEasyBeginner3 = 0;let scoreEasyIntermediate3 = 0;let scoreEasyAdvanced3 = 0;let scoreEasyGod3 = 0;let scoreEasyBeginner4 = 0;let scoreEasyIntermediate4 = 0;let scoreEasyAdvanced4 = 0;let scoreEasyGod4 = 0;let scoreEasyBeginner5 = 0;let scoreEasyIntermediate5 = 0;let scoreEasyAdvanced5 = 0;let scoreEasyGod5 = 0;let scoreDifficultBeginner2 = 0;let scoreDifficultIntermediate2 = 0;let scoreDifficultAdvanced2 = 0;let scoreDifficultGod2 = 0;let scoreDifficultBeginner3 = 0;let scoreDifficultIntermediate3 = 0;let scoreDifficultAdvanced3 = 0;let scoreDifficultGod3 = 0;let scoreDifficultBeginner4 = 0;let scoreDifficultIntermediate4 = 0;let scoreDifficultAdvanced4 = 0;let scoreDifficultGod4 = 0;let scoreDifficultBeginner5 = 0;let scoreDifficultIntermediate5 = 0;let scoreDifficultAdvanced5 = 0;let scoreDifficultGod5 = 0;let streakEasyBeginner2 = 0;let streakEasyIntermediate2 = 0;let streakEasyAdvanced2 = 0;let streakEasyGod2 = 0;let streakEasyBeginner3 = 0;let streakEasyIntermediate3 = 0;let streakEasyAdvanced3 = 0;let streakEasyGod3 = 0;let streakEasyBeginner4 = 0;let streakEasyIntermediate4 = 0;let streakEasyAdvanced4 = 0;let streakEasyGod4 = 0;let streakEasyBeginner5 = 0;let streakEasyIntermediate5 = 0;let streakEasyAdvanced5 = 0;let streakEasyGod5 = 0;let streakDifficultBeginner2 = 0;let streakDifficultIntermediate2 = 0;let streakDifficultAdvanced2 = 0;let streakDifficultGod2 = 0;let streakDifficultBeginner3 = 0;let streakDifficultIntermediate3 = 0;let streakDifficultAdvanced3 = 0;let streakDifficultGod3 = 0;let streakDifficultBeginner4 = 0;let streakDifficultIntermediate4 = 0;let streakDifficultAdvanced4 = 0;let streakDifficultGod4 = 0;let streakDifficultBeginner5 = 0;let streakDifficultIntermediate5 = 0;let streakDifficultAdvanced5 = 0;let streakDifficultGod5 = 0;let scoreType = 'Wynik';let scoreDiff = 'łatwy';
 
 const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
 
@@ -15,7 +15,7 @@ function showScores(modal, type, diff){
 	for(i = 0; i < 4; i++){
 		let modalScoreBlock = document.createElement('div');
 		modalScoreBlock.className = 'msBlock';
-			let msHeadContent = (i == 0)? 'Początkujący' : ((i == 1)? 'Średni' : ((i == 2)? 'Zaawansowany' : 'Ekspert'));
+			let msHeadContent = (i == 0)? 'początkujący' : ((i == 1)? 'średni' : ((i == 2)? 'zaawansowany' : 'ekspert'));
 			let modalScoreHead = document.createElement('span');
 			modalScoreHead.className = 'msHead';
 			modalScoreHead.innerText = msHeadContent;
@@ -77,7 +77,7 @@ function openModal(type, notification){
 		for(i = 0; i < 5; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtn';
-			modalBtn.innerText = (i == 0)? 'Początkujący' : ((i == 1)? 'Średni' : ((i == 2)? 'Zaawansowany' : ((i == 3)? 'Ekspert' : 'Wszystko')));
+			modalBtn.innerText = (i == 0)? 'Początkujący' : ((i == 1)? 'średni' : ((i == 2)? 'zaawansowany' : ((i == 3)? 'ekspert' : 'wszystko')));
 			modalBtn.addEventListener('click', levelSelect);
 			modal.append(modalBtn);
 		}
@@ -98,7 +98,7 @@ function openModal(type, notification){
 		for(i = 0; i < 2; i++){
 			let modalBtn = document.createElement('button');
 			modalBtn.className = 'modalBtnL';
-			modalBtn.innerText = (i == 0)? 'Łatwy' : 'Trudny';
+			modalBtn.innerText = (i == 0)? 'Łatwy' : 'trudny';
 			modalBtn.addEventListener('click', difficultySelect);
 			modal.append(modalBtn);
 			setTimeout(function(){
@@ -146,7 +146,7 @@ function openModal(type, notification){
 		for(i = 0; i < 4; i++){
 			let scoreBtn = document.createElement('button');
 			scoreBtn.className = (i == 0)? 'scoreBtnActive' : 'scoreBtn';
-			scoreBtn.innerText = (i == 0 || i == 2)? 'Łatwy' : 'Trudny';
+			scoreBtn.innerText = (i == 0 || i == 2)? 'Łatwy' : 'trudny';
 			scoreBtn.j = i;
 			scoreBtn.modal = modal;
 			scoreBtn.addEventListener('click', changeScore);
@@ -395,7 +395,7 @@ function gameOver(){
 function gameStart(){
 	setGlobal();
 	container.innerHTML = '';
-	let wordType = (level == 'Początkujący')? beginner : ((level == 'Średni')? intermediate : ((level == 'Zaawansowany')? advanced : ((level == 'Ekspert')? fullList : custom)));
+	let wordType = (level == 'początkujący')? beginner : ((level == 'średni')? intermediate : ((level == 'zaawansowany')? advanced : ((level == 'ekspert')? fullList : custom)));
 	let rand = Math.floor(Math.random() * wordType.length);
 	chosenWord = wordType[rand].toUpperCase();
 	addLogo();
@@ -715,7 +715,7 @@ function checkAnswer(wordRow, answer){
 	}
 
 	if(score === maxBlock){
-		let scoreLevel = (level == 'Początkujący')? 1 : ((level == 'Średni')? 2 : ((level == 'Zaawansowany')? 3 : 4));
+		let scoreLevel = (level == 'początkujący')? 1 : ((level == 'średni')? 2 : ((level == 'zaawansowany')? 3 : 4));
 		userScore = userScore + ((scoreLevel * 10) - ((scoreLevel + 1) * currentRow));
 
 		if(userScore > localStorage.getItem('Wynik' + difficulty + level)){
@@ -756,7 +756,7 @@ function submitWord(wordRow){
 	if(nextRowBlock > 0 && nextRowBlock % maxBlock == 0){
 		let answer = wordRow.innerText.replace(/[\n\r]/g, '');
 		if(fullList.includes(answer)){
-			if(difficulty == 'Trudny'){
+			if(difficulty == 'trudny'){
 				for(i = 0; i < mustUse.length; i++){
 					if(!answer.includes(mustUse[i])){
 						remNotification = 0;
