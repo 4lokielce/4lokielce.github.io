@@ -158,7 +158,7 @@ function openModal(type, notification){
 		for(i = 0; i < 2; i++){
 			let helpBtn = document.createElement('button');
 			helpBtn.className = (i == 0)? 'helpBtnActive' : 'helpBtn';
-			helpBtn.innerText = (i == 0 || i == 2)? 'GAME' : 'OPTIONS';
+			helpBtn.innerText = (i == 0 || i == 2)? 'GRA' : 'USTAWIENIA';
 			helpBtn.j = i;
 			helpBtn.modal = modal;
 			helpBtn.addEventListener('click', changeHelpView);
