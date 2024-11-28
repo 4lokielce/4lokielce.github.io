@@ -390,8 +390,8 @@
   switchScene(scenes[0]);
 
   //Losowy spacer
-  //setInterval(function() {
-  // switchScene(scenes[parseInt(scenes.length*Math.random())]);
-  //}, 30000);
+setInterval(function() {
+switchScene(scenes[parseInt(scenes.length*Math.random())]);
+}, 30000);
   
 })();
