@@ -390,8 +390,10 @@
   switchScene(scenes[0]);
 
   //Losowy spacer
+function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 30000);
-  
+};
+
 })();
