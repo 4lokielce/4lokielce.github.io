@@ -387,7 +387,7 @@
   }
 
   // Display the initial scene.
-  switchScene(scenes[1]);
+  switchScene(scenes[0]);
 
   //Losowy spacer
   //setInterval(function() {
