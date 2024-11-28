@@ -394,6 +394,6 @@ function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 30000);
-};
-
+}
+LosowySpacer()
 })();
