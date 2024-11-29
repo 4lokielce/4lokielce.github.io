@@ -395,13 +395,13 @@ setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 20000);
 }
-// var startlosowyspacerElement = document.querySelector('#startlosowyspacer'); 
 startlosowyspacer.addEventListener('click', LosowySpacer);
   
 //wirtualnaewakuacja1
+var ewakuacja1=[scenes[0],scenes[2],scenes[3]];  
 function wirtualnaewakuacja1() {
 setInterval(function() {
-switchScene(scenes[parseInt(scenes.length*Math.random())]);
+switchScene(ewakuacja1[parseInt(ewakuacja1.length*Math.random())]);
 }, 10000);
 }
 
