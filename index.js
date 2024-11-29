@@ -393,7 +393,7 @@
 function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
-}, 30000);
+}, 20000);
 }
 // var startlosowyspacerElement = document.querySelector('#startlosowyspacer'); 
 startlosowyspacer.addEventListener('click', LosowySpacer);
