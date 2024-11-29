@@ -398,10 +398,10 @@ switchScene(scenes[parseInt(scenes.length*Math.random())]);
 startlosowyspacer.addEventListener('click', LosowySpacer);
   
 //wirtualnaewakuacja1
-var ewakuacja1=[scenes[5],scenes[6],scenes[3],scenes[4],scenes[7],scenes[8]];  
+var ewakuacja1=[scenes[10],scenes[9],scenes[8],scenes[7],scenes[6],scenes[5]];  
 function wirtualnaewakuacja1() {
     var kolejnosc=0;
-  alert(scenes[5].data.id)
+  alert(scenes[3].data.id)
 setInterval(function() {
 
 switchScene(ewakuacja1[kolejnosc]);kolejnosc++;
