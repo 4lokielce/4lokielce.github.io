@@ -824,7 +824,7 @@ var APP_DATA = {
           "yaw": -2.8536706249458366,
           "pitch": 0.07282945635544813,
           "title": "Sala nr 1",
-          "text": "Pracownia muzyczna [<a href='https://plan.4lokielce.pl/plany/s1.html' target='_blank'>Plan</a>]<br><iframe src='https://plan.4lokielce.pl/plany/s1.html' width='100%' height='100%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+          "text": "Pracownia muzyczna <button id='wirtualnaewakuacja1'>Plan</button><br><iframe src='https://plan.4lokielce.pl/plany/s1.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         }
       ]
     },
