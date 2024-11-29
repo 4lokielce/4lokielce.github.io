@@ -402,7 +402,8 @@ var ewakuacja1=[scenes[5],scenes[6],scenes[3],scenes[4],scenes[7],scenes[8]];
 function wirtualnaewakuacja1() {
   alert(scenes[5].data.id)
 setInterval(function() {
-switchScene(ewakuacja1[parseInt(ewakuacja1.length*Math.random())]);
+  var kolejnosc=0;
+switchScene(ewakuacja1[kolejnosc]);kolejnosc++;
 }, 1000);
 }
 
