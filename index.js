@@ -389,7 +389,7 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
-  //Losowy spacer
+//Losowy spacer
 function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
@@ -397,4 +397,15 @@ switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }
 // var startlosowyspacerElement = document.querySelector('#startlosowyspacer'); 
 startlosowyspacer.addEventListener('click', LosowySpacer);
+  
+//wirtualnaewakuacja1
+function wirtualnaewakuacja1() {
+setInterval(function() {
+switchScene(scenes[parseInt(scenes.length*Math.random())]);
+}, 10000);
+}
+
+startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
+
+  
 })();
