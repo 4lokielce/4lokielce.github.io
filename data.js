@@ -822,9 +822,9 @@ var APP_DATA = {
       "infoHotspots": [
         {
           "yaw": -2.8536706249458366,
-          "pitch": 0.07282945635544813,
+          "pitch": 0.07282945635544813, 
           "title": "Sala nr 1",
-          "text": "Pracownia muzyczna <button id='wirtualnaewakuacja1'>Plan</button><br><iframe src='https://plan.4lokielce.pl/plany/s1.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+          "text": "Pracownia muzyczna <input type='button' value='Wirtualna ewakuacja' onclick='rameczka1.src="https://4lokielce.github.io/demo.html"' /><br><iframe id='rameczka1' src='https://plan.4lokielce.pl/plany/s1.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         }
       ]
     },
