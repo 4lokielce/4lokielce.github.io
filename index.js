@@ -400,10 +400,10 @@ startlosowyspacer.addEventListener('click', LosowySpacer);
 //wirtualnaewakuacja1
 var ewakuacja1=[scenes[5],scenes[6],scenes[3],scenes[4],scenes[7]];  
 function wirtualnaewakuacja1() {
-  alert(ewakuacja1)
+  alert(scenes[5],id)
 setInterval(function() {
 switchScene(ewakuacja1[parseInt(ewakuacja1.length*Math.random())]);
-}, 5000);
+}, 1000);
 }
 
 startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
