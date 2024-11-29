@@ -401,11 +401,11 @@ startlosowyspacer.addEventListener('click', LosowySpacer);
 var ewakuacja1=[scenes[10],scenes[9],scenes[8],scenes[7],scenes[6],scenes[5]];  
 function wirtualnaewakuacja1() {
     var kolejnosc=0;
-  alert(scenes[3].data.id)
+  //alert(scenes[3].data.id)
 setInterval(function() {
 
 switchScene(ewakuacja1[kolejnosc]);kolejnosc++;
-}, 1000);
+}, 2000);
 }
 
 startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
