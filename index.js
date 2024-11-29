@@ -395,5 +395,6 @@ setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 30000);
 }
-startlosowyspacer.addEventListener('click', LosowySpacer);
+ var startlosowyspacerElement = document.querySelector('#startlosowyspacer'); 
+startlosowyspacerElement.addEventListener('click', LosowySpacer);
 })();
