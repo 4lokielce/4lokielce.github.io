@@ -406,7 +406,7 @@ switchScene(ewakuacja1[kolejnosc]);kolejnosc++;
 }, 2000);
 }
 //wirtualnaewakuacja13
-var ewakuacja13=[scenes[23],scenes[7],scenes[29],scenes[3],scenes[4],scenes[6],scenes[5]];  
+var ewakuacja13=[scenes[30],scenes[7],scenes[29],scenes[3],scenes[4],scenes[6],scenes[5]];  
 function wirtualnaewakuacja13() {
     var kolejnosc=0;
 setInterval(function() {
