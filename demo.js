@@ -401,14 +401,19 @@ startlosowyspacer.addEventListener('click', LosowySpacer);
 var ewakuacja1=[scenes[13],scenes[7],scenes[29],scenes[3],scenes[4],scenes[6],scenes[5]];  
 function wirtualnaewakuacja1() {
     var kolejnosc=0;
-  //alert(scenes[3].data.id)
 setInterval(function() {
-
 switchScene(ewakuacja1[kolejnosc]);kolejnosc++;
 }, 2000);
 }
-
+//wirtualnaewakuacja13
+var ewakuacja13=[scenes[13],scenes[7],scenes[29],scenes[3],scenes[4],scenes[6],scenes[5]];  
+function wirtualnaewakuacja13() {
+    var kolejnosc=0;
+setInterval(function() {
+switchScene(ewakuacja13[kolejnosc]);kolejnosc++;
+}, 2000);
+}
 startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
-
+startwirtualnaewakuacja13.addEventListener('click', wirtualnaewakuacja13);
   
 })();
