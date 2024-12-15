@@ -1791,7 +1791,7 @@ var APP_DATA = {
           "yaw": 2.7960128623552105,
           "pitch": 0.01025406958310171,
           "title": "Sala nr 13",
-          "text": "Pracownia informatyczna"
+          "text": "Pracownia informatyczna  <a href='https://plan.4lokielce.pl/plany/s9.html' target='rameczka1'>Plan sali nr 1</a> <a href='https://4lokielce.github.io/demo.html' target='rameczka1'>Wirtualna ewakuacja</a><br><iframe name='rameczka1' src='https://plan.4lokielce.pl/plany/s1.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         }
       ]
     },
