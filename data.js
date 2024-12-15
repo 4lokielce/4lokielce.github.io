@@ -1794,12 +1794,19 @@ var APP_DATA = {
           "text": "Pracownia informatyczna  <a href='https://plan.4lokielce.pl/plany/s9.html' target='rameczka13'>Plan sali nr 13</a> <a href='https://4lokielce.github.io/demo.html' target='rameczka13'>Wirtualna ewakuacja</a> <a href='https://4lokielce.github.io/regulamin.html' target='rameczka13'>Regulamin</a><br><iframe name='rameczka13' src='https://plan.4lokielce.pl/plany/s9.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         },
         {
-          "yaw": -2.572159976220388,
+          "yaw": -2.672159976220388,
           "pitch": 0.07540589616806201,
           "title": "Gaśnica",
           "text": "Instrukcja",
           "css": "gasnice"
-        }        
+        },
+        {
+          "yaw": -2.672159976220388,
+          "pitch": 0.01025406958310171,
+          "title": "Bezpieczniki",
+          "text": "Wyłącznik prądu",
+          "css": "bezpieczniki"
+        }             
       ]
     },
     {
