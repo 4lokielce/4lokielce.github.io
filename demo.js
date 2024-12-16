@@ -294,6 +294,7 @@
     // Create hotspot/tooltip header.
     var header = document.createElement('div');
     header.classList.add('info-hotspot-header');
+    header.classList.add(hotspot.css);
 
     // Create image element.
     var iconWrapper = document.createElement('div');
