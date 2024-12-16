@@ -1802,7 +1802,7 @@ var APP_DATA = {
         },
         {
           "yaw": -2.672159976220388,
-          "pitch": -0.01025406958310171,
+          "pitch": -0.11025406958310171,
           "title": "Bezpieczniki",
           "text": "Wyłącznik prądu",
           "css": "bezpieczniki"
