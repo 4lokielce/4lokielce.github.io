@@ -1791,7 +1791,7 @@ var APP_DATA = {
           "yaw": 2.7960128623552105,
           "pitch": 0.01025406958310171,
           "title": "Sala nr 13",
-          "text": "Pracownia informatyczna  <a href='https://plan.4lokielce.pl/plany/s9.html' target='rameczka13'>Plan sali nr 13</a> <a href='https://4lokielce.github.io/demo.html' target='rameczka13'>Wirtualna ewakuacja</a> <a href='https://4lokielce.github.io/REGULAMIN PRACOWNI INFORMATYCZNEJ 1.pdf' target='rameczka13'>Regulamin</a><br><iframe name='rameczka13' src='https://plan.4lokielce.pl/plany/s9.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+          "text": "Pracownia informatyczna  <a href='https://plan.4lokielce.pl/plany/s9.html' target='rameczka13'>Plan sali nr 13</a> <a href='https://4lokielce.github.io/demo.html' target='rameczka13'>Wirtualna ewakuacja</a> REGULAMIN PRACOWNI INFORMATYCZNEJ <a href='https://4lokielce.github.io/REGULAMIN PRACOWNI INFORMATYCZNEJ 1.pdf' target='rameczka13'>str. 1</a> <a href='https://4lokielce.github.io/REGULAMIN PRACOWNI INFORMATYCZNEJ 2.pdf' target='rameczka13'>str. 2</a><br><iframe name='rameczka13' src='https://plan.4lokielce.pl/plany/s9.html' width='100%' height='90%' style='border:0;' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
         },
         {
           "yaw": -2.672159976220388,
