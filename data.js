@@ -820,7 +820,8 @@ var APP_DATA = {
           "yaw": -2.0465772164660034,
           "pitch": 0.08995141719116084,
           "rotation": 0.7853981633974483,
-          "target": "6-ks1"
+          "target": "6-ks1",
+          "css" : "ewakuacyjny"
         }
       ],
       "infoHotspots": [
