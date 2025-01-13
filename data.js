@@ -262,7 +262,8 @@ var APP_DATA = {
           "yaw": 0.9374701654604287,
           "pitch": 0.3612435298257335,
           "rotation": 0.7853981633974483,
-          "target": "5-korytarz-siownia"
+          "target": "5-korytarz-siownia",
+          "css": "ewakuacyjny"
         },
         {
           "yaw": 3.04983136485352,
