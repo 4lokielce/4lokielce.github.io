@@ -1850,7 +1850,8 @@ var APP_DATA = {
           "yaw": -3.1240762063351607,
           "pitch": 0.14465052435066496,
           "rotation": 3.14,
-          "target": "6-ks1"
+          "target": "6-ks1",
+           "css":"ewakuacyjny"
         },
         {
           "yaw": 0.3301245920884597,
