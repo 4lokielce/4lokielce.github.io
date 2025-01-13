@@ -198,7 +198,8 @@ var APP_DATA = {
           "yaw": 2.4804005539710694,
           "pitch": 0.6372163008380305,
           "rotation": 0,
-          "target": "3-k-sklepik"
+          "target": "3-k-sklepik",
+          "css": "ewakuacyjny"
         }
       ],
       "infoHotspots": [
