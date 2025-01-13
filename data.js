@@ -1575,7 +1575,8 @@ var APP_DATA = {
           "yaw": -2.0203663114574795,
           "pitch": 0.3413612152716965,
           "rotation": 0,
-          "target": "2-k-sekretariat"
+          "target": "2-k-sekretariat",
+          "css":"ewakuacyjny"
         },
         {
           "yaw": 0.9555043587480938,
