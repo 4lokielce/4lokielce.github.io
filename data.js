@@ -1700,7 +1700,8 @@ var APP_DATA = {
           "yaw": 1.2281094565541526,
           "pitch": 0.362600438145412,
           "rotation": 0,
-          "target": "4-k-pielgniarka"
+          "target": "4-k-pielgniarka",
+          "css": "ewakuacyjny"
         }
       ],
       "infoHotspots": []
