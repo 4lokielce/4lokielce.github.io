@@ -390,7 +390,7 @@ var APP_DATA = {
           "pitch": 0.17898713252003873,
           "rotation": 0,
           "target": "4-korytarz-sala-gimnatyczna",
-          "css: "ewakuacyjny"
+          "css": "ewakuacyjny"
         },
         {
           "yaw": 2.9523796414009027,
