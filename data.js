@@ -454,7 +454,8 @@ var APP_DATA = {
           "yaw": 2.186419287278002,
           "pitch": 0.26076965733140156,
           "rotation": 0,
-          "target": "27-szatnia4"
+          "target": "27-szatnia4",
+          "css":"ewakuacyjny"
         },
         {
           "yaw": 1.5101702158380785,
