@@ -256,7 +256,8 @@ var APP_DATA = {
           "yaw": -1.614722889979852,
           "pitch": 0.3140411729536403,
           "rotation": 0,
-          "target": "23-sklepik-szkolny"
+          "target": "23-sklepik-szkolny",
+          "css": "ewakuacyjny"
         },
         {
           "yaw": 0.9374701654604287,
