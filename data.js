@@ -1538,7 +1538,8 @@ var APP_DATA = {
           "yaw": 2.576526308323521,
           "pitch": 0.22745560176854873,
           "rotation": 0,
-          "target": "24-szatnia1"
+          "target": "24-szatnia1",
+          "css": "ewakuacyjny"
         }
       ],
       "infoHotspots": []
