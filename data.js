@@ -1388,7 +1388,8 @@ var APP_DATA = {
           "yaw": 0.10069944568745193,
           "pitch": 0.36897797522604847,
           "rotation": 0,
-          "target": "11-portiernia"
+          "target": "11-portiernia",
+          "css": "ewakuacyjny"
         },
         {
           "yaw": -2.4010778358244806,
