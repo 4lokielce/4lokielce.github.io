@@ -1350,7 +1350,7 @@ var APP_DATA = {
           "yaw": -2.419093449823686,
           "pitch": 0.1171835832215109,
           "rotation": 0,
-          "target": "",
+          "target": "29-wejcie",
           "css" : "ewakuacyjny"
         }
       ],
