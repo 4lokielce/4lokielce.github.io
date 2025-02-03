@@ -1345,6 +1345,13 @@ var APP_DATA = {
           "pitch": 0.1650560629658191,
           "rotation": 0.7853981633974483,
           "target": "13-s1a"
+        },
+        {
+          "yaw": -2.419093449823686,
+          "pitch": 0.1171835832215109,
+          "rotation": 0,
+          "target": "",
+          "css" : "ewakuacyjny"
         }
       ],
       "infoHotspots": [
