@@ -778,7 +778,8 @@ var APP_DATA = {
           "yaw": -0.20080001986016427,
           "pitch": 0.34987163459037873,
           "rotation": 0,
-          "target": "29-wejcie"
+          "target": "29-wejcie",
+          "css" : "ewakuacyjny"
         }
       ],
       "infoHotspots": [
