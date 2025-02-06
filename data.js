@@ -1365,10 +1365,10 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": -2.419093449823686,
+          "yaw": -2.519093449823686,
           "pitch": 0.1171835832215109,
-          "title": "Wyjście ewakuacyjne",
-          "text": "Wyjście ewakuacyjne"
+          "title": "Slepik",
+          "text": "Slepik"
         }
       ]
     },
