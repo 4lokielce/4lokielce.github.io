@@ -1620,18 +1620,12 @@ var APP_DATA = {
         {
           "yaw": 0.36878629879685576,
           "pitch": 0.027890464208777388,
-          "rotation": 0.7853981633974483,
+          "rotation": 0,
           "target": "30-wejcie-nauczycieli",
           "css":"ewakuacyjny"
         }        
       ],
       "infoHotspots": [
-        {
-          "yaw": 0.36878629879685576,
-          "pitch": 0.027890464208777388,
-          "title": "Kantorek Woźnych",
-          "text": "Wyjście ewakuacyjne"
-        },
         {
           "yaw": 2.3439841930210816,
           "pitch": 0.2891337120813926,
