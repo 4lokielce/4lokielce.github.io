@@ -1186,6 +1186,12 @@ var APP_DATA = {
           "pitch": 0.11090400540518175,
           "rotation": 0,
           "target": "4-korytarz-sala-gimnatyczna"
+        },
+        {
+          "yaw": 3.00279545538155,
+          "pitch": 0.07279911283501228,
+          "rotation": 0,
+          "target": "0-pano1"
         }
       ],
       "infoHotspots": [
