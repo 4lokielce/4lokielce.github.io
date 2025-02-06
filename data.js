@@ -1616,7 +1616,14 @@ var APP_DATA = {
           "pitch": 0.16401745388381528,
           "rotation": 0.7853981633974483,
           "target": "21-sekretariat"
-        }
+        },
+        {
+          "yaw": 0.36878629879685576,
+          "pitch": 0.027890464208777388,
+          "rotation": 0.7853981633974483,
+          "target": "30-wejcie-nauczycieli",
+          "css":"ewakuacyjny"
+        }        
       ],
       "infoHotspots": [
         {
