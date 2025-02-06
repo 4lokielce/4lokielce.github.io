@@ -1214,12 +1214,6 @@ var APP_DATA = {
           "pitch": 0,
           "title": "Zdjęcia z drona Tello",
           "text": "<a href='img/sala_gimnastyczna_tello.png' target='_blank'><img src='img/sala_gimnastyczna_tello.png' width='260px'></a>"
-        },
-        {
-          "yaw": 3.00279545538155,
-          "pitch": 0.07279911283501228,
-          "title": "Wyjście ewakuacyjne",
-          "text": "Wyjście ewakuacyjne"
         }
       ]
     },
@@ -3340,7 +3334,7 @@ var APP_DATA = {
     },
         {
       "id": "0-pano1",
-      "name": "O projekcie",
+      "name": "Boisko do koszykówki",
       "levels": [
         {
           "tileSize": 256,
