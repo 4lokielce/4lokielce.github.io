@@ -334,8 +334,8 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": -0.06705503849642547,
-          "pitch": 0.059756352291046255,
+          "yaw": 0.23348360423,
+          "pitch": -0.059756352291046255,
           "title": "Gaśnica",
           "text": "Gaśnica",
           "css": "gasnice"
@@ -355,7 +355,7 @@ var APP_DATA = {
         {
           "yaw": 0.5340222469621345,
           "pitch": 0.10299191822582188,
-          "title": "Kantorek&nbsp;",
+          "title": "Kantorek",
           "text": "Tu znajduje się sprzęt sportowy."
         }
       ]
