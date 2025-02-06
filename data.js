@@ -323,7 +323,14 @@ var APP_DATA = {
           "rotation": 5.497787143782138,
           "target": "20-sala-gimnastyczna",
           "css": "ewakuacyjny"
-        }
+        },
+         {
+          "yaw": -0.06705503849642547,
+          "pitch": 0.059756352291046255,
+          "rotation": 0,
+          "target": "0-pano1",
+          "css": "ewakuacyjny"
+        },
       ],
       "infoHotspots": [
         {
@@ -1191,7 +1198,8 @@ var APP_DATA = {
           "yaw": 3.00279545538155,
           "pitch": 0.07279911283501228,
           "rotation": 0,
-          "target": "0-pano1"
+          "target": "0-pano1",
+          "css": "ewakuacyjny"
         }
       ],
       "infoHotspots": [
