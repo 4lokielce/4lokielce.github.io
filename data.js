@@ -336,8 +336,9 @@ var APP_DATA = {
         {
           "yaw": -0.06705503849642547,
           "pitch": 0.059756352291046255,
-          "title": "Wyjście ewakuacyjne",
-          "text": "Wyjście ewakuacyjne&nbsp;"
+          "title": "Gaśnica",
+          "text": "Gaśnica",
+          "css": "gasnice"
         },
         {
           "yaw": 2.7926232898919032,
