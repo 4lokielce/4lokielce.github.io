@@ -1828,9 +1828,9 @@ var APP_DATA = {
         {
           "yaw": -2.672159976220388,
           "pitch": 0.07540589616806201,
-          "title": "Gaśnica",
+          "title": "Urządzenie Gaśnicze",
           "text": "Instrukcja",
-          "css": "gasnice"
+          "css": "urzadzenie_gasnicze"
         },
         {
           "yaw": -2.672159976220388,
