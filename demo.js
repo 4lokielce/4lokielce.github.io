@@ -301,8 +301,7 @@
     var iconWrapper = document.createElement('div');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
     var icon = document.createElement('img');
-    hotspot.css=='gasnice' ? icon.src = 'img/gasnica.png' : icon.src = 'img/info.png';
-    hotspot.css=='urzadzenie_gasnicze' ? icon.src = 'img/urzadzenie_gasnicze.png' : icon.src = 'img/info.png';
+    hotspot.css=='gasnice' ? icon.src = 'img/gasnica.png' : hotspot.css=='urzadzenie_gasnicze' ? icon.src = 'img/urzadzenie_gasnicze.png' : icon.src = 'img/info.png';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
 
