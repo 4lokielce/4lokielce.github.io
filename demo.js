@@ -417,5 +417,6 @@ switchScene(ewakuacja13[kolejnosc]);kolejnosc++;
 }
 startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
 startwirtualnaewakuacja13.addEventListener('click', wirtualnaewakuacja13);
+select1.addEventListener('change', (event) => {  event.target.value});
   
 })();
