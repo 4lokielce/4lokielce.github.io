@@ -417,6 +417,10 @@ switchScene(ewakuacja13[kolejnosc]);kolejnosc++;
 }
 startwirtualnaewakuacja1.addEventListener('click', wirtualnaewakuacja1);
 startwirtualnaewakuacja13.addEventListener('click', wirtualnaewakuacja13);
-select1.addEventListener('change', this.value);
+    document.getElementById('select1').addEventListener('change', function() {
+        if (window[this.value]) {
+            window[this.value](); // Wywołuje funkcję o nazwie zgodnej z wartością option
+        }
+    });
   
 })();
