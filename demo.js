@@ -395,7 +395,7 @@
 function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
-}, 20000);
+}, 10000);
 }
 startlosowyspacer.addEventListener('click', LosowySpacer);
   
