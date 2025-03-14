@@ -930,7 +930,7 @@ var APP_DATA = {
         {
           "yaw": -0.8161080203683149,
           "pitch": -0.017871071465981103,
-          "title": "Sala nr 2",
+          "title": "Sala nr 2 | MATEMATYKA",
           "text": "Pracownia matematyczna"
         }
       ]
@@ -1072,7 +1072,7 @@ var APP_DATA = {
     },
     {
       "id": "18-s6",
-      "name": "Sala nr 6",
+      "name": "Sala nr 6 | MATEMATYKA",
       "levels": [
         {
           "tileSize": 256,
@@ -1674,7 +1674,7 @@ var APP_DATA = {
         {
           "yaw": -2.557174177195785,
           "pitch": 0.014139577151549787,
-          "title": "Sala nr 11",
+          "title": "Sala nr 11 | FIZYKA",
           "text": "Pracownia fizyczna"
         }
       ]
@@ -1738,7 +1738,7 @@ var APP_DATA = {
     },
     {
       "id": "2-s12",
-      "name": "Sala nr 12",
+      "name": "Sala nr 12 | FIZYKA",
       "levels": [
         {
           "tileSize": 256,
@@ -1783,7 +1783,7 @@ var APP_DATA = {
     },
     {
       "id": "3-s13",
-      "name": "Sala nr 13",
+      "name": "Sala nr 13 | INFORMATYKA",
       "levels": [
         {
           "tileSize": 256,
