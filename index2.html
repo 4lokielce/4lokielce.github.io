@@ -403,7 +403,7 @@
 </a>
    
 <a href="https://4lokielce.github.io/"> 
-  <img style="position: absolute; left: 0px; bottom: 0px; z-index: 10; opacity: 0.5;" src="img/logo40.png">
+  <img style="position: absolute; left: 50px; top: 0px; z-index: 10; opacity: 0.5;" src="img/logo40.png">
 </a>
 
 <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
@@ -431,5 +431,12 @@
 <script src="vendor/marzipano.js" ></script>
 <script src="data.js"></script>
 <script src="demo.js"></script>
+<script>
+onload = function() {
+ setInterval(function() {
+ switchScene(scenes[parseInt(scenes.length*Math.random())]);
+ }, 10000);
+}	
+</script>
 </body>
 </html>
