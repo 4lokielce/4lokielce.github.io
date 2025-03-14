@@ -617,7 +617,7 @@ var APP_DATA = {
     },
     {
       "id": "0-k-s4",
-      "name": "k s4",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
@@ -686,7 +686,7 @@ var APP_DATA = {
     },
     {
       "id": "1-k-s6",
-      "name": "k s6",
+      "name": "Parter",
       "levels": [
         {
           "tileSize": 256,
