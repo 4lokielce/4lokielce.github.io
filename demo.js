@@ -182,8 +182,7 @@
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
-  //function switchScene(scene) {
- window.switchScene = function(scene) {
+function switchScene(scene) {
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
@@ -393,12 +392,12 @@
   switchScene(scenes[13]);
 
 //Losowy spacer
-/*function LosowySpacer() {
+function LosowySpacer() {
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 10000);
 }
-startlosowyspacer.addEventListener('click', LosowySpacer);*/
+startlosowyspacer.addEventListener('click', LosowySpacer);
   
 //wirtualnaewakuacja1
 var ewakuacja1=[scenes[13],scenes[7],scenes[29],scenes[3],scenes[4],scenes[6],scenes[5]];  
