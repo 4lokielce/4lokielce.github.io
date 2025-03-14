@@ -3246,7 +3246,7 @@ var APP_DATA = {
     },
     {
       "id": "31-s29",
-      "name": "Sala nr 29",
+      "name": "Sala nr 29 | GEOGRAFIA",
       "levels": [
         {
           "tileSize": 256,
@@ -3291,7 +3291,7 @@ var APP_DATA = {
     },
     {
       "id": "32-s30",
-      "name": "Sala nr 30",
+      "name": "Sala nr 30 | JĘZYK OBCY",
       "levels": [
         {
           "tileSize": 256,
