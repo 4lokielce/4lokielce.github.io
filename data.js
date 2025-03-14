@@ -892,7 +892,7 @@ var APP_DATA = {
     },
     {
       "id": "14-s2",
-      "name": "Sala nr 2",
+      "name": "Sala nr 2 | MATEMATYKA",
       "levels": [
         {
           "tileSize": 256,
