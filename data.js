@@ -1636,7 +1636,7 @@ var APP_DATA = {
     },
       {
       "id": "0-s11",
-      "name": "Sala nr 11",
+      "name": "Sala nr 11 | FIZYKA",
       "levels": [
         {
           "tileSize": 256,
@@ -1907,7 +1907,7 @@ var APP_DATA = {
     },
     {
       "id": "5-s14",
-      "name": "Sala nr 14",
+      "name": "Sala nr 14 | JĘZYK OBCY",
       "levels": [
         {
           "tileSize": 256,
@@ -2009,7 +2009,7 @@ var APP_DATA = {
     },
     {
       "id": "7-s15",
-      "name": "Sala nr 15",
+      "name": "Sala nr 15 | INFORMATYKA",
       "levels": [
         {
           "tileSize": 256,
@@ -2117,7 +2117,7 @@ var APP_DATA = {
     },
     {
       "id": "9-pokj-nauczycielski",
-      "name": "Pokój Nauczycielski",
+      "name": "POKÓJ NAUCZYCIELSKI",
       "levels": [
         {
           "tileSize": 256,
@@ -2225,7 +2225,7 @@ var APP_DATA = {
     },
     {
       "id": "11-s17",
-      "name": "Sala nr 17",
+      "name": "Sala nr 17 | MATEMATYKA",
       "levels": [
         {
           "tileSize": 256,
@@ -2332,7 +2332,7 @@ var APP_DATA = {
     },
     {
       "id": "13-s18",
-      "name": "Sala nr 18",
+      "name": "Sala nr 18 | JĘZYK POLSKI",
       "levels": [
         {
           "tileSize": 256,
@@ -2434,7 +2434,7 @@ var APP_DATA = {
     },
     {
       "id": "15-s19",
-      "name": "Sala nr 19",
+      "name": "Sala nr 19 | HISTORIA",
       "levels": [
         {
           "tileSize": 256,
