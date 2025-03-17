@@ -2479,7 +2479,7 @@ var APP_DATA = {
     },
     {
       "id": "16-s21",
-      "name": "Sala nr 21",
+      "name": "Sala nr 21 | CHEMIA",
       "levels": [
         {
           "tileSize": 256,
@@ -2530,7 +2530,7 @@ var APP_DATA = {
     },
     {
       "id": "17-labchem",
-      "name": "Pracownia chemiczna",
+      "name": "LABORATORIUM CHEMICZNE",
       "levels": [
         {
           "tileSize": 256,
@@ -2630,7 +2630,7 @@ var APP_DATA = {
     },
     {
       "id": "19-s22",
-      "name": "Sala nr 22",
+      "name": "Sala nr 24 | BIOLOGIA",
       "levels": [
         {
           "tileSize": 256,
@@ -2731,7 +2731,7 @@ var APP_DATA = {
     },
     {
       "id": "21-s23",
-      "name": "Sala nr 23",
+      "name": "Sala nr 23 | BIOLOGIA",
       "levels": [
         {
           "tileSize": 256,
@@ -2776,7 +2776,7 @@ var APP_DATA = {
     },
     {
       "id": "22-s24",
-      "name": "Sala nr 24",
+      "name": "Sala nr 24 | JĘZYK OBCY",
       "levels": [
         {
           "tileSize": 256,
@@ -2941,7 +2941,7 @@ var APP_DATA = {
     },
     {
       "id": "25-s26",
-      "name": "Sala nr 26",
+      "name": "Sala nr 26 | JĘZYK POLSKI",
       "levels": [
         {
           "tileSize": 256,
@@ -3043,7 +3043,7 @@ var APP_DATA = {
     },
     {
       "id": "27-s27",
-      "name": "Sala nr 27",
+      "name": "Sala nr 27 | CHEMIA",
       "levels": [
         {
           "tileSize": 256,
@@ -3144,7 +3144,7 @@ var APP_DATA = {
     },
     {
       "id": "29-s28",
-      "name": "Sala nr 28",
+      "name": "Sala nr 28 | JĘZYK POLSKI",
       "levels": [
         {
           "tileSize": 256,
