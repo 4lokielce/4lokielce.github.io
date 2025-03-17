@@ -388,7 +388,9 @@ function switchScene(scene) {
     return null;
   }
 
-
+ // Display the initial scene.
+  switchScene(scenes[0]);
+  
 setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
 }, 10000);
