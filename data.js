@@ -801,7 +801,7 @@ var APP_DATA = {
     },
     {
       "id": "12-s1",
-      "name": "Sala nr 1 | MUZKYA",
+      "name": "Sala nr 1 | MUZYKA",
       "levels": [
         {
           "tileSize": 256,
