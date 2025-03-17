@@ -59,7 +59,7 @@ var APP_DATA = {
     },
       {
       "id": "0-biblioteka",
-      "name": "Biblioteka",
+      "name": "BIBLIOTEKA",
       "levels": [
         {
           "tileSize": 256,
@@ -110,7 +110,7 @@ var APP_DATA = {
     },
     {
       "id": "1-czytelnia",
-      "name": "Czytelnia",
+      "name": "CZYTELNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -161,7 +161,7 @@ var APP_DATA = {
     },
     {
       "id": "2-k-sekretariat",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -213,7 +213,7 @@ var APP_DATA = {
     },
     {
       "id": "3-k-sklepik",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -284,7 +284,7 @@ var APP_DATA = {
     },
     {
       "id": "4-korytarz-sala-gimnatyczna",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -362,7 +362,7 @@ var APP_DATA = {
     },
     {
       "id": "5-korytarz-siownia",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -426,7 +426,7 @@ var APP_DATA = {
     },
     {
       "id": "6-ks1",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -497,7 +497,7 @@ var APP_DATA = {
     },
     {
       "id": "7-ks2",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -554,7 +554,7 @@ var APP_DATA = {
     },
     {
       "id": "8-ks3",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -617,7 +617,7 @@ var APP_DATA = {
     },
     {
       "id": "0-k-s4",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -686,7 +686,7 @@ var APP_DATA = {
     },
     {
       "id": "1-k-s6",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -749,7 +749,7 @@ var APP_DATA = {
     },
     {
       "id": "11-portiernia",
-      "name": "Portiernia",
+      "name": "PORTIERNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -801,7 +801,7 @@ var APP_DATA = {
     },
     {
       "id": "12-s1",
-      "name": "Sala nr 1",
+      "name": "Sala nr 1 | MUZKYA",
       "levels": [
         {
           "tileSize": 256,
@@ -847,7 +847,7 @@ var APP_DATA = {
     },
     {
       "id": "13-s1a",
-      "name": "Sala nr 1A",
+      "name": "Sala nr 1A | RELIGIA",
       "levels": [
         {
           "tileSize": 256,
@@ -937,7 +937,7 @@ var APP_DATA = {
     },
     {
       "id": "15-s3",
-      "name": "Sala nr 3",
+      "name": "Sala nr 3 | JĘZYK POLSKI",
       "levels": [
         {
           "tileSize": 256,
@@ -982,7 +982,7 @@ var APP_DATA = {
     },
     {
       "id": "16-s4",
-      "name": "Sala nr 4",
+      "name": "Sala nr 4 | HISTORIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1027,7 +1027,7 @@ var APP_DATA = {
     },
     {
       "id": "17-s5",
-      "name": "Sala nr 5",
+      "name": "Sala nr 5 | JĘZYK OBCY",
       "levels": [
         {
           "tileSize": 256,
@@ -1117,7 +1117,7 @@ var APP_DATA = {
     },
     {
       "id": "19-sala-7b",
-      "name": "Sala nr 7B",
+      "name": "Sala nr 7B | KONFERENCYJNA",
       "levels": [
         {
           "tileSize": 256,
@@ -1162,7 +1162,7 @@ var APP_DATA = {
     },
     {
       "id": "20-sala-gimnastyczna",
-      "name": "Sala gimnastyczna",
+      "name": "Sala 8 | SALA GIMNASTYCZNA",
       "levels": [
         {
           "tileSize": 256,
@@ -1220,7 +1220,7 @@ var APP_DATA = {
     },
     {
       "id": "21-sekretariat",
-      "name": "Sekretariat",
+      "name": "SEKRETARIAT",
       "levels": [
         {
           "tileSize": 256,
@@ -1271,7 +1271,7 @@ var APP_DATA = {
     },
     {
       "id": "22-siownia",
-      "name": "Siłownia",
+      "name": "SIŁOWNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1316,7 +1316,7 @@ var APP_DATA = {
     },
     {
       "id": "23-sklepik-szkolny",
-      "name": "Sklepik szkolny",
+      "name": "SKLEPIK SZKOLNY",
       "levels": [
         {
           "tileSize": 256,
@@ -1374,7 +1374,7 @@ var APP_DATA = {
     },
     {
       "id": "24-szatnia1",
-      "name": "Szatnia",
+      "name": "SZATNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1425,7 +1425,7 @@ var APP_DATA = {
     },
     {
       "id": "25-szatnia2",
-      "name": "Szatnia",
+      "name": "SZATNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1469,7 +1469,7 @@ var APP_DATA = {
     },
     {
       "id": "26-szatnia3",
-      "name": "Szatnia",
+      "name": "SZATNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1513,7 +1513,7 @@ var APP_DATA = {
     },
     {
       "id": "27-szatnia4",
-      "name": "Szatnia",
+      "name": "SZATNIA",
       "levels": [
         {
           "tileSize": 256,
@@ -1564,7 +1564,7 @@ var APP_DATA = {
     },
    {
       "id": "30-wejcie-nauczycieli",
-      "name": "Parter",
+      "name": "PARTER",
       "levels": [
         {
           "tileSize": 256,
@@ -1681,7 +1681,7 @@ var APP_DATA = {
     },
     {
       "id": "1-k-s11",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -1843,7 +1843,7 @@ var APP_DATA = {
     },
     {
       "id": "4-k-pielgniarka",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -1952,7 +1952,7 @@ var APP_DATA = {
     },
     {
       "id": "6-k-s14",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2054,7 +2054,7 @@ var APP_DATA = {
     },
     {
       "id": "8-k-pokj-nauczycielski",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2162,7 +2162,7 @@ var APP_DATA = {
     },
     {
       "id": "10-k-s17",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2270,7 +2270,7 @@ var APP_DATA = {
     },
     {
       "id": "12-k-s18",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2377,7 +2377,7 @@ var APP_DATA = {
     },
     {
       "id": "14-k-s19",
-      "name": "Pierwsze piętro",
+      "name": "PIERWSZE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2574,7 +2574,7 @@ var APP_DATA = {
     },
     {
       "id": "18-k-s23-s22-s21",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2675,7 +2675,7 @@ var APP_DATA = {
     },
     {
       "id": "20-k-pracownia-chemiczna",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2821,7 +2821,7 @@ var APP_DATA = {
     },
     {
       "id": "23-k-s24",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2878,7 +2878,7 @@ var APP_DATA = {
     },
     {
       "id": "24-k-s26",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -2986,7 +2986,7 @@ var APP_DATA = {
     },
     {
       "id": "26-k-s27",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -3088,7 +3088,7 @@ var APP_DATA = {
     },
     {
       "id": "28-k-s28",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -3189,7 +3189,7 @@ var APP_DATA = {
     },
     {
       "id": "30-k-s29",
-      "name": "Drugie piętro",
+      "name": "DRUGIE PIĘTRO",
       "levels": [
         {
           "tileSize": 256,
@@ -3336,7 +3336,7 @@ var APP_DATA = {
     },
         {
       "id": "0-pano1",
-      "name": "Boisko do koszykówki",
+      "name": "BOISKO DO KOSZYKÓWKI",
       "levels": [
         {
           "tileSize": 256,
