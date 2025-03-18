@@ -151,7 +151,8 @@
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
 alert("OK");
-else
+}
+else {
 alert("NIE, wybrano...");
 switchScene(scene);
 }
