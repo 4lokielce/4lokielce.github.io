@@ -390,11 +390,11 @@ function switchScene(scene) {
   }
 
  // Display the initial scene.
+function start() {  
 var losowascena = scenes[parseInt(scenes.length*Math.random())]
-
 switchScene(losowascena);
-
-
+}
+start()
 
   
 
