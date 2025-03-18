@@ -266,7 +266,7 @@ function switchScene(scene) {
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
-      alert(hotspot.target)
+      alert("test"+hotspot.target)
       switchScene(findSceneById(hotspot.target));
     });
 
