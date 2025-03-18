@@ -149,7 +149,7 @@
   scenes.forEach(function(scene) {
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
-            alert(scene.data.id)
+            alert(scene.data.id==losowascena ? "OK" : "NIE")
       switchScene(scene);
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
@@ -390,13 +390,10 @@ function switchScene(scene) {
   }
 
  // Display the initial scene.
-//  switchScene(scenes[0]);
-  
-//setInterval(function() {
- var losowascena = scenes[parseInt(scenes.length*Math.random())]
-  alert(losowascena.data.id)
+var losowascena = scenes[parseInt(scenes.length*Math.random())]
+
 switchScene(losowascena);
-//}, 10000);
+
 
 
   
