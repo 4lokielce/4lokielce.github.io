@@ -149,7 +149,7 @@
   scenes.forEach(function(scene) {
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
-            alert(scene.data.id==losowascena ? "OK" : "NIE")
+            alert(scene.data.id==losowascena.data.id ? "OK" : "NIE")
       switchScene(scene);
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
