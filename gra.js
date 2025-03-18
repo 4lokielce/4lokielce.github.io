@@ -153,8 +153,8 @@ if (scene.data.id==losowascena.data.id) {
 alert("OK");
 }
 else {
-alert("NIE, wybrano " + scene.data.id);
 switchScene(scene);
+alert("NIE, wybrano " + scene.data.name);
 }
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
