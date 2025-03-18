@@ -266,6 +266,7 @@ function switchScene(scene) {
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
+      alert(hotspot.target)
       switchScene(findSceneById(hotspot.target));
     });
 
@@ -389,11 +390,11 @@ function switchScene(scene) {
   }
 
  // Display the initial scene.
-  switchScene(scenes[0]);
+//  switchScene(scenes[0]);
   
-setInterval(function() {
+//setInterval(function() {
 switchScene(scenes[parseInt(scenes.length*Math.random())]);
-}, 10000);
+//}, 10000);
 
 
   
