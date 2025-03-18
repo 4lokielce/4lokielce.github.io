@@ -149,6 +149,7 @@
   scenes.forEach(function(scene) {
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
+            alert(scene.data.id)
       switchScene(scene);
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
@@ -266,7 +267,6 @@ function switchScene(scene) {
 
     // Add click event handler.
     wrapper.addEventListener('click', function() {
-      alert("test"+hotspot.target)
       switchScene(findSceneById(hotspot.target));
     });
 
@@ -394,7 +394,7 @@ function switchScene(scene) {
   
 //setInterval(function() {
  var losowascena = scenes[parseInt(scenes.length*Math.random())]
-  alert(losowascena.id)
+//  alert(losowascena.id)
 switchScene(losowascena);
 //}, 10000);
 
