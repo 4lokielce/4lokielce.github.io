@@ -393,7 +393,9 @@ function switchScene(scene) {
 //  switchScene(scenes[0]);
   
 //setInterval(function() {
-switchScene(scenes[parseInt(scenes.length*Math.random())]);
+ var losowascena = scenes[parseInt(scenes.length*Math.random())]
+  alert(losowascena)
+switchScene(losowascena);
 //}, 10000);
 
 
