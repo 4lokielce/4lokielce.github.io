@@ -394,7 +394,7 @@ function switchScene(scene) {
   
 //setInterval(function() {
  var losowascena = scenes[parseInt(scenes.length*Math.random())]
-//  alert(losowascena.id)
+  alert(losowascena.data.id)
 switchScene(losowascena);
 //}, 10000);
 
