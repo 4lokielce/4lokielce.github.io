@@ -216,7 +216,7 @@ a{
 }
 
 .modalBtnL{
-	padding: 40px;
+	padding: 30px;
 }
 
 .modalMessage{
@@ -385,7 +385,7 @@ a{
 		margin-left: 215px;
 	}
 	.modalBtnL, .modalBtn{
-		padding:6vh;
+		padding: 5vh;
 	}
 	.msBlock {
 		margin-top: 22px;
