@@ -40,12 +40,11 @@ a{
 	margin: 3px;
 	display: inline-block;
 }
-
-.logo_gold{
+.logo_gold, .blockGold{
     background-color: #fbee04;
 }
 
-.logo_green{
+.logo_green, .blockGreen{
     background-color: #00005b;
 }
 
@@ -161,17 +160,11 @@ a{
 	transform: rotateX(360deg);
 }
 
-.blockGreen{
-	background-color: #35a535;
-}
-
 .blockGrey{
 	background-color: #737373;
 }
 
-.blockGold{
-	background-color: #d7bf4a;
-}
+
 
 /*modal*/
 #shadowBack{
