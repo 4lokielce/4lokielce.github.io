@@ -31,7 +31,7 @@ a{
 	filter: brightness(1.125);
 }
 
-.logo_green, .logo_gold{
+.dobre_miejsce, .zle_miejsce{
     font-size: 26px;
 	color: #fff;
 	width: 49px;
@@ -40,12 +40,12 @@ a{
 	margin: 3px;
 	display: inline-block;
 }
-.logo_gold, .blockGold{
-    background-color: #fbee04;
+.zle_miejsce{
+    background-color: #d5b8ea;
 }
 
-.logo_green, .blockGreen{
-    background-color: #00005b;
+.dobre_miejsce{
+    background-color: #7030a0;
 }
 
 /*nav bar*/
@@ -155,7 +155,7 @@ a{
 	width: 58px;
 }
 
-.blockGreen, .blockGrey, .blockGold{
+.dobre_miejsce, .blockGrey, .zle_miejsce{
 	color:#fff;
 	transform: rotateX(360deg);
 }
@@ -349,7 +349,7 @@ a{
 		width: 30px;
 		height: 30px;
 	}
-	.logo_green, .logo_gold {
+	.dobre_miejsce, .zle_miejsce{
 		font-size: 21px;
 		width: 32px;
 		height: 27px;
