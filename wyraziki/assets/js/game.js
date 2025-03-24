@@ -45,7 +45,7 @@ function showHelp(modal, type){
 	if(type == 'game'){
 		for(i = 0; i < exampleWords.length; i++){
 			let rand = Math.floor(Math.random() * 6);
-			let tileClass = (i == 0)? 'blockGreen' : ((i == 1)? 'blockGold' : 'blockGrey');
+			let tileClass = (i == 0)? 'dobre_miejsce' : ((i == 1)? 'zle_miejsce' : 'blockGrey');
 			let exNotification = '';
 			let exampleRow = document.createElement('div');
 			exampleRow.className = 'exampleRow';
@@ -246,7 +246,7 @@ function addLogo(){
 
 	let domName = 'WYRAZIKI';
 	for(i = 0; i < domName.length; i++){
-		let spanClass = (i == 0 || i % 2 == 0)? 'logo_green' : 'logo_gold';
+		let spanClass = (i == 0 || i % 2 == 0)? 'dobre_miejsce' : 'zle_miejsce';
 		let logoSpan = document.createElement('span');
 		logoSpan.className = spanClass;
 		logoSpan.innerText = domName[i];
@@ -669,10 +669,10 @@ function checkAnswer(wordRow, answer){
 		if(chosenWord.toUpperCase().includes(letter)){
 			if(chosenWord[i].toUpperCase() === letter){
 				score++;
-				blockClass = ' blockGreen';
+				blockClass = ' dobre_miejsce';
 				if(count(answer, letter) > count(chosenWord, letter)){
 					for(j = 0; j < wordRow.childNodes.length; j++){
-						if(wordRow.childNodes[j].innerText == letter && wordRow.childNodes[j].className == 'row_block  blockGold'){
+						if(wordRow.childNodes[j].innerText == letter && wordRow.childNodes[j].className == 'row_block  zle_miejsce'){
 							wordRow.childNodes[j].className = 'row_block  blockGrey';
 							let index = answerArray.indexOf(letter);
 							if (index !== -1) {
@@ -683,7 +683,7 @@ function checkAnswer(wordRow, answer){
 				}
 			}else{
 				if(countOccurrences(answerArray, letter) <= count(chosenWord, letter)){
-					blockClass = ' blockGold';
+					blockClass = ' zle_miejsce';
 				}
 				else{
 					blockClass = ' blockGrey';
@@ -694,13 +694,13 @@ function checkAnswer(wordRow, answer){
 		let keyboard = document.getElementById('keyboard_' + letter);
 		if(chosenWord.toUpperCase().includes(letter)){
 			if(letter == chosenWord[i]){
-				if(!keyboard.className.includes('blockGreen')){
-					keyboard.classList.remove('blockGold');
-					keyboard.className += ' blockGreen';
+				if(!keyboard.className.includes('dobre_miejsce')){
+					keyboard.classList.remove('zle_miejsce');
+					keyboard.className += ' dobre_miejsce';
 				}
 			}else{
-				if(!keyboard.className.includes('blockGreen') && !keyboard.className.includes('blockGold')){
-					keyboard.className += ' blockGold';
+				if(!keyboard.className.includes('dobre_miejsce') && !keyboard.className.includes('zle_miejsce')){
+					keyboard.className += ' zle_miejsce';
 				}
 			}
 			if(count(answer, letter) > count(mustUse, letter) && count(mustUse, letter) <= count(chosenWord, letter)){
