@@ -5,7 +5,7 @@ html, body{
 }
 
 a{
-	color: #337c33;
+	color: #d5b8ea;
 }
 
 #container{
@@ -31,7 +31,7 @@ a{
 	filter: brightness(1.125);
 }
 
-.dobre_miejsce, .zle_miejsce{
+.logo .dobre_miejsce, .logo .zle_miejsce{
     font-size: 26px;
 	color: #fff;
 	width: 49px;
@@ -349,7 +349,7 @@ a{
 		width: 30px;
 		height: 30px;
 	}
-	.dobre_miejsce, .zle_miejsce{
+	.logo .dobre_miejsce, .logo .zle_miejsce{
 		font-size: 21px;
 		width: 32px;
 		height: 27px;
