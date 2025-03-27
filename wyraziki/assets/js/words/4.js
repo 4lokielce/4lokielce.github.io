@@ -1,8 +1,7 @@
 custom = ["JSON"];
+beginner = ["BAJT","CMYK","DYSK","HDMI","HTML","HTTP","JPEG","MEGA","TERA","TIFF"];
 
-beginner = ["BAJT","CMYK","DHCP","DYSK","FTPS","HDMI","HTML","HTTP","IMAP","JPEG","MEGA","SMTP","TERA","TIFF"];
-
-intermediate = beginner.concat(["MOLP","NTFS"]);
+intermediate = beginner.concat(["DHCP","FTPS","IMAP","MOLP","NTFS","SMTP"]);
 
 advanced = intermediate.concat(["JSON"]);
 

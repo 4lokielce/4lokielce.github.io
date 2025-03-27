@@ -1,5 +1,5 @@
 custom = ["ADRES","LOGIN"];
-beginner = ["ADRES","APPLE","DYSKI","HAKER","HASŁO","HTTPS", "KARTA","KLUCZ","LOGIN","MODEM","PAINT","PLIKI","WKLEJ"];
-intermediate = beginner.concat(["BAJTY","BUFOR","CACHE","FLASH","ŁĄCZE"]);
+beginner = ["ADRES","APPLE","BAJTY","DYSKI","EKRAN","EXCEL","FOLDER","HAKER","HASŁO","HTTPS","KABEL","KARTA","KLUCZ","LINUX","LISTA", "LOGIN","ŁĄCZE","MODEM","PAINT","PIXEL","PLIKI","PŁYTA","PŁYTY","RUTER","SESJA","SESJE", "SZYFR","WKLEJ","ZAPIS"];
+intermediate = beginner.concat(["BUFOR","CACHE","FLASH"]);
 advanced = intermediate.concat(["DEBUG"]);
-fullList = advanced.concat(["ADRES", "APPLE", "BUFOR", "EKRAN", "EXCEL", "FOLDER", "HASŁO", "KABEL", "KARTA", "KLUCZ", "LINUX", "LISTA", "LOGIN", "MODEM", "PIXEL", "PLIKI", "PŁYTA", "PŁYTY", "PRINT", "RUTER", "SESJA", "SESJE", "SZYFR", "ZAPIS"]);
+fullList = advanced.concat([]);

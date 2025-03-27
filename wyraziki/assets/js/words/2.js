@@ -1,5 +1,5 @@
 custom = ["ZM"];
-beginner = ["BB","CD","GB","GG","IF","IP","ON","OS","PX","RR", "SD"];
-intermediate = beginner.concat(["AI","AS","IN","KB","MB","OR"]);
+beginner = ["CD","GB","IP","KB","MB","ON","PX","SD","TB"];
+intermediate = beginner.concat(["AI","AS","IN","IF","OR","OS"]);
 advanced = intermediate.concat(["ZM"]);
 fullList = advanced.concat(["ZM"]);
