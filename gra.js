@@ -151,6 +151,7 @@
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
 alert("OK");
+switchScene(losowascena);
 }
 else {
 //switchScene(scene);
