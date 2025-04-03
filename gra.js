@@ -152,7 +152,7 @@ var losowascena
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
 alert("OK");
-switchScene(scenes[parseInt(scenes.length*Math.random())]);
+start();
 }
 else {
 //switchScene(scene);
