@@ -16,7 +16,8 @@
 'use strict';
 
 (function() {
-var losowascena
+var losowascena;
+var suma=0;  
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
@@ -151,12 +152,14 @@ var losowascena
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
-alert("OK");
+  suma+=10
+alert("OK. (+10p) masz " + suma + "punktów" );
 start();
 }
 else {
 //switchScene(scene);
-alert("NIE, wybrano " + scene.data.name);
+  suma--
+alert("NIE, (-1p) wybrano " + scene.data.name);
 }
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
