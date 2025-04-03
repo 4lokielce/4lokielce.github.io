@@ -16,6 +16,7 @@
 'use strict';
 
 (function() {
+var losowascena
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
@@ -397,7 +398,9 @@ function switchScene(scene) {
 
  // Display the initial scene.
 
-var losowascena = scenes[parseInt(scenes.length*Math.random())]
+  function start() {
+losowascena = scenes[parseInt(scenes.length*Math.random())]
 switchScene(losowascena);
-  
+  }
+  start()
 })();
