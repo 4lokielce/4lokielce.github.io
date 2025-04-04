@@ -159,7 +159,7 @@ start();
 else {
 //switchScene(scene);
   suma--
-alert("Źle, (-1p)\nWybrano " + scene.data.name\nPróbuj dalej);
+alert("Źle, (-1p)\nWybrano " + scene.data.name+"\nPróbuj dalej");
 }
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
