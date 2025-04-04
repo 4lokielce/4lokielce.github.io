@@ -153,13 +153,13 @@ var suma=0;
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
   suma+=10
-alert("OK. (+10p) masz " + suma + "punktów" );
+alert("OK. (+10p)\nMasz " + suma + "punktów" );
 start();
 }
 else {
 //switchScene(scene);
   suma--
-alert("NIE, (-1p) wybrano " + scene.data.name);
+alert("Źle, (-1p)\nWybrano " + scene.data.name\nPróbuj dalej);
 }
       // On mobile, hide scene list after selecting a scene.
       if (document.body.classList.contains('mobile')) {
