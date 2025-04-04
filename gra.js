@@ -153,7 +153,7 @@ var suma=0;
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
   suma+=10
-alert("OK. (+10p)\nMasz " + suma + "punktów" );
+alert("OK. (+3p)\nMasz " + suma + "punktów" );
 start();
 }
 else {
