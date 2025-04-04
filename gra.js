@@ -152,13 +152,13 @@ var suma=0;
     var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
     el.addEventListener('click', function() {
 if (scene.data.id==losowascena.data.id) {
-  suma+=10
+  suma+=3;
 alert("OK. (+3p)\nMasz " + suma + "punktów" );
 start();
 }
 else {
 //switchScene(scene);
-  suma--
+  suma--;
 alert("Źle, (-1p)\nWybrano " + scene.data.name+"\nPróbuj dalej");
 }
       // On mobile, hide scene list after selecting a scene.
