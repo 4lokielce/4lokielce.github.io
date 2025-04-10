@@ -402,11 +402,13 @@ function switchScene(scene) {
  // Display the initial scene.
 
   function start() {
-losowascena = scenes[parseInt(scenes.length*Math.random())];
+    for (var i = 0; i < scenes.length; i++) {
+losowascena = scenes[parseInt((scenes.length-i)*Math.random())];
 tymczasowa=scenes[losowascena];
 scenes[losowascena]=scenes[scenes.length];
 scenes[scenes.length]=tymczasowa;    
 switchScene(losowascena);
+    }
   }
   start()
 })();
