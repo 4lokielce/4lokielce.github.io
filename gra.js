@@ -402,7 +402,10 @@ function switchScene(scene) {
  // Display the initial scene.
 
   function start() {
-losowascena = scenes[parseInt(scenes.length*Math.random())]
+losowascena = scenes[parseInt(scenes.length*Math.random())];
+tymczasowa=scenes[losowascena];
+scenes[losowascena]=scenes[scenes.length];
+    
 switchScene(losowascena);
   }
   start()
