@@ -405,7 +405,7 @@ function switchScene(scene) {
 losowascena = scenes[parseInt(scenes.length*Math.random())];
 tymczasowa=scenes[losowascena];
 scenes[losowascena]=scenes[scenes.length];
-    
+scenes[scenes.length]=tymczasowa;    
 switchScene(losowascena);
   }
   start()
