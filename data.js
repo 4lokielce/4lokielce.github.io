@@ -2630,7 +2630,7 @@ var APP_DATA = {
     },
     {
       "id": "19-s22",
-      "name": "Sala nr 24 | BIOLOGIA",
+      "name": "Sala nr 22 | BIOLOGIA",
       "levels": [
         {
           "tileSize": 256,
