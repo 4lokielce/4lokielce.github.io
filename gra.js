@@ -406,10 +406,11 @@ function switchScene(scene) {
 
     for (var i = 0; i < scenes.length; i++) {
 losowascena = scenes[parseInt((scenes.length-i)*Math.random())];
-    }
+
 pomocnicza=scenes[losowascena];
-scenes[losowascena]=scenes[scenes.length];
+scenes[losowascena]=scenes[scenes.length-i];
 scenes[scenes.length]=pomocnicza;    
+          }
 switchScene(losowascena);
 
   }
