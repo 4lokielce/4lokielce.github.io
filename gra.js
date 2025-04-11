@@ -409,7 +409,7 @@ losowascena = scenes[parseInt((scenes.length-i)*Math.random())];
 
 pomocnicza=scenes[losowascena];
 scenes[losowascena]=scenes[scenes.length-i];
-scenes[scenes.length]=pomocnicza;    
+scenes[scenes.length-i]=pomocnicza;    
           }
 switchScene(losowascena);
 
