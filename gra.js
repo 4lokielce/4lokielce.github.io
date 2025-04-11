@@ -413,7 +413,7 @@ scenes[losowascena]=scenes[scenes.length-licznik];
 scenes[scenes.length-licznik]=pomocnicza;    
 //          }
 switchScene(losowascena);
-
+licznik++
   }
   start()
 })();
