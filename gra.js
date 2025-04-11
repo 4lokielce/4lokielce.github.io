@@ -17,7 +17,8 @@
 
 (function() {
 var losowascena;
-var suma=0;  
+var suma=0;
+var pomocnicza;
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
@@ -402,14 +403,15 @@ function switchScene(scene) {
  // Display the initial scene.
 
   function start() {
-//    var tymczasowa;
-//    for (var i = 0; i < scenes.length; i++) {
-losowascena = scenes[parseInt((scenes.length)*Math.random())];
-//tymczasowa=scenes[losowascena];
-//scenes[losowascena]=scenes[scenes.length];
-//scenes[scenes.length]=tymczasowa;    
+
+    for (var i = 0; i < scenes.length; i++) {
+losowascena = scenes[parseInt((scenes.length-i)*Math.random())];
+    }
+pomocnicza=scenes[losowascena];
+scenes[losowascena]=scenes[scenes.length];
+scenes[scenes.length]=pomocnicza;    
 switchScene(losowascena);
-//    }
+
   }
   start()
 })();
