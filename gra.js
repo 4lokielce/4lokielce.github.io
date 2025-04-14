@@ -18,7 +18,7 @@
 (function() {
 var losowascena;
 var suma=0;
-  var licznik =0;
+var licznik =0;
 var pomocnicza;
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
@@ -404,16 +404,13 @@ function switchScene(scene) {
  // Display the initial scene.
 
   function start() {
-
-//    for (var i = 0; i < scenes.length; i++) {
 losowascena = scenes[parseInt((scenes.length-licznik)*Math.random())];
-
 pomocnicza=scenes[losowascena];
 scenes[losowascena]=scenes[scenes.length-licznik];
 scenes[scenes.length-licznik]=pomocnicza;    
-//          }
 switchScene(losowascena);
 licznik++
+    if(licznik==scenes.length) alert("KONIEC GRY")
   }
   start()
 })();
