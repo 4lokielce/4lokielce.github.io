@@ -410,7 +410,7 @@ scenes[losowascena]=scenes[scenes.length-licznik];
 scenes[scenes.length-licznik]=pomocnicza;    
 switchScene(losowascena);
 licznik++
-    if(licznik==scenes.length) alert("KONIEC GRY")
+    if(licznik==scenes.length) alert("KONIEC GRY"\nZdobyłeś " + suma + "punktów na "+(scenes.length*3)+"możliwych")
   }
   start()
 })();
