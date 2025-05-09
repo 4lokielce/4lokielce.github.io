@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter Dziesiętny na Binarny</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            min-height: 100vh;
+        }
+        .step-animation {
+            transition: all 0.5s ease-in-out;
+        }
+        .arrow {
+            position: relative;
+        }
+        .arrow::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #4f46e5;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden p-6 my-10">
+        <h1 class="text-3xl font-bold text-center text-indigo-700 mb-6">Konwersja Liczby Dziesiętnej na Binarną</h1>
+        
+        <div class="mb-8">
+            <label for="decimalInput" class="block text-gray-700 text-lg font-medium mb-2">Podaj liczbę dziesiętną:</label>
+            <div class="flex gap-4">
+                <input type="number" id="decimalInput" min="0" max="1000000" value="42" 
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg">
+                <button id="convertBtn" 
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                    Konwertuj
+                </button>
+            </div>
+        </div>
+
+        <div id="speedControl" class="mb-8 flex flex-col sm:flex-row items-center gap-4">
+            <label class="text-gray-700 font-medium">Prędkość animacji:</label>
+            <div class="flex items-center gap-2 w-full sm:w-auto">
+                <span class="text-sm">Wolno</span>
+                <input type="range" id="speedSlider" min="1" max="5" value="3" 
+                    class="w-full sm:w-48 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                <span class="text-sm">Szybko</span>
+            </div>
+        </div>
+
+        <div id="conversionContainer" class="hidden">
+            <div class="bg-indigo-50 p-6 rounded-xl mb-6">
+                <h2 class="text-xl font-semibold text-indigo-800 mb-4">Krok po kroku:</h2>
+                <div id="stepsContainer" class="space-y-6"></div>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl">
+                <h2 class="text-xl font-semibold text-green-800 mb-2">Wynik:</h2>
+                <div class="flex items-center gap-4">
+                    <span id="decimalResult" class="text-2xl font-bold"></span>
+                    <span class="text-xl">=</span>
+                    <span id="binaryResult" class="text-2xl font-bold text-green-700"></span>
+                    <span class="text-xl">(binarnie)</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="explanationContainer" class="mt-8 bg-blue-50 p-6 rounded-xl">
+            <h2 class="text-xl font-semibold text-blue-800 mb-4">Jak działa konwersja z systemu dziesiętnego na binarny?</h2>
+            <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                <li>Dzielimy liczbę dziesiętną przez 2.</li>
+                <li>Zapisujemy resztę z dzielenia (0 lub 1).</li>
+                <li>Wynik dzielenia (bez reszty) staje się nową liczbą do dzielenia.</li>
+                <li>Powtarzamy kroki 1-3, aż wynik dzielenia będzie równy 0.</li>
+                <li>Odczytujemy reszty z dzielenia od dołu do góry, aby uzyskać liczbę binarną.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const decimalInput = document.getElementById('decimalInput');
+            const convertBtn = document.getElementById('convertBtn');
+            const stepsContainer = document.getElementById('stepsContainer');
+            const decimalResult = document.getElementById('decimalResult');
+            const binaryResult = document.getElementById('binaryResult');
+            const conversionContainer = document.getElementById('conversionContainer');
+            const speedSlider = document.getElementById('speedSlider');
+            
+            convertBtn.addEventListener('click', startConversion);
+            
+            function startConversion() {
+                const decimal = parseInt(decimalInput.value);
+                
+                if (isNaN(decimal) || decimal < 0) {
+                    alert('Proszę podać poprawną liczbę nieujemną!');
+                    return;
+                }
+                
+                // Pokaż kontener z wynikami
+                conversionContainer.classList.remove('hidden');
+                
+                // Wyczyść poprzednie kroki
+                stepsContainer.innerHTML = '';
+                
+                // Ustaw wyniki
+                decimalResult.textContent = decimal;
+                
+                // Jeśli liczba to 0, specjalne traktowanie
+                if (decimal === 0) {
+                    binaryResult.textContent = '0';
+                    
+                    const stepDiv = document.createElement('div');
+                    stepDiv.className = 'p-4 bg-white rounded-lg shadow step-animation opacity-0';
+                    stepDiv.innerHTML = `
+                        <p class="text-lg">Liczba 0 w systemie dziesiętnym to 0 w systemie binarnym.</p>
+                    `;
+                    stepsContainer.appendChild(stepDiv);
+                    
+                    setTimeout(() => {
+                        stepDiv.classList.remove('opacity-0');
+                    }, 100);
+                    
+                    return;
+                }
+                
+                // Oblicz konwersję
+                const steps = [];
+                let num = decimal;
+                let binary = '';
+                
+                while (num > 0) {
+                    const remainder = num % 2;
+                    steps.push({
+                        number: num,
+                        division: Math.floor(num / 2),
+                        remainder: remainder
+                    });
+                    binary = remainder + binary;
+                    num = Math.floor(num / 2);
+                }
+                
+                binaryResult.textContent = binary;
+                
+                // Pokaż kroki animowane
+                showStepsAnimated(steps);
+            }
+            
+            function showStepsAnimated(steps) {
+                stepsContainer.innerHTML = '';
+                
+                // Utwórz elementy dla wszystkich kroków, ale ukryj je
+                steps.forEach((step, index) => {
+                    const stepDiv = document.createElement('div');
+                    stepDiv.className = 'p-4 bg-white rounded-lg shadow step-animation opacity-0';
+                    
+                    const isLastStep = index === steps.length - 1;
+                    
+                    stepDiv.innerHTML = `
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                            <div class="flex-none">
+                                <span class="inline-block w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">
+                                    ${index + 1}
+                                </span>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <div class="flex items-center">
+                                        <div class="text-xl font-medium">${step.number}</div>
+                                        <div class="mx-2 text-xl">÷</div>
+                                        <div class="text-xl font-medium">2</div>
+                                        <div class="mx-2 text-xl">=</div>
+                                        <div class="text-xl font-medium">${step.division}</div>
+                                    </div>
+                                    <div class="flex items-center ml-2 sm:ml-6">
+                                        <div class="text-gray-600">reszta:</div>
+                                        <div class="ml-2 w-8 h-8 rounded-full bg-green-100 border-2 border-green-500 flex items-center justify-center font-bold text-green-700">
+                                            ${step.remainder}
+                                        </div>
+                                    </div>
+                                </div>
+                                ${isLastStep ? `
+                                <div class="mt-3 text-indigo-700 font-medium">
+                                    Wynik dzielenia to 0, więc kończymy proces.
+                                </div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                    
+                    stepsContainer.appendChild(stepDiv);
+                });
+                
+                // Dodaj podsumowanie
+                const summaryDiv = document.createElement('div');
+                summaryDiv.className = 'p-4 bg-indigo-100 rounded-lg shadow step-animation opacity-0 mt-6';
+                
+                let binaryResult = '';
+                for (let i = steps.length - 1; i >= 0; i--) {
+                    binaryResult += steps[i].remainder;
+                }
+                
+                summaryDiv.innerHTML = `
+                    <div class="font-medium text-lg text-indigo-800">Odczytujemy reszty od dołu do góry:</div>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        ${steps.map((step, idx) => {
+                            const stepIndex = steps.length - 1 - idx;
+                            return `
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 border-2 border-green-500 flex items-center justify-center font-bold text-green-700">
+                                        ${steps[stepIndex].remainder}
+                                    </div>
+                                    <div class="text-xs text-gray-500 mt-1">Krok ${stepIndex + 1}</div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                    <div class="mt-4 text-xl font-bold text-indigo-800">
+                        Wynik: ${steps[0].number}<sub>10</sub> = ${binaryResult}<sub>2</sub>
+                    </div>
+                `;
+                
+                stepsContainer.appendChild(summaryDiv);
+                
+                // Animuj pokazywanie kroków
+                const stepElements = stepsContainer.querySelectorAll('.step-animation');
+                
+                let delay = 0;
+                const baseDelay = 600 / speedSlider.value;
+                
+                stepElements.forEach((el, idx) => {
+                    setTimeout(() => {
+                        el.classList.remove('opacity-0');
+                        
+                        // Przewiń do nowego elementu
+                        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, delay);
+                    
+                    delay += baseDelay;
+                });
+            }
+            
+            // Obsługa zmiany prędkości
+            speedSlider.addEventListener('input', function() {
+                // Prędkość jest obsługiwana przy każdym wywołaniu showStepsAnimated
+            });
+            
+            // Inicjalizacja - pokaż przykład
+            decimalInput.value = "42";
+            startConversion();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93d03d6bb61ceeb5',t:'MTc0Njc4MzY3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
