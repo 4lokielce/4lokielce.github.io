@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let C = document.getElementById("c");
     let D = document.getElementById("d");
 
-    if (beg_questions > 19) {
+    if (beg_questions > 20) {
       let num = Math.floor(Math.random() * (Object.keys(json).length - 0));
     } else {
       num = beg_questions;
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
     answering = false;
     score += 100;
     beg_questions += 1;
-    if (beg_questions < 19) {
+    if (beg_questions < 20) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
       document.getElementById("nr").hidden = true;
     } else {
@@ -393,7 +393,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function Wrong() {
     answering = false;
     beg_questions += 1;
-    if (beg_questions < 19) {
+    if (beg_questions < 20) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
       document.getElementById("nr").hidden = true;
     } else {
