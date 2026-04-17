@@ -1,0 +1,162 @@
+{
+  "0": {
+    "question": "Jaka część komputera jest odpowiedzialna za wyświetlanie obrazów",
+    "A": "Karta Graficzna",
+    "B": "RAM",
+    "C": "SSD",
+    "D": "Dysk twardy",
+    "answer": "A"
+  },
+  "1": {
+    "question": "Po jakim zwierzęciu jest nazwany pewien język programowania którego nazwa zaczyna się na P",
+    "A": "Po ptaku",
+    "B": "Po niedźwiedziu",
+    "C": "Po wężu",
+    "D": "Po wilku",
+    "answer": "C"
+  },
+  "2": {
+    "question": "1024 MB to:",
+    "A": "1 KB",
+    "B": "1 KG",
+    "C": "1 GB",
+    "D": "1 TB",
+    "answer": "C"
+  },
+  "3": {
+    "question": "Jaki blok w Scratchu odpowiada za ruch?",
+    "A": "Speak",
+    "B": "Move x steps",
+    "C": "Play sound",
+    "D": "Change character",
+    "answer": "B"
+  },
+  "4": {
+    "question": "Jak inaczej nazywa się procesor?",
+    "A": "RAM",
+    "B": "SSD",
+    "C": "GPU",
+    "D": "CPU",
+    "answer": "D"
+  },
+  "5": {
+    "question": "MOD w Excelu zwraca",
+    "A": "Dodane liczby",
+    "B": "Resztę podzielonej liczby",
+    "C": "Odjęte liczby",
+    "D": "Liczby spotęgowane",
+    "answer": "B"
+  },
+  "6": {
+    "question": "Czym jest element a w html?",
+    "A": "Pogrubionym tekstem",
+    "B": "Zdięciem",
+    "C": "Polem do pisania",
+    "D": "Hiperlinkem",
+    "answer": "D"
+  },
+  "7": {
+    "question": "Czym jest element b w html?",
+    "A": "Pogrubionym tekstem",
+    "B": "Zdięciem",
+    "C": "Polem do pisania",
+    "D": "Hiperlinkem",
+    "answer": "A"
+  },
+  "8": {
+    "question": "Czym drukujemy wiadomości w pythonie?",
+    "A": "def",
+    "B": "return",
+    "C": "print()",
+    "D": "class",
+    "answer": "C"
+  },
+  "9": {
+    "question": "Czym zwracamy zmienne z funkcji w pythonie?",
+    "A": "print()",
+    "B": "return",
+    "C": "def",
+    "D": "class",
+    "answer": "B"
+  },
+  "10": {
+    "question": "Co oznacza skrót CPU?",
+    "A": "Computer Personal Unit",
+    "B": "Central Processing Unit",
+    "C": "Central Program Utility",
+    "D": "Control Processing Unit",
+    "answer": "B"
+  },
+  "11": {
+    "question": "Co oznacza skrót WWW?",
+    "A": "Wide Web World",
+    "B": "Web World Wide",
+    "C": "World Wide Web",
+    "D": "Wprld Work Web",
+    "answer": "C"
+  },
+  "12": {
+    "question": "Jaki typ plików ma końcówkę .avi?",
+    "A": "Filmiki",
+    "B": "Muzyka",
+    "C": "Zdięcia",
+    "D": "Programy",
+    "answer": "A"
+  },
+  "13": {
+    "question": "Jaki typ plików ma końcówkę .ogg?",
+    "A": "Filmiki",
+    "B": "Muzyka",
+    "C": "Zdięcia",
+    "D": "Programy",
+    "answer": "B"
+  },
+  "14": {
+    "question": "Czym jest wirus komputerowy",
+    "A": "Program mający na celu zaszkodzić komputerowi",
+    "B": "Program zwiększający pamięc na komputerze",
+    "C": "Program do tworzenia gier",
+    "D": "Program do edycji tekstu",
+    "answer": "A"
+  },
+  "15": {
+    "question": "Czym jest RAN",
+    "A": "Trwała pamięć",
+    "B": "Część wykonująca obliczenia",
+    "C": "Wyświetla obrazy na ekranie",
+    "D": "Tymczasowa pamięć",
+    "answer": "D"
+  },
+  "16": {
+    "question": "Czym jest JS",
+    "A": "Językiem Programowania",
+    "B": "Protokołem",
+    "C": "Typem praw autorskich",
+    "D": "Techniką oszustwa internetowego",
+    "answer": "A"
+  },
+  "17": {
+    "question": "Czym jest Phising",
+    "A": "Językiem Programowania",
+    "B": "Protokołem",
+    "C": "Typem praw autorskich",
+    "D": "Techniką oszustwa internetowego",
+    "answer": "D"
+  },
+  "18": {
+    "question": "Czym jest MIT",
+    "A": "Językiem Programowania",
+    "B": "Protokołem",
+    "C": "Typem praw autorskich",
+    "D": "Techniką oszustwa internetowego",
+    "answer": "C"
+  },
+  "19": {
+    "question": "Czym jest HTTP",
+    "A": "Językiem Programowania",
+    "B": "Protokołem",
+    "C": "Typem praw autorskich",
+    "D": "Techniką oszustwa internetowego",
+    "answer": "B"
+  }
+}
