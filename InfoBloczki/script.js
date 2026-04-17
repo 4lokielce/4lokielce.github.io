@@ -290,10 +290,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 newBlock()
                 answering = false;
                 document.getElementById("questionbox").hidden = true
+                score += 10
+            } else {
+                mergeBlocks()
+                newBlock()
+                answering = false;
+                document.getElementById("questionbox").hidden = true
             }
         }
         B.onclick = function() {
             if (answer == "B") {
+                mergeBlocks()
+                newBlock()
+                answering = false;
+                document.getElementById("questionbox").hidden = true
+                score += 10
+            } else {
                 mergeBlocks()
                 newBlock()
                 answering = false;
@@ -306,10 +318,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 newBlock()
                 answering = false;
                 document.getElementById("questionbox").hidden = true
+                score += 10
+            } else {
+                mergeBlocks()
+                newBlock()
+                answering = false;
+                document.getElementById("questionbox").hidden = true
             }
+            
         }
         D.onclick = function() {
             if (answer == "D") {
+                mergeBlocks()
+                newBlock()
+                answering = false;
+                document.getElementById("questionbox").hidden = true
+                score += 10
+            } else {
                 mergeBlocks()
                 newBlock()
                 answering = false;
